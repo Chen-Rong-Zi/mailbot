@@ -1,0 +1,4 @@
+2023-12-08 08:53:52,210 [ERROR] (read_admin_data: 392): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2023-12-10 14:15:20,921 [ERROR] (read_admin_data: 406): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2023-12-10 14:16:57,060 [ERROR] (get_url: 264): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2023-12-10 14:16:57,061 [ERROR] (fetch_data: 469): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效

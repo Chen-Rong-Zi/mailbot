@@ -1,0 +1,14 @@
+[Unit]
+Description=Mailbot
+
+[Service]
+Type=simple
+PIDFile=/run/mailbot_init.pid
+ExecStart=/opt/mailbot/mailbot_init.sh
+ExecReload=/bin/kill -SIGHUP $MAINPID
+ExecStop=/bin/kill -SIGINT $MAINPID
+PrivateTmp=true
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
