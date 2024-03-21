@@ -1,0 +1,14 @@
+# 统一身份认证区
+[nju]
+username = '231220088'
+password = '025475rongzi'
+
+# 邮件区
+[email]
+email = '发送邮件的邮箱'
+token = '发送邮件的邮箱授权码'
+
+# 表格api
+[table]
+server     = '服务器url'
+api_token  = '学生填写申请的表单的api'

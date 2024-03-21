@@ -2,3 +2,71 @@
 2023-12-10 14:15:20,921 [ERROR] (read_admin_data: 406): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
 2023-12-10 14:16:57,060 [ERROR] (get_url: 264): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
 2023-12-10 14:16:57,061 [ERROR] (fetch_data: 469): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-20 12:38:15,605 [ERROR] (read_user_data: 368): 读取学生数据出错，学生 af2d31be-973d-11ee-8789-d1a7a5d41e66，完整错误：
+2024-03-20 12:38:15,608 [ERROR] (read_user_data: 369): [Errno 2] No such file or directory: './data/af2d31be-973d-11ee-8789-d1a7a5d41e66.dat'
+Traceback (most recent call last):
+  File "/home/rongzi/mailbot/project/fetch.py", line 358, in read_user_data
+    with open(
+         ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/af2d31be-973d-11ee-8789-d1a7a5d41e66.dat'
+2024-03-20 12:38:24,247 [ERROR] (read_user_data: 368): 读取学生数据出错，学生 231220088，完整错误：
+2024-03-20 12:38:24,247 [ERROR] (read_user_data: 369): [Errno 2] No such file or directory: './data/231220088.dat'
+Traceback (most recent call last):
+  File "/home/rongzi/mailbot/project/fetch.py", line 358, in read_user_data
+    with open(
+         ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/231220088.dat'
+2024-03-20 12:38:34,332 [ERROR] (read_admin_data: 396): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2024-03-20 12:38:38,186 [ERROR] (read_admin_data: 396): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2024-03-20 12:40:51,989 [ERROR] (read_admin_data: 396): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2024-03-20 12:41:28,541 [ERROR] (read_admin_data: 396): 统一身份认证失败，错误：Data must be padded to 16 byte boundary in CBC mode
+2024-03-20 12:42:22,396 [ERROR] (get_url: 260): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-20 12:42:22,397 [ERROR] (fetch_data: 458): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-20 12:43:39,049 [ERROR] (get_url: 260): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-20 12:43:39,050 [ERROR] (fetch_data: 458): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-20 20:44:52,400 [ERROR] (read_user_data: 202): 读取学生数据出错，学生 231220088，完整错误：
+2024-03-20 20:44:52,400 [ERROR] (read_user_data: 203): [Errno 2] No such file or directory: './data/231220088.dat'
+Traceback (most recent call last):
+  File "/home/rongzi/mailbot/project/fetch.py", line 192, in read_user_data
+    with open(
+         ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/231220088.dat'
+2024-03-20 20:45:08,081 [ERROR] (read_user_data: 202): 读取学生数据出错，学生 231880291.dat，完整错误：
+2024-03-20 20:45:08,081 [ERROR] (read_user_data: 203): [Errno 2] No such file or directory: './data/231880291.dat.dat'
+Traceback (most recent call last):
+  File "/home/rongzi/mailbot/project/fetch.py", line 192, in read_user_data
+    with open(
+         ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './data/231880291.dat.dat'
+2024-03-20 20:45:10,646 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'requests' is not defined
+2024-03-20 20:45:42,042 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'requests' is not defined
+2024-03-20 20:46:15,338 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'requests' is not defined
+2024-03-20 20:46:34,958 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'requests' is not defined
+2024-03-20 20:48:16,753 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 're' is not defined
+2024-03-20 20:48:32,019 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'random' is not defined
+2024-03-20 20:48:43,578 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'string' is not defined
+2024-03-20 20:48:50,964 [ERROR] (read_admin_data: 230): 统一身份认证失败，错误：name 'AES' is not defined
+2024-03-20 20:49:02,262 [ERROR] (read_admin_data: 229): 统一身份认证失败，错误：name 'base64' is not defined
+2024-03-20 20:49:13,879 [ERROR] (read_admin_data: 229): 统一身份认证失败，错误：name 'json' is not defined
+2024-03-20 20:49:23,519 [ERROR] (get_url: 93): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-20 20:49:23,520 [ERROR] (fetch_data: 291): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-20 20:52:15,377 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:52:54,786 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:53:37,488 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:53:38,727 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:53:44,112 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:54:37,429 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:54:39,072 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:55:00,697 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:55:47,038 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 20:58:06,308 [ERROR] (get_captch: 94): 从统一身份认证网站获取验证码失败，无法与服务器建立联系
+2024-03-20 21:01:54,943 [ERROR] (login: 132): 登录失败，请检查用户名和密码是否正确，                                服务器返回值：200
+2024-03-20 21:02:12,388 [ERROR] (login: 132): 登录失败，请检查用户名和密码是否正确，                                服务器返回值：200
+2024-03-20 21:25:07,207 [ERROR] (read_admin_data: 220): 统一身份认证失败，错误：[Errno 2] No such file or directory: './admin.config'
+2024-03-20 21:25:36,218 [ERROR] (read_admin_data: 220): 统一身份认证失败，错误：name 'f' is not defined
+2024-03-20 21:26:47,348 [ERROR] (get_url: 93): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-20 21:26:47,349 [ERROR] (fetch_data: 282): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-21 22:51:36,930 [ERROR] (get_url: 91): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-21 22:51:36,935 [ERROR] (fetch_data: 275): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
+2024-03-21 22:52:05,492 [ERROR] (get_url: 91): 资料获取失败，错误：未登录或会话已失效，服务器返回：{'code': '9100', 'msg': '未登录或会话已失效', 'data': None}
+2024-03-21 22:52:05,493 [ERROR] (fetch_data: 276): 学生 231880291 下载出错，错误：登录失效，服务器报错：未登录或会话已失效
