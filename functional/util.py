@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 import inspect
 
 def curry(func, len_of_params=None):

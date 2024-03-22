@@ -5,14 +5,15 @@ import base64
 import requests
 import json
 
-from Crypto.Cipher import AES
-from logger        import fetch_log as log
+from   Crypto.Cipher import AES
+from   util.logger   import fetch_log as log
 
 class authserver:
-    def __init__(self, username: str, password: str):
-        self.session  = requests.Session()
-        self.username = username
-        self.password = password
+    def __init__(self, username: str, password: str, ocr_token: str):
+        self.session   = requests.Session()
+        self.username  = username
+        self.password  = password
+        self.ocr_token = ocr_token
 
     def encrypt_password(self, password_seed: str)->str:
         '''
@@ -22,12 +23,12 @@ class authserver:
 
             password_seed: AES 加密算法的参数
         '''
-        random_iv = ''.join(random.sample((string.ascii_letters + string.digits) * 10, 16))
+        random_iv  = ''.join(random.sample((string.ascii_letters + string.digits) * 10, 16))
         random_str = ''.join(random.sample((string.ascii_letters + string.digits) * 10, 64))
 
         data = random_str + self.password
-        key = password_seed.encode("utf-8")
-        iv = random_iv.encode("utf-8")
+        key  = password_seed.encode("utf-8")
+        iv   = random_iv.encode("utf-8")
 
         bs = AES.block_size
 
@@ -35,7 +36,7 @@ class authserver:
             return s + (bs - len(s) % bs) * chr(bs - len(s) % bs)
 
         cipher = AES.new(key, AES.MODE_CBC, iv)
-        data = cipher.encrypt(pad(data).encode("utf-8"))
+        data   = cipher.encrypt(pad(data).encode("utf-8"))
         return base64.b64encode(data).decode("utf-8")
 
     def need_captcha(self):
@@ -44,7 +45,7 @@ class authserver:
         '''
 
         need_url = f'https://authserver.nju.edu.cn/authserver/needCaptcha.html'
-        res = self.session.post(need_url, data={'username': self.username})
+        res      = self.session.post(need_url, data={'username': self.username})
         return 'true' in res.text
 
     def get_captch(self, online: bool)->str:
@@ -54,45 +55,33 @@ class authserver:
             online: 是否调用在线付费 API 识别验证码
         '''
 
-        if self.need_captcha():
-            captch_url = 'https://authserver.nju.edu.cn/authserver/captcha.html'
-            captch_img = self.session.get(captch_url).content
+        captch_url = 'https://authserver.nju.edu.cn/authserver/captcha.html'
+        captch_img = self.session.get(captch_url).content
 
-            if online:
-                captch_img = 'data:image/jpg;base64,{}'.format(
-                    base64.b64encode(captch_img).decode('utf-8'))
+        if not online:
+            # 本地存档一份当前验证码
+            with open('chaptch.jpg', 'wb') as img_output:
+                img_output.write(captch_img)
+            return input('请输入验证码：')
 
-                data = {
-                    'image': captch_img,
-                    'token': '-aiEOVLTyt9yoOmq6cLvYrKejQGimynQieo3IjO1k44',
-                    'type': 10110
-                }
-                headers = {
-                    'Content-Type': 'application/json'
-                }
-                res = requests.post('http://api.jfbym.com/api/YmServer/customApi',
-                                    data = json.dumps(data), headers=headers)
-                if res.status_code == 405:
-                    log.logger.error('OCR 接口拒绝服务：返回值 405，请检查 P 认证')
-                    raise Exception('OCR 接口拒绝服务')
-                else:
-                    res = res.json()
-                    if res['code'] == 10000:
-                        return res['data']['data']
-                    elif res['code'] == 10002:
-                        log.logger.error(f'OCR 接口欠费，接口返回：{res}')
-                        raise Exception('OCR 接口欠费，请联系开发人员处理')
-                    else:
-                        log.logger.error(f'''OCR 接口遇到未知错误，错误码：{res['code']}''')
-                        raise Exception(f'''OCR 接口遇到未知错误，错误码：{res['code']}''')
-            else:
-                # 本地存档一份当前验证码
-                with open('chaptch.jpg', 'wb') as img_output:
-                    img_output.write(captch_img)
-                return input('请输入验证码：')
-        else:
-            log.logger.error('从统一身份认证网站获取验证码失败，无法与服务器建立联系')
-            raise Exception('从统一身份认证网站获取验证码失败，请检查网络连接')
+        captch_img = 'data:image/jpg;base64,{}'.format(base64.b64encode(captch_img).decode('utf-8'))
+        data       = {'image': captch_img, 'token': self.ocr_token, 'type': 10110}
+        headers    = { 'Content-Type': 'application/json' }
+        res        = requests.post('http://api.jfbym.com/api/YmServer/customApi', data=json.dumps(data), headers=headers)
+
+        if res.status_code == 405:
+            log.logger.error('OCR 接口拒绝服务：返回值 405，请检查 P 认证')
+            raise Exception('OCR 接口拒绝服务')
+
+        res = res.json()
+        if res['code'] == 10000:
+            return res['data']['data']
+        elif res['code'] == 10002:
+            log.logger.error(f'OCR 接口欠费，接口返回：{res}')
+            raise Exception('OCR 接口欠费，请联系开发人员处理')
+
+        log.logger.error(f'''OCR 接口遇到未知错误，错误码：{res['code']}''')
+        raise Exception(f'''OCR 接口遇到未知错误，错误码：{res['code']}''')
 
     def login(self, online:bool=True):
         '''

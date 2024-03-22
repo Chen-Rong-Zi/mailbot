@@ -16,3 +16,6 @@ api_token = '学生填写申请的表单的api'
 # 邮件机器人
 [mailbot]
 port = 8080
+
+[ocr]
+token = '-aiEOVLTyt9yoOmq6cLvYrKejQGimynQieo3IjO1k44'

@@ -1,4 +1,4 @@
-from logger import mailbot_log as log
+from util.logger import mailbot_log as log
 
 def forever():
     n = 0

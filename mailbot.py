@@ -1,15 +1,15 @@
-from os import remove, path
 import sys
+from   os       import remove, path, environ
 import subprocess
 
 import json
 import shutil
+import toml
 from   wsgiref.simple_server import make_server
 
-import toml
-from   logger   import mailbot_log as log
-from   validate import Validator
-from   handler  import Handler
+from   util.logger   import mailbot_log as log
+from   util.validate import Validator
+from   util.handler  import Handler
 
 
 def set_config():
@@ -22,38 +22,27 @@ def set_config():
         log.logger.info('用户配置不合法，修改失败')
 
 def send_email_request(post):
-    log.logger.info("收到一次发送邮件请求 user: " + str(post['user']))
-        f.write(json.dumps(post, ensure_ascii = False))
-    flag = True
+    log.logger.error(f"收到一次发送邮件请求 user: {str(post['user'])}")
 
+    user = post['user']
+    environ.update({'config' : json.dumps(config), 'data' : json.dumps(post)})
     try:
-        user = post['user']
-        env = {'config' : json.dumps(config), 'data' : json.dumps(config)}
-        res1 = subprocess.run(["python", "fetch.py", user], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True, env = env)
-    except Exception:
-        flag = False
-        log.logger.error("user: " + user + " 获取文件失败")
-    if res1.stderr:
-        flag = False
-        log.logger.error("user: " + user + " 获取文件失败")
-        print(res1.stderr.decode('utf-8'))
-    if flag:
-        log.logger.info("user: " + user + " 获取文件成功")
-        try:
-            res2 = subprocess.run(["python", "send_email.py", user], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True)
-        except Exception:
-            flag = False
-            log.logger.error("user: " + user + " 发送邮件失败")
-        if res2.stderr:
-            flag = False
-            log.logger.error("user: " + user + " 发送邮件失败")
-            print(res2.stderr.decode('utf-8'))
-    if flag:
-        log.logger.info("user: " + user + " 发送邮件成功")
-        id = json.loads(json_str)['id']
-        base.query('select 名称 from Table1')
-        sqlc = '''UPDATE Table1 set 是否成功发送 = True where num = %d''' % (int(id))
-        base.query(sqlc)
+        data_program = subprocess.run(["python3", "fetch.py",      str(user)], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True, env = environ)
+        mail_program = subprocess.run(["python3", "send_email.py", str(user)], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True)
+
+        if mail_program.stderr or data_program.stderr:
+            print(mail_program.stderr.decode('utf-8'))
+            raise Exception
+    except Exception as err:
+        log.logger.error(f"user: {user} 发送邮件失败")
+        return [json.dumps({"status": "ok"}).encode('utf-8')]
+
+    breakpoint()
+    base.query('select 名称 from Table1')
+    sqlc = f'''UPDATE Table1 set 是否成功发送 = True where num = {int(post['id'])}'''
+    base.query(sqlc)
+    log.logger.info(f"user: {user} 发送邮件成功")
+    return [json.dumps({"status": "ok"}).encode('utf-8')]
 
 def update_mail():
     log.logger.info("收到一次更新邮件内容的请求")
@@ -69,12 +58,14 @@ def update_config():
     log.logger.info("收到一次更新管理员配置的请求")
     download_func = lambda : base.download_file(post['admin'], './tmp/admin.toml')
     result        = Handler.multi_apply(download_func, range(3))
+    if not result:
+        return [json.dumps({"status": "ok"}).encode('utf-8')]
 
-    if result:
-        shutil.move('./tmp/admin.toml', './admin.toml')
-        set_config()
-        log.logger.info("已完成更新管理员配置文件")
-    return [json.dumps({"status": "ok"}).encode('utf-8')]
+    shutil.move('./tmp/admin.toml', './admin.toml')
+    set_config()
+    log.logger.info("已完成更新管理员配置文件")
+    return [json.dumps({"status": "ok", 'result' : '用户配置不合法'}).encode('utf-8')]
+
 
 def application(environ, start_response):
     start_response('200 OK', [('Content-Type', 'application/json')])
@@ -82,7 +73,7 @@ def application(environ, start_response):
     json_str      = request_body.decode('utf-8')
     is_post_valid = Validator.valid_post(json_str)
     if not is_post_valid:
-        return [json.dumps({"status": "ok"}).encode('utf-8')]
+        return [json.dumps({"status": "ok", 'result' : 'json不合法'}).encode('utf-8')]
 
     post = is_post_valid
     if 'word'  in post:
@@ -92,7 +83,6 @@ def application(environ, start_response):
     else:
         send_email_request(post)
     return [json.dumps({"status": "ok"}).encode('utf-8')]
-
 
 def main():
     port  = config['mailbot']['port']

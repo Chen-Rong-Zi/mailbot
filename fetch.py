@@ -1,23 +1,20 @@
-import re
 import os
 import sys
-import time
 import json
-import base64
-import random
-import string
 import zipfile
 import requests
-import toml
+from   functools  import reduce
 
+from   util.validate   import Validator
+from   util.authserver import authserver
+from   util.logger     import fetch_log  as log
+from   functional.util import curry
 '''
     安装此库的方法：
         pip install crypto
         pip install pycryptodome
         然后把 Python 安装目录下 ./Lib/site-packages/crypto 改成首字母大写的 Crypto
 '''
-from authserver import authserver
-from logger     import fetch_log as log
 
 
 class printer:
@@ -66,82 +63,44 @@ class printer:
             stu_name:  学生中文姓名
         '''
 
-        try:
-            params = {
-                # 选择的证明文件种类，每一种都有固定的
-                'itemId': self.id_map[item_name],
-                # 代表导出方案为单个导出
-                'schemeId': '1166533502928420866',
-                # 学号
-                'ID': stu_id,
-                'pageNumber': '1',
-                'pageSize': '10',
-            }
+        is_stuid_valid = Validator.valid_stuid(stu_id, self.id_map[item_name], self.session)
+        if not is_stuid_valid:
+            raise Exception(f'{stu_id}不合法')
 
-            # 验证学号是否正确
-            res_1 = self.session.get(
-                'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/item/user/page',
-                params=params, verify=False
-            )
+        name_list = is_stuid_valid
+        json_data = {
+            'itemId': self.id_map[item_name],
+            'itemName': item_name,
+            'users': [
+                {
+                    'id': name_list[0]['ID'],
+                    'name': name_list[0]['NAME'],
+                },
+            ],
+            'groupUserIds': '',
+            'singleUserCount': '50',
+            'schemeId': '1166533502928420866',
+            'groupBy': ''
+        }
 
-            res_1 = res_1.json()
-            # 登录失败则返回的 data 为空
-            if not res_1['data']:
-                log.logger.error(f'''资料获取失败，错误：{res_1['msg']}，服务器返回：{res_1}''')
-                raise Exception(f'''登录失效，服务器报错：{res_1['msg']}''')
+        # 获取任务 id
+        result = self.session.post('http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/create', json=json_data, verify=False) \
+                .json()['data']
+        # 获取下载 url
+        url    = 'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/{}'.format(result)
+        task   = self.session.get(url=url, verify=False) \
+                .json()
 
-            name_list = res_1['data']['records']
-            if name_list == []:
-                log.logger.error(f'资料获取失败，未查询到学号 {stu_id} 对应的学生 {stu_name}')
-                raise Exception('学号错误')
-
-            json_data = {
-                'itemId': self.id_map[item_name],
-                'itemName': item_name,
-                'users': [
-                    {
-                        'id': name_list[0]['ID'],
-                        'name': name_list[0]['NAME'],
-                    },
-                ],
-                'groupUserIds': '',
-                'singleUserCount': '50',
-                'schemeId': '1166533502928420866',
-                'groupBy': ''
-            }
-
-            # 获取任务 id
-            res_2 = self.session.post(
-                'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/create',
-                json=json_data, verify=False
-            )
-
-            # 获取下载 url
-            url = 'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/{}'\
-                .format(res_2.json()['data'])
-
-            for counter in range(0, 10):
-                time.sleep(3)
-                res_3 = self.session.get(url=url, verify=False)
-                res_3 = res_3.json()
-
-                # 出现错误信息
-                if res_3['errorLog']:
-                    log.logger.error(f'''资料下载失败，服务器返回错误信息：{res_3['errorLog']}''')
-                    raise Exception(f'''资料下载失败，服务器返回错误信息：{res_3['errorLog']}''')
-                # 下载成功
-                if res_3['downloadUrl']:
-                    return res_3['downloadUrl']
-
-            # 30s 仍然无法获得下载链接，结束并返回获取失败
-            log.logger.error('资料下载失败，获取下载链接轮询超时')
-            raise Exception('资料下载失败，获取下载链接超时')
-        except requests.Timeout:
-            log.logger.error('资料下载失败，请求超时')
-            raise Exception('资料下载失败，请求超时，请检查网络连接')
+        # 出现错误信息
+        if task.get('errorLog', True):
+            log.logger.error(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
+            raise Exception(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
+        # 下载成功
+        if task.get('downloadUrl', False):
+            return task['downloadUrl']
+        return None
 
 class fetcher:
-    uid            = 0
     auth           = None
     printer        = None
     user_data      = {}
@@ -175,17 +134,18 @@ class fetcher:
         '''
         # 设置用户 id
         self.uid       = uid
-        self.user_data = self.read_user_data()
-        self.username, self.password = self.read_admin_data()
-        self.auth = authserver(self.username, self.password)
+        self.materials = self.read_user_data()
+        self.username, self.password, self.ocr_token = self.read_admin_data()
+        self.auth = authserver(self.username, self.password, self.ocr_token)
         self.auth.login()
 
     def read_user_data(self):
         '''
             根据用户 id 读取用户数据
         '''
-        data = os.environ['data'][self.uid]
-        return json.load(data)
+        data      = os.environ['data']
+        materials = json.loads(data)['list']
+        return materials
 
     def read_admin_data(self):
         '''
@@ -197,9 +157,10 @@ class fetcher:
         config    = json.loads(os.environ['config'])
         username  = config['nju']['username']
         password  = config['nju']['password']
-        return username, password
+        ocr_token = config['ocr']['token']
+        return username, password, ocr_token
 
-    def store_file(self, url:str, file_name:str):
+    def store_file(self, file_name:str, url:str):
         '''
             通过 url 下载文件并存入对应目录，
             并将 zip 文件解压，取出其中的 pdf
@@ -252,11 +213,10 @@ class fetcher:
                 os.mkdir(f'./files/{self.uid}')
 
             # 获取资料 url 并下载到本地存储文件夹
-            stu_id = self.user_data['user']
-            for item in self.user_data['list']:
+            for item in self.materials:
                 for mapping in self.download_map[item]:
-                    url = self.printer.get_url(mapping['name'], stu_id)
-                    self.store_file(url, mapping['file'])
+                    working_list = [curry(self.printer.get_url)(mapping['name']), curry(self.store_file)(mapping['file'])]
+                    reduce(lambda pre, curr : curr(pre), working_list, self.uid)
         except Exception as err:
             log.logger.error(f'学生 {self.uid} 下载出错，错误：{err}')
             raise Exception(f'下载出错，错误：{err}')
@@ -273,6 +233,7 @@ def main(uid:str):
         exit(0)
     except Exception as err:
         print(f'获取资料出错，错误：{err}', file=sys.stderr)
+        log.logger.error(err)
         exit(1)
 
 if __name__ == '__main__':
