@@ -55,8 +55,7 @@ class printer:
         })
 
         # 访问自助打印网站，获取专有 Cookies
-        self.session.get(
-            'http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
+        self.session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
 
     def get_url(self, item_name: str, stu_id: int):
         '''
@@ -175,8 +174,8 @@ class fetcher:
             uid: 用户唯一 id
         '''
         # 设置用户 id
-        self.uid = uid
-        self.read_user_data()
+        self.uid       = uid
+        self.user_data = self.read_user_data()
         self.username, self.password = self.read_admin_data()
         self.auth = authserver(self.username, self.password)
         self.auth.login()
@@ -185,21 +184,8 @@ class fetcher:
         '''
             根据用户 id 读取用户数据
         '''
-
-        try:
-            with open(
-                self.user_data_path.format(self.uid),
-                'r', encoding='utf-8'
-            ) as file:
-                self.user_data = json.loads(file.read())
-
-            if not self.user_data.get('user'):
-                log.logger.error(f'读取学生数据出错，请检查学生 {self.uid} 对应信息是否为空')
-                raise Exception(f'读取学生数据出错，请检查学生信息是否为空')
-        except Exception as err:
-            log.logger.error(f'读取学生数据出错，学生 {self.uid}，完整错误：')
-            log.logger.exception(err)
-            raise Exception(f'读取学生数据出错，错误：{err}')
+        data = os.environ['data'][self.uid]
+        return json.load(data)
 
     def read_admin_data(self):
         '''
@@ -208,7 +194,6 @@ class fetcher:
         '''
         # 获取统一身份认证登陆账户及密码
         # test
-        os.environ.update({'config' : json.dumps({'nju': {"username" : "231220088", "password" : '025475rongzi'}})})
         config    = json.loads(os.environ['config'])
         username  = config['nju']['username']
         password  = config['nju']['password']

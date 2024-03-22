@@ -62,22 +62,26 @@ class Validator:
     def valid_post(content):
         try:
             post        = json.loads(content)
-            user        = post['user']
             time        = post['time']
             passwd      = post['passwd']
+            user        = post['user']
             key         = 'Xz4uXT7m4KN33vN59D'
             pwstr       = str(time) + key + str(user)
             bpwstr      = pwstr.encode('UTF-8')
             passwd_hash = hashlib.md5(bpwstr).hexdigest()
 
             if 'word' in post:
-                word = content['word']
-            elif 'admin' in post:
-                time = post['time']
-            if passwd_hash != post['passwd']:
+                word    = post['word']
+                version = post['version']
+            elif 'account' in post:
+                version = post['version']
+                key     = post['key']
+            elif passwd_hash != post['passwd']:
                 raise AssertionError
-            return post
+            else:
+                raise AssertionError
 
+            return post
         except json.decoder.JSONDecodeError:
             log.logger.error('用户输入非json字符串')
             return False
@@ -90,3 +94,5 @@ class Validator:
         except Exception:
             log.logger.error('post请求无效')
             return False
+
+    def valid_stuid():
