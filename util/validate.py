@@ -6,7 +6,8 @@ import seatable_api
 from   seatable_api        import Base, context
 from   requests.exceptions import MissingSchema
 
-from   util.logger         import mailbot_log as log
+from   util.logger         import mailbot_log
+from   util.logger         import fetch_log
 
 def encrypt(time, user):
     key         = 'Xz4uXT7m4KN33vN59D'
@@ -30,16 +31,16 @@ class Validator:
             server    = table['server']
             return config
         except toml.decoder.TomlDecodeError:
-            log.logger.error('admin.toml格式不正确')
+            mailbot_log.logger.error('admin.toml格式不正确')
             return False
         except FileNotFoundError:
-            log.logger.error('未找到admin.toml')
+            mailbot_log.logger.error('未找到admin.toml')
             return False
         except KeyError:
-            log.logger.error('admin.toml缺少相应键值对')
+            mailbot_log.logger.error('admin.toml缺少相应键值对')
             return False
         except Exception:
-            log.logger.error('admin.toml出错')
+            mailbot_log.logger.error('admin.toml出错')
             return False
 
     def valid_base():
@@ -57,19 +58,19 @@ class Validator:
             base.auth()
             return base
         except AssertionError:
-            log.logger.error('admin.toml出错')
+            mailbot_log.logger.error('admin.toml出错')
             return False
         except MissingSchema:
-            log.logger.error('token或server参数不合法')
+            mailbot_log.logger.error('token或server参数不合法')
             return False
         except KeyError:
-            log.logger.error('config错误')
+            mailbot_log.logger.error('config错误')
             return False
         except ConnectionError:
-            log.logger.error('Base连接失败，请求被拒绝')
+            mailbot_log.logger.error('Base连接失败，请求被拒绝')
             return False
         except Exception:
-            log.logger.error('Base验证失败')
+            mailbot_log.logger.error('Base验证失败')
             return False
 
     def valid_stuid(stu_id, itemId, session):
@@ -88,15 +89,16 @@ class Validator:
             # 验证学号是否正确
             result = session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/item/user/page', params=params, verify=False).json()
             if result['data'] is None:
+                fetch_log.logger.error(f'登陆失效')
                 raise Exception(f'''登录失效，服务器报错：{result['msg']}''')
 
             if result['data']['records'] == []:
-                log.logger.error(f'资料获取失败，未查询到学号 {stu_id} 对应的学生 {stu_name}')
+                fetch_log.logger.error(f'资料获取失败，未查询到学号 {stu_id} 对应的学生 {stu_name}')
                 raise Exception('学号错误')
 
             return result['data']['records']
         except Exception as err:
-            log.logger.error(err)
+            fetch_log.logger.error(err)
             return False
 
     def valid_post(content):
@@ -122,14 +124,14 @@ class Validator:
                 raise AssertionError
             return post
         except json.decoder.JSONDecodeError:
-            log.logger.error('用户输入非json字符串')
+            mailbot_log.logger.error('用户输入非json字符串')
             return False
         except KeyError:
-            log.logger.error('用户请求json不完整')
+            mailbot_log.logger.error('用户请求json不完整')
             return False
         except AssertionError:
-            log.logger.error('用户请求密码错误')
+            mailbot_log.logger.error('用户请求密码错误')
             return False
         except Exception:
-            log.logger.error('post请求无效')
+            mailbot_log.logger.error('post请求无效')
             return False

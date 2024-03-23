@@ -2,13 +2,12 @@ import os
 import sys
 import json
 import zipfile
-import requests
-from   functools  import reduce
 
-from   util.validate   import Validator
-from   util.authserver import authserver
-from   util.logger     import fetch_log  as log
-from   functional.util import curry
+from util.validate        import Validator
+from util.authserver      import authserver
+from util.handler         import Handler
+from util.logger          import fetch_log as log
+from util.functional.util import curry, not_none, compose, flat
 '''
     安装此库的方法：
         pip install crypto
@@ -52,9 +51,13 @@ class printer:
         })
 
         # 访问自助打印网站，获取专有 Cookies
-        self.session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
+        try:
+            self.session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
+        except Exception as err:
+            log.logger.error(err)
+            raise Exception(err)
 
-    def get_url(self, item_name: str, stu_id: int):
+    def get_url(self, stu_id: int, item_name: str):
         '''
             获取 stu_id（学号）对应 item_name 类型的材料
 
@@ -65,7 +68,7 @@ class printer:
 
         is_stuid_valid = Validator.valid_stuid(stu_id, self.id_map[item_name], self.session)
         if not is_stuid_valid:
-            raise Exception(f'{stu_id}不合法')
+            raise Exception('学号未通过验证性检测')
 
         name_list = is_stuid_valid
         json_data = {
@@ -73,8 +76,8 @@ class printer:
             'itemName': item_name,
             'users': [
                 {
-                    'id': name_list[0]['ID'],
-                    'name': name_list[0]['NAME'],
+                    'id'   : name_list[0]['ID'],
+                    'name' : name_list[0]['NAME'],
                 },
             ],
             'groupUserIds': '',
@@ -87,22 +90,20 @@ class printer:
         result = self.session.post('http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/create', json=json_data, verify=False) \
                 .json()['data']
         # 获取下载 url
-        url    = 'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/{}'.format(result)
+        url    = 'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/{}' \
+                .format(result)
         task   = self.session.get(url=url, verify=False) \
                 .json()
 
         # 出现错误信息
-        if task.get('errorLog', True):
-            log.logger.error(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
+        if task.get('errorLog', None) is not None:
             raise Exception(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
         # 下载成功
-        if task.get('downloadUrl', False):
-            return task['downloadUrl']
-        return None
+        if task.get('downloadUrl', None):
+            raise Exception('未知错误，服务器未返回下载链接')
+        return task['downloadUrl']
 
 class fetcher:
-    auth           = None
-    printer        = None
     user_data      = {}
     user_data_path = './data/{}.dat'
     user_file_path = './files/{}/'
@@ -138,6 +139,10 @@ class fetcher:
         self.username, self.password, self.ocr_token = self.read_admin_data()
         self.auth = authserver(self.username, self.password, self.ocr_token)
         self.auth.login()
+        self.printer = printer(self.auth.session)
+        if not os.path.exists(f'./files/{self.uid}'):
+            os.mkdir(f'./files/{self.uid}')
+
 
     def read_user_data(self):
         '''
@@ -204,22 +209,34 @@ class fetcher:
             raise Exception(f'文件写入出错，错误：{err}')
 
     def fetch_data(self):
-        try:
-            # 初始化爬虫对象
-            self.printer = printer(self.auth.session)
-
-            # 验证并新建文件夹
-            if not os.path.exists(f'./files/{self.uid}'):
-                os.mkdir(f'./files/{self.uid}')
-
+        get_map  = lambda item : self.download_map[item]
+        get_name = lambda item : item['name']
+        get_file = lambda item : item['file']
+        def get_data():
             # 获取资料 url 并下载到本地存储文件夹
-            for item in self.materials:
-                for mapping in self.download_map[item]:
-                    working_list = [curry(self.printer.get_url)(mapping['name']), curry(self.store_file)(mapping['file'])]
-                    reduce(lambda pre, curr : curr(pre), working_list, self.uid)
-        except Exception as err:
-            log.logger.error(f'学生 {self.uid} 下载出错，错误：{err}')
-            raise Exception(f'下载出错，错误：{err}')
+            urls_proc = [curry(map, 2)(get_map),
+                         curry(flat),
+                         curry(map, 2)(get_name),
+                         curry(map, 2)(curry(self.printer.get_url)(self.uid))]
+            urls      = compose(urls_proc, self.materials)
+
+            file_proc = [curry(map, 2)(get_map),
+                         curry(flat),
+                         curry(map, 2)(get_file)]
+            filenames = compose(file_proc, self.materials)
+
+            for filename, url in zip(filenames, urls):
+                if url:
+                    log.logger.info(f'{filename}, url: {url}')
+                    self.store_file(filename, url)
+                else:
+                    # 可能为用户输入错误，不抛出异常
+                    log.logger.error(f'未找到学号  {self.uid}  对应的  {filename}')
+
+        result = Handler.multi_apply(get_data, range(1, 11), 'fetch_data失败, 未能获取资料')
+        if not result:
+            raise Exception('fetch data抛出异常')
+
 
 def main(uid:str):
     '''

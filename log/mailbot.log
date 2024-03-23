@@ -1,262 +1,193 @@
-
-2024-03-23 00:21:19,416 [ERROR] (valid_base: 66): Base验证失败
-2024-03-23 00:22:10,152 [ERROR] (valid_base: 69): Base验证失败
-2024-03-23 00:22:11,877 [ERROR] (valid_base: 69): Base验证失败
-2024-03-23 00:22:38,962 [ERROR] (valid_base: 70): Base验证失败
-2024-03-23 00:23:07,013 [ERROR] (valid_base: 71): Base验证失败
-2024-03-23 00:23:28,898 [ERROR] (valid_config: 21): in valid_config
-2024-03-23 00:23:28,898 [ERROR] (valid_config: 21): in valid_config
-2024-03-23 00:23:28,899 [ERROR] (valid_base: 71): Base验证失败
-2024-03-23 00:23:40,770 [ERROR] (valid_config: 21): in valid_config
-2024-03-23 00:23:40,770 [ERROR] (valid_config: 32): outter valid_config
-2024-03-23 00:23:40,770 [ERROR] (valid_config: 21): in valid_config
-2024-03-23 00:23:40,771 [ERROR] (valid_config: 32): outter valid_config
-2024-03-23 00:23:40,771 [ERROR] (valid_base: 72): Base验证失败
-2024-03-23 00:23:52,639 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:23:52,640 [ERROR] (valid_base: 71): Base验证失败
-2024-03-23 00:24:25,969 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:24:25,970 [ERROR] (valid_base: 51): out valid_base
-2024-03-23 00:24:25,970 [ERROR] (valid_base: 72): Base验证失败
-2024-03-23 00:24:30,006 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:24:30,006 [ERROR] (valid_base: 72): Base验证失败
-2024-03-23 00:24:36,870 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:24:36,870 [ERROR] (valid_base: 72): Base验证失败
-2024-03-23 00:24:41,379 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:24:41,380 [ERROR] (valid_base: 72): Base验证失败
-2024-03-23 00:25:09,341 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:25:09,342 [ERROR] (valid_base: 69): config错误
-2024-03-23 00:25:20,461 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:25:20,462 [ERROR] (valid_base: 69): config错误
-2024-03-23 00:25:40,503 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:25:40,503 [ERROR] (valid_base: 57): out valid_base
-2024-03-23 00:26:07,033 [ERROR] (valid_base: 75): Base验证失败
-2024-03-23 00:26:08,127 [ERROR] (valid_base: 47): in valid_base
-2024-03-23 00:26:08,128 [ERROR] (valid_base: 57): out valid_base
-2024-03-23 00:26:13,289 [ERROR] (valid_base: 75): Base验证失败
-2024-03-23 00:26:48,127 [INFO] (main: 86): Mailbot开始运行并监听端口8080
-2024-03-23 00:27:31,194 [ERROR] (valid_post: 128): 用户请求不完整
-2024-03-23 00:28:09,441 [ERROR] (valid_post: 128): 用户请求不完整
-2024-03-23 00:28:19,748 [ERROR] (valid_post: 125): 用户输入非json字符串
-2024-03-23 00:28:52,427 [ERROR] (valid_post: 131): 用户请求密码错误
-2024-03-23 00:28:56,286 [ERROR] (valid_post: 131): 用户请求密码错误
-2024-03-23 00:31:42,859 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:32:07,457 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:32:26,117 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:32:28,622 [INFO] (main: 86): Mailbot开始运行并监听端口8080
-2024-03-23 00:32:29,315 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:40:26,549 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:40:27,560 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:40:28,925 [INFO] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:41:34,539 [INFO] (main: 86): Mailbot开始运行并监听端口8080
-2024-03-23 00:41:53,305 [INFO] (main: 86): Mailbot开始运行并监听端口8080
-2024-03-23 00:42:10,125 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:42:42,323 [INFO] (main: 88): Mailbot开始运行并监听端口8080
-2024-03-23 00:42:43,096 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:42:47,608 [INFO] (main: 88): Mailbot开始运行并监听端口8080
-2024-03-23 00:42:48,128 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:11,600 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:12,786 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:13,474 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:13,949 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:14,411 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:15,324 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:16,008 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:18,441 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:44:43,612 [INFO] (main: 88): Mailbot开始运行并监听端口8080
-2024-03-23 00:44:44,119 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:45:17,142 [INFO] (main: 88): Mailbot开始运行并监听端口8080
-2024-03-23 00:45:18,135 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:46:03,846 [ERROR] (valid_post: 128): 用户请求json不完整
-2024-03-23 00:46:06,851 [ERROR] (valid_post: 128): 用户请求json不完整
-2024-03-23 00:46:14,542 [ERROR] (valid_post: 128): 用户请求json不完整
-2024-03-23 00:48:25,506 [INFO] (main: 89): Mailbot开始运行并监听端口8080
-2024-03-23 00:48:49,643 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:50:02,281 [INFO] (main: 89): Mailbot开始运行并监听端口8080
-2024-03-23 00:50:04,968 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:51:16,039 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:51:17,899 [INFO] (main: 88): Mailbot开始运行并监听端口8080
-2024-03-23 00:51:18,836 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:53:05,439 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:53:05,920 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:53:32,086 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:53:33,524 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:54:22,048 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:54:49,351 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:54:50,421 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:55:06,600 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:55:06,900 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:56:19,167 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:56:19,795 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:56:35,424 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:56:36,469 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:56:48,954 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:56:49,724 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:57:14,674 [INFO] (main: 91): Mailbot开始运行并监听端口8080
-2024-03-23 00:57:15,174 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:58:40,390 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:58:43,532 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:58:46,517 [INFO] (main: 92): Mailbot开始运行并监听端口8080
-2024-03-23 00:58:47,104 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:59:08,737 [INFO] (main: 92): Mailbot开始运行并监听端口8080
-2024-03-23 00:59:10,706 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 00:59:49,958 [INFO] (main: 89): Mailbot开始运行并监听端口8080
-2024-03-23 00:59:50,400 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:01:09,146 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:01:13,483 [INFO] (main: 87): Mailbot开始运行并监听端口8080
-2024-03-23 01:01:14,099 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:01:28,312 [INFO] (main: 87): Mailbot开始运行并监听端口8080
-2024-03-23 01:01:28,882 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:41,973 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:02:42,322 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:50,805 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:02:51,345 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:51,622 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:02:54,716 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:54,987 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:02:55,754 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:56,033 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:02:56,705 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:02:56,985 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:03,637 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:03,911 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:04,419 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:04,699 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:05,441 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:05,706 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:06,446 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:06,718 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:07,201 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:07,479 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:07,832 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:08,105 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:08,475 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:08,748 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:09,114 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:09,403 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:09,736 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:10,020 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:10,586 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:10,861 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:11,292 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:11,569 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:12,232 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:12,508 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:12,981 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:13,256 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:03:13,732 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 1
-2024-03-23 01:03:14,012 [ERROR] (send_email_request: 37): user: 1 发送邮件失败
-2024-03-23 01:27:31,093 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:28:30,427 [ERROR] (valid_post: 128): 用户请求json不完整
-2024-03-23 01:34:39,873 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:34:40,141 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:34:47,902 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:34:48,159 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:35:23,770 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:35:24,758 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:35:25,015 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:35:32,643 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:35:33,777 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:35:34,031 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:35:36,052 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:35:36,299 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:12,030 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:36:12,741 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:25,748 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:26,003 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:29,528 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:29,781 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:30,759 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:31,012 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:34,927 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:40,523 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:40,790 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:43,871 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:44,127 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:45,634 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:45,887 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:54,441 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:36:54,693 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:36:59,267 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:15,853 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:16,111 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:38:28,630 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:28,883 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:38:33,153 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:33,407 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:38:35,837 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:38:36,663 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:36,916 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:38:59,342 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:38:59,584 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:39:22,145 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:39:22,387 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:39:57,620 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:39:57,869 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:40:19,612 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:40:19,856 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:41:21,800 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:41:22,059 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:41:28,215 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:41:29,129 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:41:29,381 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:41:36,069 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:41:36,315 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:41:58,054 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:41:58,302 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:42:15,306 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:42:19,073 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:42:19,130 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:42:25,638 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:42:28,269 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:42:28,328 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:43:01,341 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:43:03,963 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:43:04,026 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:43:30,677 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:43:33,319 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:43:33,382 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:43:50,317 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:43:52,907 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:43:52,970 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:44:30,909 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:44:33,618 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:44:33,676 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:45:18,513 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:45:21,172 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:45:21,231 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:45:33,545 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:45:36,164 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:45:36,217 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:45:38,717 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:45:42,931 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:45:42,987 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:46:18,284 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:46:21,401 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:46:21,460 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:46:42,743 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:46:45,460 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:46:45,513 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:46:50,803 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:46:53,459 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:46:53,520 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:47:10,929 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:47:13,651 [ERROR] (valid_stuid: 99): 学号验证错误
-2024-03-23 01:47:13,713 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:47:43,735 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:47:46,486 [ERROR] (valid_stuid: 100): 学号验证错误
-2024-03-23 01:47:46,544 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:48:27,709 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:48:28,623 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:48:31,348 [ERROR] (valid_stuid: 99): name 'itemid' is not defined
-2024-03-23 01:48:31,416 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:48:44,423 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:48:47,012 [ERROR] (valid_stuid: 99): name 'itemid' is not defined
-2024-03-23 01:48:47,069 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:49:07,550 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:49:10,181 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:49:12,863 [ERROR] (valid_stuid: 99): object of type 'NoneType' has no len()
-2024-03-23 01:49:12,924 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
-2024-03-23 01:50:16,778 [INFO] (main: 90): Mailbot开始运行并监听端口8080
-2024-03-23 01:50:19,138 [ERROR] (send_email_request: 25): 收到一次发送邮件请求 user: 231880291
-2024-03-23 01:50:21,892 [ERROR] (valid_stuid: 99): 登录失效，服务器报错：未登录或会话已失效
-2024-03-23 01:50:21,946 [ERROR] (send_email_request: 37): user: 231880291 发送邮件失败
+2024-03-23 15:35:27,627 [INFO] (main: 90): Mailbot开始运行并监听端口8080
+2024-03-23 15:35:38,917 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:35:39,897 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-23 15:35:39,897 [INFO] (multi_apply: 17): 
+2024-03-23 15:35:39,920 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:35:39,921 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-23 15:35:39,921 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-23 15:35:39,921 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:36:08,790 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:36:09,429 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-23 15:36:09,430 [INFO] (multi_apply: 17): 
+2024-03-23 15:36:09,453 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:36:09,453 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-23 15:36:09,453 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-23 15:36:09,453 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:36:54,792 [INFO] (main: 90): Mailbot开始运行并监听端口8080
+2024-03-23 15:36:55,344 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:36:56,180 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:36:56,180 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:36:56,180 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:36:56,180 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:37:03,282 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:37:04,221 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:37:04,222 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:37:04,222 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:37:04,222 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:37:05,414 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:37:06,410 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:37:06,410 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:37:06,410 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:37:06,410 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:37:13,227 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:37:14,554 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:37:14,554 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:37:14,554 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:37:14,554 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:39:02,923 [INFO] (main: 90): Mailbot开始运行并监听端口8080
+2024-03-23 15:39:12,191 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:39:12,554 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:39:12,554 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:39:12,554 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:39:12,554 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:39:25,138 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:39:25,577 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:39:25,577 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:39:25,577 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:39:25,578 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:39:31,440 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:39:31,815 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:39:31,815 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:39:31,815 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:39:31,815 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:39:53,523 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:39:54,021 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:39:54,022 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:39:54,022 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:39:54,022 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:39:59,263 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:39:59,729 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:39:59,730 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:39:59,730 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:39:59,730 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:40:06,977 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:40:07,545 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:40:07,545 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:40:07,545 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:40:07,546 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:40:14,053 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:40:14,712 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:40:14,712 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:40:14,712 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:40:14,712 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:45:16,372 [INFO] (main: 90): Mailbot开始运行并监听端口8080
+2024-03-23 15:45:24,706 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:45:25,577 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:45:25,577 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:45:25,577 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:45:25,578 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:45:39,857 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:45:40,625 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:45:40,626 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:45:40,626 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:45:40,626 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:45:55,277 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:45:56,042 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:45:56,042 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:45:56,042 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:45:56,042 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:46:11,707 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:46:12,488 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:46:12,488 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:46:12,488 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:46:12,489 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:55:27,686 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:55:27,942 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:55:27,942 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:55:27,942 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:55:27,942 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:55:50,120 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:55:50,369 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:55:50,370 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:55:50,370 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:55:50,370 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:17,408 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:17,666 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:17,667 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:17,667 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:17,667 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:27,646 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:27,904 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:27,904 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:27,904 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:27,904 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:43,803 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:43,825 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:43,825 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:43,825 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:43,825 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:45,140 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:45,163 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:45,163 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:45,163 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:45,163 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:46,085 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:46,108 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:46,108 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:46,108 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:46,108 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:56:48,719 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:56:48,742 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:56:48,742 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:56:48,742 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:56:48,742 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:14,006 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:14,031 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:14,031 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:14,031 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:14,032 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:15,126 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:15,147 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:15,147 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:15,147 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:15,147 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:16,134 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:16,156 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:16,157 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:16,157 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:16,157 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:18,037 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:18,059 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:18,059 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:18,060 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:18,060 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:22,132 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:22,155 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:22,155 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:22,155 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:22,155 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:57:50,061 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:57:50,085 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:57:50,086 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:57:50,086 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:57:50,086 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 15:58:01,313 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 15:58:01,595 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 15:58:01,595 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 15:58:01,595 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 15:58:01,596 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 16:00:43,664 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 16:00:43,929 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 16:00:43,929 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 16:00:43,929 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 16:00:43,930 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 16:00:46,982 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 16:00:47,237 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 16:00:47,238 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 16:00:47,238 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 16:00:47,238 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 16:00:48,962 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 16:00:49,216 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 16:00:49,216 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 16:00:49,216 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 16:00:49,216 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 16:00:50,876 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 16:00:51,142 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 16:00:51,142 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 16:00:51,142 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 16:00:51,142 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-23 16:01:42,452 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-23 16:01:42,709 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-23 16:01:42,710 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-23 16:01:42,710 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-23 16:01:42,710 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出

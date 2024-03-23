@@ -1,5 +1,5 @@
 import sys
-from   os       import remove, path, environ
+from   os       import environ
 import subprocess
 
 import json
@@ -21,23 +21,23 @@ def set_config():
     else:
         log.logger.info('用户配置不合法，修改失败')
 
-def send_email_request(post):
+def email_request(post):
     log.logger.error(f"收到一次发送邮件请求 user: {str(post['user'])}")
 
     user = post['user']
     environ.update({'config' : json.dumps(config), 'data' : json.dumps(post)})
-    try:
-        data_program = subprocess.run(["python3", "fetch.py",      str(user)], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True, env = environ)
-        mail_program = subprocess.run(["python3", "send_email.py", str(user)], stdout = subprocess.PIPE, stderr = subprocess.PIPE, check = True)
+    proc_func_maker = lambda command : lambda : subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=environ)
 
-        if mail_program.stderr or data_program.stderr:
-            print(mail_program.stderr.decode('utf-8'))
-            raise Exception
-    except Exception as err:
-        log.logger.error(f"user: {user} 发送邮件失败")
+    crawer          = proc_func_maker(["python3", "fetch.py",     str(user)])
+    is_crawer_fine  = Handler.apply(crawer, '获取资料失败', 'mailbot.log')
+    if not is_crawer_fine:
         return [json.dumps({"status": "ok"}).encode('utf-8')]
 
-    breakpoint()
+    mail_program = proc_func_maker(["python3", "send_mail.py", str(user)])
+    is_mail_fine = Handler.apply(mail_program, '发送邮件失败', 'mailbot.log')
+    if not is_mail_fine:
+        return [json.dumps({"status": "ok"}).encode('utf-8')]
+
     base.query('select 名称 from Table1')
     sqlc = f'''UPDATE Table1 set 是否成功发送 = True where num = {int(post['id'])}'''
     base.query(sqlc)
@@ -47,7 +47,7 @@ def send_email_request(post):
 def update_mail():
     log.logger.info("收到一次更新邮件内容的请求")
     download_func = lambda : base.download_file(ckdic['word'], './tmp/prototype.docx')
-    result        = Handler.multi_apply(download_func, range(3))
+    result        = Handler.multi_apply(download_func, range(3), log_file='mailbot.log')
 
     if result:
         shutil.move('./tmp/prototype.docx', './prototype.docx')
@@ -57,7 +57,7 @@ def update_mail():
 def update_config():
     log.logger.info("收到一次更新管理员配置的请求")
     download_func = lambda : base.download_file(post['admin'], './tmp/admin.toml')
-    result        = Handler.multi_apply(download_func, range(3))
+    result        = Handler.multi_apply(download_func, range(3), log_file='mailbot.log')
     if not result:
         return [json.dumps({"status": "ok"}).encode('utf-8')]
 
@@ -81,7 +81,7 @@ def application(environ, start_response):
     if 'admin' in post:
         return update_config()
     else:
-        send_email_request(post)
+        email_request(post)
     return [json.dumps({"status": "ok"}).encode('utf-8')]
 
 def main():

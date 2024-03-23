@@ -10,7 +10,7 @@ from   util.logger   import fetch_log as log
 
 class authserver:
     def __init__(self, username: str, password: str, ocr_token: str):
-        self.session   = requests.Session()
+        self.session   = None
         self.username  = username
         self.password  = password
         self.ocr_token = ocr_token
@@ -91,6 +91,7 @@ class authserver:
             online: 是否调用在线付费 API 识别验证码，默认调用
         '''
 
+        self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'})
 
@@ -117,8 +118,7 @@ class authserver:
             if res.status_code == 302:
                 return self.session
             else:
-                log.logger.error(f'登录失败，请检查用户名和密码是否正确，\
-                                服务器返回值：{res.status_code}')
+                log.logger.error(f'登录失败，请检查用户名和密码是否正确，服务器返回值：{res.status_code}')
                 raise Exception('登录失败，请检查用户名和密码是否正确')
         except requests.Timeout:
             log.logger.error('登录失败，请求超时')

@@ -18,4 +18,5 @@ api_token = '学生填写申请的表单的api'
 port = 8080
 
 [ocr]
-token = '-aiEOVLTyt9yoOmq6cLvYrKejQGimynQieo3IjO1k44'
+# token = '-aiEOVLTyt9yoOmq6cLvYrKejQGimynQieo3IjO1k44'
+token = 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'
