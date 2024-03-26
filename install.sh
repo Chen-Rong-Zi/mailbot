@@ -40,11 +40,11 @@ fi
 ! [[ -f util/logger.py              ]] && echo 缺少logger.py              && exit 1
 ! [[ -f util/validate.py            ]] && echo 缺少validate.py            && exit 1
 
-! [[ -e $HOME/.config/systemd/user ]] && mkdir $HOME/.config/systemd/user
+! [[ -d $HOME/.config/systemd/user ]] && mkdir $HOME/.config/systemd/user
 cp mailbot.service $HOME/.config/systemd/user/mailbot.service
 
-! [[ -e $HOME/.local/bin/mailbot ]] && mkdir -p $HOME/.local/bin/mailbot
-cp -r . $HOME/.local/bin/mailbot
+! [[ -d /opt/mailbot ]] && mkdir -p /opt/mailbot
+cp -r . /opt/mailbot
 
 systemctl --user daemon-reload
 

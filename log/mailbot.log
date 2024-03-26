@@ -191,3 +191,489 @@
 2024-03-23 16:01:42,710 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
 2024-03-23 16:01:42,710 [ERROR] (multi_apply: 24): 获取资料失败
 2024-03-23 16:01:42,710 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:40:50,058 [ERROR] (valid_config: 40): admin.toml缺少相应键值对
+2024-03-24 14:40:50,059 [ERROR] (valid_config: 40): admin.toml缺少相应键值对
+2024-03-24 14:40:50,059 [ERROR] (valid_base: 61): admin.toml出错
+2024-03-24 14:40:58,884 [INFO] (main: 90): Mailbot开始运行并监听端口8080
+2024-03-24 14:43:48,200 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:43:48,540 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:43:48,540 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:43:48,540 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:43:48,540 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:43:59,611 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:44:04,918 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:44:04,918 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:44:04,918 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:44:04,918 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:51:20,193 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:51:23,211 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:51:23,212 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:51:23,212 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:51:23,212 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:51:37,773 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:51:40,618 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:51:40,618 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:51:40,618 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:51:40,618 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:52:21,574 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:52:24,933 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 14:52:24,933 [INFO] (multi_apply: 17): 
+2024-03-24 14:52:24,955 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:52:24,955 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 14:52:24,955 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 14:52:24,955 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:52:44,092 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:52:47,221 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 14:52:47,221 [INFO] (multi_apply: 17): 
+2024-03-24 14:52:47,244 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:52:47,244 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 14:52:47,245 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 14:52:47,245 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:53:04,745 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:53:07,898 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 14:53:07,898 [INFO] (multi_apply: 17): 
+2024-03-24 14:53:07,917 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:53:07,918 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 14:53:07,918 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 14:53:07,918 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:53:30,977 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:53:33,806 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:53:33,807 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:53:33,807 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:53:33,807 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:58:31,100 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:58:33,962 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:58:33,962 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:58:33,962 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:58:33,962 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 14:58:55,959 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 14:58:58,755 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 14:58:58,755 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 14:58:58,755 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 14:58:58,755 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:00:20,713 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:00:23,488 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:00:23,489 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:00:23,489 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:00:23,489 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:01:25,752 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:01:28,830 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:01:28,831 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:01:28,831 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:01:28,831 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:02:17,083 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:02:19,930 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:02:19,930 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:02:19,930 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:02:19,930 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:03:30,630 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:03:33,448 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:03:33,448 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:03:33,448 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:03:33,448 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:03:38,119 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:03:41,028 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:03:41,028 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:03:41,029 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:03:41,029 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:04:17,626 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:04:20,443 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:04:20,443 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:04:20,443 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:04:20,444 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:04:56,535 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:04:59,359 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:04:59,359 [INFO] (multi_apply: 17): 
+2024-03-24 15:04:59,378 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:04:59,378 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 15:04:59,378 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:04:59,379 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:05:18,806 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:05:19,044 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:05:19,044 [INFO] (multi_apply: 17): 
+2024-03-24 15:05:19,062 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:05:19,063 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 15:05:19,063 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:05:19,063 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:05:21,261 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:05:21,502 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:05:21,502 [INFO] (multi_apply: 17): 
+2024-03-24 15:05:21,521 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:05:21,521 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 15:05:21,521 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:05:21,521 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:05:23,317 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:05:23,559 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:05:23,559 [INFO] (multi_apply: 17): 
+2024-03-24 15:05:23,577 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:05:23,577 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 15:05:23,577 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:05:23,577 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:06:02,505 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:06:05,407 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:06:05,407 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:06:05,407 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:06:05,407 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:06:21,481 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:06:24,250 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:06:24,250 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:06:24,250 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:06:24,250 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:07:03,777 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:07:06,912 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:07:06,912 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:07:06,912 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:07:06,912 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:07:31,774 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:07:34,599 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:07:34,600 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:07:34,600 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:07:34,600 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:08:17,106 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:08:19,969 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:08:19,969 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:08:19,969 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:08:19,969 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:08:48,486 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:08:52,320 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:08:52,320 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:08:52,320 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:08:52,320 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:09:01,126 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:09:03,885 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:09:03,885 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:09:03,885 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:09:03,885 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:09:36,601 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:09:39,433 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:09:39,433 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:09:39,433 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:09:39,433 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:10:33,010 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:10:35,781 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:10:35,781 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:10:35,781 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:10:35,781 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:12:06,936 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:12:09,747 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:12:09,748 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:12:09,748 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:12:09,748 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:12:48,935 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:12:51,743 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:12:51,743 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:12:51,743 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:12:51,743 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:13:12,661 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:13:15,490 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:13:15,490 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:13:15,490 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:13:15,490 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:13:44,218 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:13:47,352 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:13:47,352 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:13:47,352 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:13:47,352 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:14:06,516 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:14:09,322 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:14:09,322 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:14:09,322 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:14:09,322 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:14:13,375 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:14:16,215 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:14:16,215 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:14:16,215 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:14:16,215 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:15:17,587 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:15:20,433 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:15:20,433 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:15:20,433 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:15:20,433 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:15:34,000 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:15:37,228 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:15:37,229 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:15:37,229 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:15:37,229 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:15:53,346 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:15:56,092 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:15:56,092 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:15:56,092 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:15:56,092 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:18:19,615 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:18:22,400 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:18:22,400 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:18:22,400 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:18:22,400 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:18:26,141 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:18:28,896 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:18:28,896 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:18:28,896 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:18:28,896 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:18:47,222 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:18:50,069 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:18:50,069 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:18:50,070 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:18:50,070 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:18:51,152 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:18:54,039 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:18:54,039 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:18:54,039 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:18:54,040 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:19:07,591 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:19:10,420 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:19:10,420 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:19:10,420 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:19:10,420 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:20:24,593 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:20:27,427 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:20:27,428 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:20:27,428 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:20:27,428 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:20:51,289 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:20:54,151 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:20:54,151 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:20:54,151 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:20:54,151 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:21:00,371 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:21:03,271 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:21:03,271 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:21:03,271 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:21:03,271 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:21:21,572 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:21:24,371 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:21:24,371 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:21:24,371 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:21:24,372 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:22:22,163 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:22:24,980 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:22:24,980 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231880291']' returned non-zero exit status 1.
+2024-03-24 15:22:24,980 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:22:24,980 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:23:15,092 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231880291
+2024-03-24 15:23:18,275 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:23:18,275 [INFO] (multi_apply: 17): 
+2024-03-24 15:23:18,294 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:23:18,294 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231880291']' returned non-zero exit status 2.
+2024-03-24 15:23:18,294 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:23:18,294 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:24:56,502 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:24:59,704 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:24:59,704 [INFO] (multi_apply: 17): 
+2024-03-24 15:24:59,724 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:24:59,724 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:24:59,724 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:24:59,724 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:25:52,176 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:25:54,985 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:25:54,985 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:25:54,985 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:25:54,985 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:28:13,852 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:28:16,710 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:28:16,710 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:28:16,710 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:28:16,710 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:29:12,195 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:29:14,975 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:29:14,975 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:29:14,975 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:29:14,975 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:30:08,077 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:30:10,889 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:30:10,890 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:30:10,890 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:30:10,890 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:30:20,496 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:30:23,289 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:30:23,290 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:30:23,290 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:30:23,290 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:30:38,821 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:30:41,604 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:30:41,604 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:30:41,605 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:30:41,605 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:34:50,568 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:34:53,280 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:34:53,281 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:34:53,281 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:34:53,281 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:35:51,190 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:35:54,766 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:35:54,766 [INFO] (multi_apply: 17): 
+2024-03-24 15:35:54,786 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:35:54,786 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:35:54,786 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:35:54,786 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:37:32,645 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:37:32,669 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:37:32,670 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:37:32,670 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:37:32,670 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:37:41,765 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:37:41,785 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:37:41,785 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:37:41,785 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:37:41,785 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:37:45,857 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:37:45,876 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:37:45,876 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:37:45,877 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:37:45,877 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:37:53,120 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:37:53,140 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:37:53,140 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:37:53,140 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:37:53,140 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:00,654 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:00,676 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:00,676 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:00,676 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:00,676 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:12,362 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:12,383 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:12,383 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:12,383 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:12,383 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:22,188 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:22,209 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:22,209 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:22,209 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:22,209 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:47,743 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:47,763 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:47,763 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:47,763 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:47,763 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:48,740 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:48,759 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:48,760 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:48,760 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:48,760 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:56,777 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:56,798 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:56,798 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:56,798 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:56,798 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:38:59,297 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:38:59,317 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:38:59,317 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:38:59,317 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:38:59,317 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:01,492 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:01,514 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:01,514 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:39:01,514 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:39:01,515 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:02,344 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:02,364 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:02,364 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:39:02,364 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:39:02,364 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:03,271 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:03,291 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:03,291 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:39:03,291 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:39:03,291 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:03,845 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:03,867 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:03,867 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:39:03,867 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:39:03,867 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:04,372 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:04,393 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:04,393 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '231220088']' returned non-zero exit status 1.
+2024-03-24 15:39:04,393 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 15:39:04,393 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:39:29,329 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:39:32,410 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:39:32,410 [INFO] (multi_apply: 17): 
+2024-03-24 15:39:32,430 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:39:32,430 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:39:32,430 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:39:32,430 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:40:01,032 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:40:04,293 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:40:04,293 [INFO] (multi_apply: 17): 
+2024-03-24 15:40:04,313 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:40:04,313 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:40:04,313 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:40:04,313 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:40:29,534 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:40:32,715 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:40:32,716 [INFO] (multi_apply: 17): 
+2024-03-24 15:40:32,734 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:40:32,735 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:40:32,735 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:40:32,735 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:42:22,775 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 231220088
+2024-03-24 15:42:26,175 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:42:26,175 [INFO] (multi_apply: 17): 
+2024-03-24 15:42:26,195 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:42:26,195 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '231220088']' returned non-zero exit status 2.
+2024-03-24 15:42:26,195 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:42:26,195 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:44:54,007 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 15:44:57,598 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:44:57,598 [INFO] (multi_apply: 17): 
+2024-03-24 15:44:57,620 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:44:57,620 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '181860006']' returned non-zero exit status 2.
+2024-03-24 15:44:57,620 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:44:57,620 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 15:45:07,862 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 15:45:11,417 [INFO] (multi_apply: 16): 调用成功，总计尝试1次
+2024-03-24 15:45:11,417 [INFO] (multi_apply: 17): 
+2024-03-24 15:45:11,437 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 15:45:11,437 [ERROR] (multi_apply: 23): Command '['python3', 'send_mail.py', '181860006']' returned non-zero exit status 2.
+2024-03-24 15:45:11,437 [ERROR] (multi_apply: 24): 发送邮件失败
+2024-03-24 15:45:11,437 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:13:14,998 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:13:19,498 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:13:19,499 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:13:19,499 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:13:19,499 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:13:51,938 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:13:55,933 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:13:55,933 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:13:55,934 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:13:55,934 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:14:15,150 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:14:19,171 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:14:19,172 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:14:19,172 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:14:19,172 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:14:56,815 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:15:00,706 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:15:00,706 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:15:00,706 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:15:00,706 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:19:13,345 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:19:17,496 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:19:17,497 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:19:17,497 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:19:17,497 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:21:25,074 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:21:28,513 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:21:28,514 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:21:28,514 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:21:28,514 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:22:12,163 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:22:16,359 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:22:16,360 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:22:16,360 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:22:16,360 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-24 16:35:59,605 [ERROR] (email_request: 25): 收到一次发送邮件请求 user: 181860006
+2024-03-24 16:36:04,285 [ERROR] (multi_apply: 22): 函数email_request.<locals>.<lambda>.<locals>.<lambda>第1次调用失败！
+2024-03-24 16:36:04,286 [ERROR] (multi_apply: 23): Command '['python3', 'fetch.py', '181860006']' returned non-zero exit status 1.
+2024-03-24 16:36:04,286 [ERROR] (multi_apply: 24): 获取资料失败
+2024-03-24 16:36:04,287 [ERROR] (multi_apply: 25): 函数email_request.<locals>.<lambda>.<locals>.<lambda>调用失败, 完全退出
+2024-03-25 17:02:26,988 [ERROR] (valid_base: 70): Base验证失败
+2024-03-25 17:02:56,258 [ERROR] (valid_base: 70): Base验证失败
+2024-03-25 17:02:58,169 [ERROR] (valid_base: 70): Base验证失败
+2024-03-25 17:04:37,566 [ERROR] (valid_base: 70): Base验证失败, 未知错误：name 'server_url' is not defined
+2024-03-25 17:05:02,298 [ERROR] (valid_base: 67): Base连接失败，请求被拒绝
+2024-03-25 17:05:09,275 [ERROR] (valid_base: 67): Base连接失败，请求被拒绝
+2024-03-25 17:05:13,349 [ERROR] (valid_base: 67): Base连接失败，请求被拒绝
+2024-03-25 17:05:50,273 [ERROR] (valid_base: 67): Base连接失败，请求被拒绝, 错误:[Errno 403] {"error_msg":"Permission denied."}
+2024-03-25 17:06:52,282 [ERROR] (valid_base: 54): api_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkdGFibGVfdXVpZCI6IjU3NmE0NGJmLTlkMjItNDllMC1iNjI0LTYzNzMzNjk3NDQ0MSIsImFwcF9uYW1lIjoiMTh3cS5weSIsImV4cCI6MTcxMTI2NTk4OH0.Evdl8lZZqzFxqMIdEyfieIJ7wHu6pJwtMjvSHkSZ2Wk', server = 'https://table.nju.edu.cn'
+2024-03-25 17:06:52,367 [ERROR] (valid_base: 68): Base连接失败，请求被拒绝, 错误:[Errno 403] {"error_msg":"Permission denied."}

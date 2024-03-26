@@ -1,5 +1,4 @@
-from util.logger import mailbot_log
-from util.logger import fetch_log
+from util.logger import fetch_log as log
 
 def forever():
     n = 0
@@ -9,7 +8,7 @@ def forever():
 
 class Handler:
     def multi_apply(func, times=forever(), error_message='', sucess_message='', log_file='fetch.log'):
-        log = {'fetch.log' : fetch_log, 'mailbot.log' : mailbot_log}[log_file]
+        # log = {'fetch.log' : fetch_log, 'mailbot.log' : mailbot_log}[log_file]
         for i in times:
             try:
                 result = func()

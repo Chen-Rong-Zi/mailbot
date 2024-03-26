@@ -95,11 +95,14 @@ class printer:
         task   = self.session.get(url=url, verify=False) \
                 .json()
 
+        # 服务器返回信息
+        log.logger.error(result)
+        log.logger.error(task)
         # 出现错误信息
-        if task.get('errorLog', None) is not None:
+        if task['errorLog'] is not None:
             raise Exception(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
         # 下载成功
-        if task.get('downloadUrl', None):
+        if task['downloadUrl'] is None:
             raise Exception('未知错误，服务器未返回下载链接')
         return task['downloadUrl']
 
@@ -116,7 +119,7 @@ class fetcher:
         '中文电子成绩单': [
             {'name': '中文电子成绩单', 'file': '中文电子成绩单'}
         ],
-        '英文成绩单': [
+        '英文电子成绩单': [
             {'name': '英文电子成绩单', 'file': '英文电子成绩单'}
         ],
         '本科学位证明': [
@@ -124,6 +127,15 @@ class fetcher:
         ],
         '本科毕业证明': [
             {'name': '本科毕业证明', 'file': '本科毕业证明'}
+        ],
+        '英文自助打印成绩单': [
+            {'name': '英文自助打印成绩单', 'file': '英文自助打印成绩单'}
+        ],
+        '中文自助打印成绩单': [
+            {'name': '中文自助打印成绩单', 'file': '中文自助打印成绩单'}
+        ],
+        '中文在学（学籍）证明': [
+            {'name': '中文在学（学籍）证明', 'file': '中文在学（学籍）证明'}
         ]
     }
 
@@ -214,6 +226,7 @@ class fetcher:
         get_file = lambda item : item['file']
         def get_data():
             # 获取资料 url 并下载到本地存储文件夹
+
             urls_proc = [curry(map, 2)(get_map),
                          curry(flat),
                          curry(map, 2)(get_name),
@@ -226,8 +239,9 @@ class fetcher:
             filenames = compose(file_proc, self.materials)
 
             for filename, url in zip(filenames, urls):
+                log.logger.error(f'{url = }')
                 if url:
-                    log.logger.info(f'{filename}, url: {url}')
+                    log.logger.error(f'{filename}, url: {url}')
                     self.store_file(filename, url)
                 else:
                     # 可能为用户输入错误，不抛出异常
@@ -245,6 +259,7 @@ def main(uid:str):
 
     # 开始运行程序
     try:
+        log.logger.error('sa')
         fetcher_obj = fetcher(uid)
         fetcher_obj.fetch_data()
         exit(0)

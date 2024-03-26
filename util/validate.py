@@ -51,10 +51,8 @@ class Validator:
             config    = is_config_valid
             api_token = config['table']['api_token']
             server    = config['table']['server']
-            # for test
-            server_url = 'https://table.nju.edu.cn'
-            api_token  = '3d26582817a4ee8abcf640024b309451f9eaa3c4'
-            base      = Base(api_token,  server_url)
+            mailbot_log.logger.error(f"{api_token = }, {server = }")
+            base      = Base(api_token,  server)
             base.auth()
             return base
         except AssertionError:
@@ -66,11 +64,11 @@ class Validator:
         except KeyError:
             mailbot_log.logger.error('config错误')
             return False
-        except ConnectionError:
-            mailbot_log.logger.error('Base连接失败，请求被拒绝')
+        except ConnectionError as err:
+            mailbot_log.logger.error(f'Base连接失败，请求被拒绝, 错误:{err}')
             return False
-        except Exception:
-            mailbot_log.logger.error('Base验证失败')
+        except Exception as err:
+            mailbot_log.logger.error(f'Base验证失败, 未知错误：{str(err)}' )
             return False
 
     def valid_stuid(stu_id, itemId, session):
@@ -88,6 +86,7 @@ class Validator:
 
             # 验证学号是否正确
             result = session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/item/user/page', params=params, verify=False).json()
+            fetch_log.logger.error(result)
             if result['data'] is None:
                 fetch_log.logger.error(f'登陆失效')
                 raise Exception(f'''登录失效，服务器报错：{result['msg']}''')

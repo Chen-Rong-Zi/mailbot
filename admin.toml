@@ -1,17 +1,19 @@
 # 统一身份认证区
 [nju]
-username = '231220088'
-password = '025475rongzi'
+username = '0412007'
+password = 'V1ews0n1c'
 
 # 邮件区
 [email]
 email = '发送邮件的邮箱'
 token = '发送邮件的邮箱授权码'
 
+
+
 # 表格api
 [table]
-server    = '服务器url'
-api_token = '学生填写申请的表单的api'
+server    = 'https://table.nju.edu.cn'
+api_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkdGFibGVfdXVpZCI6IjU3NmE0NGJmLTlkMjItNDllMC1iNjI0LTYzNzMzNjk3NDQ0MSIsImFwcF9uYW1lIjoiMTh3cS5weSIsImV4cCI6MTcxMTI2NTk4OH0.Evdl8lZZqzFxqMIdEyfieIJ7wHu6pJwtMjvSHkSZ2Wk'
 
 # 邮件机器人
 [mailbot]
