@@ -13,7 +13,8 @@ token = '发送邮件的邮箱授权码'
 # 表格api
 [table]
 server    = 'https://table.nju.edu.cn'
-api_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkdGFibGVfdXVpZCI6IjU3NmE0NGJmLTlkMjItNDllMC1iNjI0LTYzNzMzNjk3NDQ0MSIsImFwcF9uYW1lIjoiMTh3cS5weSIsImV4cCI6MTcxMTI2NTk4OH0.Evdl8lZZqzFxqMIdEyfieIJ7wHu6pJwtMjvSHkSZ2Wk'
+api_token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkdGFibGVfdXVpZCI6IjU3NmE0NGJmLTlkMjItNDllMC1iNjI0LTYzNzMzNjk3NDQ0MSIsImFwcF9uYW1lIjoiMTh3cS5weSIsImV4cCI6MTcxMTc0MDM4Nn0.pNAbI5Bz9YblcVzvPR3Avo9gqraBFGixVn5xKjVusqo'
+
 
 # 邮件机器人
 [mailbot]

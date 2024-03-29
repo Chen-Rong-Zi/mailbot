@@ -2,6 +2,7 @@ import sys
 from   os       import environ
 import subprocess
 
+from time import time
 import json
 import shutil
 import toml
@@ -12,14 +13,9 @@ from   util.validate import Validator
 from   util.handler  import Handler
 
 
-def set_config():
+def set_config(configuration):
     global config
-    is_valid = Validator.valid_config()
-    if is_valid:
-        config = is_valid
-        log.logger.info('用户配置修改成功')
-    else:
-        log.logger.info('用户配置不合法，修改失败')
+    config = configuration
 
 def email_request(post):
     log.logger.error(f"收到一次发送邮件请求 user: {str(post['user'])}")
@@ -28,12 +24,12 @@ def email_request(post):
     environ.update({'config' : json.dumps(config), 'data' : json.dumps(post)})
     proc_func_maker = lambda command : lambda : subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=environ)
 
-    crawer          = proc_func_maker(["python3", "fetch.py",     str(user)])
+    crawer          = proc_func_maker(["python", "fetch.py",  str(user)])
     is_crawer_fine  = Handler.apply(crawer, '获取资料失败', 'mailbot.log')
     if not is_crawer_fine:
         return [json.dumps({"status": "ok"}).encode('utf-8')]
 
-    mail_program = proc_func_maker(["python3", "send_mail.py", str(user)])
+    mail_program = proc_func_maker(["python", "send_mail.py", str(user)])
     is_mail_fine = Handler.apply(mail_program, '发送邮件失败', 'mailbot.log')
     if not is_mail_fine:
         return [json.dumps({"status": "ok"}).encode('utf-8')]
@@ -54,17 +50,15 @@ def update_mail():
         log.logger.info("已完成邮件内容的更新")
     return [json.dumps({"status": "ok"}).encode('utf-8')]
 
-def update_config():
+def update_config(configuration):
     log.logger.info("收到一次更新管理员配置的请求")
-    download_func = lambda : base.download_file(post['admin'], './tmp/admin.toml')
-    result        = Handler.multi_apply(download_func, range(3), log_file='mailbot.log')
-    if not result:
-        return [json.dumps({"status": "ok"}).encode('utf-8')]
+    is_config_valid = Validator.valid_config(configuration)
+    if not is_config_valid:
+        return [json.dumps({"status": "ok", 'time': time(), 'result' : '配置文件更新失败，用户配置不合法'}).encode('utf-8')]
 
-    shutil.move('./tmp/admin.toml', './admin.toml')
-    set_config()
+    set_config(is_config_valid)
     log.logger.info("已完成更新管理员配置文件")
-    return [json.dumps({"status": "ok", 'result' : '用户配置不合法'}).encode('utf-8')]
+    return [json.dumps({"status": "ok", "result" : "更新配置成功"}).encode('utf-8')]
 
 
 def application(environ, start_response):
@@ -78,8 +72,8 @@ def application(environ, start_response):
     post = is_post_valid
     if 'word'  in post:
         return update_mail()
-    if 'admin' in post:
-        return update_config()
+    if 'configuration' in post:
+        return update_config(post['configuration'])
     else:
         email_request(post)
     return [json.dumps({"status": "ok"}).encode('utf-8')]
@@ -91,11 +85,11 @@ def main():
     httpd.serve_forever()
 
 if __name__ == "__main__":
-    requirements = [Validator.valid_config(), Validator.valid_base()]
+    requirements = [Validator.valid_config()]
     valid        = all(requirements)
     if not valid:
         sys.exit(1)
     config       = requirements[0]
-    base         = requirements[1]
+    # base         = requirements[1]
     main()
 

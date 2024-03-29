@@ -51,11 +51,7 @@ class printer:
         })
 
         # 访问自助打印网站，获取专有 Cookies
-        try:
-            self.session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
-        except Exception as err:
-            log.logger.error(err)
-            raise Exception(err)
+        self.session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/admin/login/IDS?&returnUrl=/')
 
     def get_url(self, stu_id: int, item_name: str):
         '''
@@ -92,12 +88,18 @@ class printer:
         # 获取下载 url
         url    = 'http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/task/{}' \
                 .format(result)
-        task   = self.session.get(url=url, verify=False) \
-                .json()
+
+        # 尤其小心，容易触发网站反爬虫机制
+        def get_downloadUrl():
+            task = self.session.get(url=url, verify=False) \
+                    .json()
+            if task['downloadUrl'] is None:
+                raise Exception('未获取下载链接，触发反爬机制')
+            return task
+
+        task = Handler.multi_apply(get_downloadUrl, times=range(1, 4), sleeping_time=1.5)
 
         # 服务器返回信息
-        log.logger.error(result)
-        log.logger.error(task)
         # 出现错误信息
         if task['errorLog'] is not None:
             raise Exception(f'''资料下载失败，服务器返回错误信息：{task['errorLog']}''')
@@ -107,8 +109,6 @@ class printer:
         return task['downloadUrl']
 
 class fetcher:
-    user_data      = {}
-    user_data_path = './data/{}.dat'
     user_file_path = './files/{}/'
 
     # 从表格多选项到下载内容的映射
@@ -147,8 +147,8 @@ class fetcher:
         '''
         # 设置用户 id
         self.uid       = uid
-        self.materials = self.read_user_data()
-        self.username, self.password, self.ocr_token = self.read_admin_data()
+        self.materials, self.user_data                = self.read_user_data()
+        self.username,  self.password, self.ocr_token = self.read_admin_data()
         self.auth = authserver(self.username, self.password, self.ocr_token)
         self.auth.login()
         self.printer = printer(self.auth.session)
@@ -160,9 +160,9 @@ class fetcher:
         '''
             根据用户 id 读取用户数据
         '''
-        data      = os.environ['data']
-        materials = json.loads(data)['list']
-        return materials
+        user_data = os.environ['data']
+        materials = json.loads(user_data)['list']
+        return materials, user_data
 
     def read_admin_data(self):
         '''
@@ -206,7 +206,7 @@ class fetcher:
             # 判断压缩文件是否为空
             if len(zip_file.namelist()) < 1:
                 log.logger.error(f'解压出错，压缩文件位置：{zip_path}')
-                Exception('解压出错，压缩文件为空')
+                raise Exception('解压出错，压缩文件为空')
 
             # 解压首个文件
             file = zip_file.namelist()[0]
@@ -239,17 +239,13 @@ class fetcher:
             filenames = compose(file_proc, self.materials)
 
             for filename, url in zip(filenames, urls):
-                log.logger.error(f'{url = }')
                 if url:
-                    log.logger.error(f'{filename}, url: {url}')
                     self.store_file(filename, url)
-                else:
-                    # 可能为用户输入错误，不抛出异常
-                    log.logger.error(f'未找到学号  {self.uid}  对应的  {filename}')
+                    log.logger.info(f'已获取学号 {self.uid} 的 {filename}')
 
-        result = Handler.multi_apply(get_data, range(1, 11), 'fetch_data失败, 未能获取资料')
+        result = Handler.multi_apply(get_data, range(1, 4), 'fetch_data失败, 未能获取资料')
         if not result:
-            raise Exception('fetch data抛出异常')
+            raise Exception('fetch data抛出异常, multi_apply失败')
 
 
 def main(uid:str):
@@ -259,7 +255,6 @@ def main(uid:str):
 
     # 开始运行程序
     try:
-        log.logger.error('sa')
         fetcher_obj = fetcher(uid)
         fetcher_obj.fetch_data()
         exit(0)

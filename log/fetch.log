@@ -1,64 +1,53 @@
 
-2024-03-24 16:36:00,048 [ERROR] (main: 262): sa
-2024-03-24 16:36:03,118 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,195 [ERROR] (get_url: 99): 1771818241157500929
-2024-03-24 16:36:03,195 [ERROR] (get_url: 100): {'id': '1771818241157500929', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,196 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第1次调用失败！
-2024-03-24 16:36:03,196 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,197 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,239 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,310 [ERROR] (get_url: 99): 1771818241673400322
-2024-03-24 16:36:03,310 [ERROR] (get_url: 100): {'id': '1771818241673400322', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,311 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第2次调用失败！
-2024-03-24 16:36:03,311 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,311 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,347 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,414 [ERROR] (get_url: 99): 1771818242117996546
-2024-03-24 16:36:03,414 [ERROR] (get_url: 100): {'id': '1771818242117996546', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,414 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第3次调用失败！
-2024-03-24 16:36:03,415 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,415 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,450 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,528 [ERROR] (get_url: 99): 1771818242562592770
-2024-03-24 16:36:03,529 [ERROR] (get_url: 100): {'id': '1771818242562592770', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,529 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第4次调用失败！
-2024-03-24 16:36:03,529 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,529 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,567 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,637 [ERROR] (get_url: 99): 1771818243049132034
-2024-03-24 16:36:03,637 [ERROR] (get_url: 100): {'id': '1771818243049132034', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,638 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第5次调用失败！
-2024-03-24 16:36:03,638 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,638 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,670 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,739 [ERROR] (get_url: 99): 1771818243476951041
-2024-03-24 16:36:03,739 [ERROR] (get_url: 100): {'id': '1771818243476951041', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,740 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第6次调用失败！
-2024-03-24 16:36:03,740 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,740 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,774 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,839 [ERROR] (get_url: 99): 1771818243904770050
-2024-03-24 16:36:03,839 [ERROR] (get_url: 100): {'id': '1771818243904770050', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,839 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第7次调用失败！
-2024-03-24 16:36:03,840 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,840 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,876 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:03,947 [ERROR] (get_url: 99): 1771818244336783362
-2024-03-24 16:36:03,948 [ERROR] (get_url: 100): {'id': '1771818244336783362', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:02', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:03,948 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第8次调用失败！
-2024-03-24 16:36:03,948 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:03,948 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:03,986 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:04,054 [ERROR] (get_url: 99): 1771818244793962497
-2024-03-24 16:36:04,054 [ERROR] (get_url: 100): {'id': '1771818244793962497', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:03', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:04,054 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第9次调用失败！
-2024-03-24 16:36:04,055 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:04,055 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:04,090 [ERROR] (valid_stuid: 88): {'success': True, 'msg': None, 'data': {'records': [{'ID': '181860006', 'NAME': '陈劭彬', 'ROW_ID': 1}], 'total': 1, 'size': 10, 'current': 1, 'pages': 1}}
-2024-03-24 16:36:04,161 [ERROR] (get_url: 99): 1771818245246947329
-2024-03-24 16:36:04,161 [ERROR] (get_url: 100): {'id': '1771818245246947329', 'itemId': '1373833631222497282', 'itemName': '本科学位证明', 'singleUserCount': 50, 'groupBy': None, 'timeCust': '0', 'exportType': None, 'status': 1, 'progress': 0, 'errorLog': None, 'createTime': '2024-03-24 16:36:03', 'schoolCode': '10284', 'groupUserIds': None, 'users': None, 'exportFinish': None, 'exportTotal': None, 'startTimestamp': None, 'downloadUrl': None, 'schemeId': None}
-2024-03-24 16:36:04,162 [ERROR] (multi_apply: 21): 函数fetcher.fetch_data.<locals>.get_data第10次调用失败！
-2024-03-24 16:36:04,162 [ERROR] (multi_apply: 22): 未知错误，服务器未返回下载链接
-2024-03-24 16:36:04,162 [ERROR] (multi_apply: 23): fetch_data失败, 未能获取资料
-2024-03-24 16:36:04,162 [ERROR] (multi_apply: 24): 函数fetcher.fetch_data.<locals>.get_data调用失败, 完全退出
-2024-03-24 16:36:04,163 [ERROR] (main: 268): fetch data抛出异常
+2024-03-27 00:18:08,143 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-27 00:18:10,029 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-27 00:18:10,093 [INFO] (get_data: 245): 已获取学号 231220088 的 中英文在学证明
+2024-03-27 00:18:11,674 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-27 00:18:13,201 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-27 00:18:14,730 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-03-27 00:18:14,779 [INFO] (get_data: 245): 已获取学号 231220088 的 中文电子成绩单
+2024-03-27 00:18:16,361 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-27 00:18:17,889 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-27 00:18:17,938 [INFO] (get_data: 245): 已获取学号 231220088 的 英文电子成绩单
+2024-03-27 00:18:19,511 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-27 00:18:19,545 [INFO] (get_data: 245): 已获取学号 231220088 的 本科学位证明
+2024-03-27 00:18:21,110 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-27 00:18:21,139 [INFO] (get_data: 245): 已获取学号 231220088 的 本科毕业证明
+2024-03-27 00:18:22,706 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-27 00:18:22,737 [INFO] (get_data: 245): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-27 00:18:24,302 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-27 00:18:24,334 [INFO] (get_data: 245): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-27 00:18:25,901 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-27 00:18:25,928 [INFO] (get_data: 245): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-27 00:18:25,928 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-27 00:38:15,373 [ERROR] (main: 267): 'data'
+2024-03-27 00:38:19,378 [ERROR] (main: 267): 'data'
+2024-03-27 00:38:37,978 [ERROR] (main: 267): 'data'
+2024-03-27 00:38:38,970 [ERROR] (main: 267): 'data'
+2024-03-27 23:51:28,693 [ERROR] (main: 263): name 'data' is not defined
+2024-03-27 23:54:33,766 [ERROR] (main: 263): name 'data' is not defined
+2024-03-27 23:55:45,337 [ERROR] (read_user_data: 163): environ({'SHELL': '/bin/bash', 'LSCOLORS': 'Gxfxcxdxdxegedabagacad', 'light': '\\e[2m', 'LESS': '-R', 'error_icon': '/usr/share/icons/Papirus/48x48/apps/script-error.svg', 'shot_dir': '/home/mailbot/Pictures/screenshot', 'TERM_PROGRAM_VERSION': '3.2a', 'GTK_IM_MODULE': 'fcitx', 'deleteline': '\\e[9m', 'TMUX': '/tmp/tmux-1000/default,328974,0', 'HISTSIZE': '', 'LogoutCommand': 'i3-msg exit', 'underline': '\\e[4m', 'notification_id': '1234', 'src': '/home/mailbot/Downloads/Coredump', 'manjaro_icon': '/usr/share/icons/manjaro/maia/48x48.png', 'XMODIFIERS': '@im=fcitx', 'OSH': '/home/mailbot/.oh-my-bash', 'bg_red': '\\e[41m', 'EDITOR': '/usr/bin/vim', 'PWD': '/opt/mailbot2', 'LOGNAME': 'mailbot', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'XDG_SESSION_TYPE': 'tty', 'bg_green': '\\e[42m', 'bg_yellow': '\\e[43m', 'TZ': 'Asia/Shanghai', 'FZF_DEFAULT_COMMAND': 'sudo find /home /usr 2>/dev/null', 'shot_icon': '/usr/share/icons/Papirus/48x48/apps/deepin-screenshot.svg', 'fg_blue': '\\e[34m', 'bg_magenta': '\\e[45m', 'MOTD_SHOWN': 'pam', 'highlight': '\\e[7m', 'GTK2_RC_FILES': '/home/mailbot/.gtkrc-2.0', 'HOME': '/home/mailbot', 'LANG': 'zh_CN.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'fg_cyan': '\\e[36m', 'COMP_WORDBREAKS': ' \t\n"\'><=;|&(', 'fg_black': '\\e[30m', 'SSH_CONNECTION': '172.19.124.101 58400 114.212.99.252 22', 'bold': '\\e[1m', 'core_pattern': '|/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -- %E', 'origin': '\\e[0m', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'fg_white': '\\e[37m', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'bin': '/home/mailbot/cProgram/a.out', 'USER': 'mailbot', 'TMUX_PANE': '%0', 'bg_cyan': '\\e[46m', 'fg_magenta': '\\e[35m', 'MANPAGER': 'bat', 'ubuntu': 'rongzi@139.224.128.37', 'image_path': '/home/mailbot/Pictures/screenshot/24-03-26_20:38:50.jpg', 'SHLVL': '2', 'core_dir': '/home/mailbot/Downloads/Coredump', 'PAGER': 'less', 'QT_IM_MODULE': 'fcitx', 'XDG_SESSION_ID': '2885', 'bg_white': '\\e[47m', 'fg_green': '\\e[32m', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '172.19.124.101 58400 22', 'fg_yellow': '\\e[33m', 'RANGER_DEVICONS_SEPARATOR': '  ', 'LC_ALL': 'zh_CN.UTF-8', 'QT_AUTO_SCREEN_SCALE_FACTOR': '0', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'token': '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', 'bg_blue': '\\e[44m', 'BROWSER': 'google-chrome-stable', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mailbot/cProgram:/home/mailbot/cProgram:/home/mailbot/cProgram', 'fg_red': '\\e[31m', 'USE_SYMENGINE': '1', 'HISTIGNORE': 'exit:ls:bg:fg:history:clear', 'HISTFILESIZE': '', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'FZF_DEFAULT_OPTS': '--bind ctrl-j:accept\n --color=fg:#d0d0d0,hl:#5f87af\n --color=fg+:#d0d0d0,hl+:#5fd7ff\n --color=info:#afaf87,prompt:#d7005f,pointer:#af5fff\n --color=marker:#87ff00,spinner:#af5fff,header:#87afaf', 'RANGER_LOAD_DEFAULT_RC': 'FALSE', 'bg_black': '\\e[40m', 'SSH_TTY': '/dev/pts/0', 'CM_DIR': '/run/user/1000', 'OLDPWD': '/opt', 'dwm_startup_log': '/home/mailbot/.log/dwm.log', 'TERM_PROGRAM': 'tmux', 'BASH_FUNC_vman%%': '() {  [[ -n "$(man $@ 2>/dev/null)" ]] && man $@ 2> /dev/null | vim -MR +"set filetype=man" -\n}', 'BASH_FUNC_get_shot_path%%': '() {  time=$(date "+%y-%m-%d_%H:%M:%S");\n echo "$time.png"\n}', 'BASH_FUNC_nopad%%': '() {  pad_id=$(xinput list | grep -Eio \'pad.*id=([1-9]+)\' | cut -d"=" -f2);\n xdotool mousemove 1920 1080;\n xinput set-prop $pad_id \'Device Enabled\' 0\n}', 'BASH_FUNC_rn%%': '() {  if [[ $# -eq 0 ]]; then\n python3 -c "a=list(range(10));print(a)";\n else\n if [[ $# -eq 1 ]]; then\n python3 -c "a=list(range($1));print(a)";\n else\n if [[ $# -eq 2 ]]; then\n python3 -c "a=list(range($1, $2));print(a)";\n else\n if [[ $# -eq 3 ]]; then\n python3 -c "a=list(range($1, $2, $3));print(a)";\n else\n if [[ $# -eq 4 ]]; then\n python3 -c "a=set(list(range($1, $2, $3)));print(a)";\n fi;\n fi;\n fi;\n fi;\n fi\n}', 'BASH_FUNC_fj%%': '() {  path=$(fzf);\n if [[ $(file $path 2>/dev/null | awk  \'{print $2}\') == \'directory\' ]]; then\n joshuto $path;\n else\n if [[ $path == \'\' ]]; then\n echo -e $bold$fg_red$bg_white"didn\'t find path"$origin;\n else\n joshuto $( echo $path | awk -F / -v OFS=/ \'{$NF="";print}\' );\n fi;\n fi\n}', 'BASH_FUNC_pad%%': '() {  pad_id=$(xinput list | grep -Eio \'pad.*id=([1-9]+)\' | cut -d"=" -f2);\n xinput set-prop $pad_id \'Device Enabled\' 1;\n xdotool mousemove 960 540\n}', 'BASH_FUNC_jo%%': '() {  if [[ $(file $1 2>/dev/null | awk  \'{print $2}\') == \'directory\' ]]; then\n joshuto $1;\n else\n if [[ -z $1 ]]; then\n joshuto ./;\n else\n joshuto $( echo $1 | awk -F / -v OFS=/ \'{$NF="";print}\' );\n fi;\n fi\n}', 'BASH_FUNC_debug%%': '() {  export core_name="$(/bin/ls -r $core_dir| head -n 1)";\n export core_path="$core_dir/$core_name";\n gdb $bin "$core_path"\n}', '_': '/usr/bin/python3', 'config': '{"nju": {"username": "0412007", "password": "V1ews0n1c"}, "email": {"email": "\\u53d1\\u9001\\u90ae\\u4ef6\\u7684\\u90ae\\u7bb1", "token": "\\u53d1\\u9001\\u90ae\\u4ef6\\u7684\\u90ae\\u7bb1\\u6388\\u6743\\u7801"}, "table": {"server": "https://table.nju.edu.cn", "api_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkdGFibGVfdXVpZCI6IjU3NmE0NGJmLTlkMjItNDllMC1iNjI0LTYzNzMzNjk3NDQ0MSIsImFwcF9uYW1lIjoiMTh3cS5weSIsImV4cCI6MTcxMTU1NzU4M30.SBrwzCPZTSLze45rq8Ii2R955LpgVbZan-KsogE82i0"}, "mailbot": {"port": 8080}, "ocr": {"token": "TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c"}}', 'data': '{"user": 181860006, "name": "Rongzi Chen", "dist": "1398881912@qq.com", "time": 1, "passwd": "1813cf19a482d814a0e83b08f7dfbe7a"}'})
+2024-03-27 23:55:45,338 [ERROR] (main: 264): name 'data' is not defined
+2024-03-27 23:57:01,712 [ERROR] (main: 263): 'data'
+2024-03-27 23:57:37,393 [ERROR] (main: 263): 'data'
+2024-03-27 23:58:23,125 [ERROR] (main: 264): 'data'
+2024-03-27 23:58:27,011 [ERROR] (main: 258): archor
+2024-03-27 23:58:27,011 [ERROR] (main: 264): 'data'
+2024-03-27 23:58:30,895 [ERROR] (main: 264): 'data'
+2024-03-27 23:58:49,540 [ERROR] (main: 264): 'data'
+2024-03-27 23:58:54,319 [ERROR] (__init__: 149): archor
+2024-03-27 23:58:54,320 [ERROR] (main: 264): 'data'
+2024-03-27 23:59:01,292 [ERROR] (main: 264): 'data'
+2024-03-27 23:59:04,417 [ERROR] (main: 264): 'data'
+2024-03-27 23:59:08,152 [ERROR] (__init__: 150): archor
+2024-03-27 23:59:08,153 [ERROR] (main: 264): 'data'
+2024-03-27 23:59:33,115 [ERROR] (main: 263): name 'data' is not defined
+2024-03-28 00:00:14,221 [ERROR] (main: 263): not enough values to unpack (expected 3, got 2)
+2024-03-28 00:00:52,723 [ERROR] (main: 263): not enough values to unpack (expected 3, got 2)
+2024-03-28 00:01:51,829 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-28 00:01:52,408 [INFO] (get_data: 244): 已获取学号 181860006 的 本科学位证明
+2024-03-28 00:01:54,018 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-28 00:01:54,704 [INFO] (get_data: 244): 已获取学号 181860006 的 中英文在学证明
+2024-03-28 00:01:56,274 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-28 00:01:57,055 [INFO] (get_data: 244): 已获取学号 181860006 的 本科毕业证明
+2024-03-28 00:01:57,056 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 

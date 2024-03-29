@@ -1,11 +1,13 @@
 import json
 import toml
 import hashlib
+from cryptography.fernet import Fernet
 
 import seatable_api
 from   seatable_api        import Base, context
 from   requests.exceptions import MissingSchema
 
+from   util.error          import UpdateConfigError, BaseTokenError
 from   util.logger         import mailbot_log
 from   util.logger         import fetch_log
 
@@ -17,10 +19,13 @@ def encrypt(time, user):
     return passwd_hash
 
 class Validator:
-    def valid_config():
+    def valid_config(config_str=None):
         try:
-            with open("admin.toml", 'r', encoding='utf-8') as file:
-                config = toml.load(file)
+            if config_str is None:
+                with open("admin.toml", 'r', encoding='utf-8') as file:
+                    config = toml.load(file)
+            else:
+                config = toml.loads(config_str)
             nju       = config['nju']
             username  = nju['username']
             password  = nju['password']
@@ -29,9 +34,11 @@ class Validator:
             table     = config['table']
             api_token = table['api_token']
             server    = table['server']
+            if not Validator.valid_base(config):
+                raise BaseTokenError('base验证未通过')
             return config
-        except toml.decoder.TomlDecodeError:
-            mailbot_log.logger.error('admin.toml格式不正确')
+        except toml.decoder.TomlDecodeError as err:
+            mailbot_log.logger.error(f'admin.toml格式不正确, 错误: {err}')
             return False
         except FileNotFoundError:
             mailbot_log.logger.error('未找到admin.toml')
@@ -39,19 +46,16 @@ class Validator:
         except KeyError:
             mailbot_log.logger.error('admin.toml缺少相应键值对')
             return False
-        except Exception:
-            mailbot_log.logger.error('admin.toml出错')
+        except Exception as err:
+            mailbot_log.logger.error(f'admin.toml出错, 错误: {err}')
             return False
 
-    def valid_base():
+    def valid_base(config):
         try:
-            is_config_valid = Validator.valid_config()
-            if not is_config_valid:
-                raise AssertionError
-            config    = is_config_valid
             api_token = config['table']['api_token']
             server    = config['table']['server']
-            mailbot_log.logger.error(f"{api_token = }, {server = }")
+            # test
+            # mailbot_log.logger.error(f"{api_token = }, {server = }")
             base      = Base(api_token,  server)
             base.auth()
             return base
@@ -86,7 +90,6 @@ class Validator:
 
             # 验证学号是否正确
             result = session.get('http://zzfwx.nju.edu.cn/wec-self-print-app-console/item/sp-batch-export/item/user/page', params=params, verify=False).json()
-            fetch_log.logger.error(result)
             if result['data'] is None:
                 fetch_log.logger.error(f'登陆失效')
                 raise Exception(f'''登录失效，服务器报错：{result['msg']}''')
@@ -103,34 +106,35 @@ class Validator:
     def valid_post(content):
         try:
             post        = json.loads(content)
-            user        = post['user']
-            time        = post['time']
-            passwd      = post['passwd']
+            user        = post['user']       # 学号
+            time        = post['time']       # 请求时间
+            passwd      = post['passwd']     # 验证码
             passwd_hash = encrypt(time, user)
             if 'id' in post:
-                id      = post['id']
-                name    = post['name']
-                dist    = post['dist']
-                self    = post['self']
-                list    = post['list']
+                id      = post['id']         # 姓名
+                name    = post['name']       # 英文姓名
+                dist    = post['dist']       # 申请单位邮箱
+                self    = post['self']       # 申请人邮箱
+                list    = post['list']       # 申请列表
             elif 'word' in post:
                 word    = post['word']
                 version = post['version']
-            elif 'account' in post:
-                version = post['version']
-                key     = post['key']
-            elif passwd_hash != post['passwd']:
-                raise AssertionError
+            elif 'configuration' in post:
+                # 配置文件格式检测位于update_config中
+                pass
+
+            if passwd_hash != post['passwd']:
+                raise AssertionError('密码验证错误')
             return post
         except json.decoder.JSONDecodeError:
             mailbot_log.logger.error('用户输入非json字符串')
             return False
-        except KeyError:
-            mailbot_log.logger.error('用户请求json不完整')
+        except KeyError as err:
+            mailbot_log.logger.error(f'用户请求json不完整：{err}')
             return False
         except AssertionError:
             mailbot_log.logger.error('用户请求密码错误')
             return False
-        except Exception:
-            mailbot_log.logger.error('post请求无效')
+        except Exception as err:
+            mailbot_log.logger.error(f'post请求无效, 错误：{err}')
             return False
