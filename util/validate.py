@@ -13,7 +13,7 @@ from   util.logger         import fetch_log
 
 def encrypt(time, user):
     key         = 'Xz4uXT7m4KN33vN59D'
-    pwstr       = str(time) + key + str(user)
+    pwstr       = f"{time}{key}{user}"
     bpwstr      = pwstr.encode('UTF-8')
     passwd_hash = hashlib.md5(bpwstr).hexdigest()
     return passwd_hash
@@ -26,17 +26,19 @@ class Validator:
                     config = toml.load(file)
             else:
                 config = toml.loads(config_str)
-            nju       = config['nju']
-            username  = nju['username']
-            password  = nju['password']
-            email     = config['email']
-            token     = email['token']
-            table     = config['table']
-            api_token = table['api_token']
-            server    = table['server']
-            if not Validator.valid_base(config):
+            nju           = config['nju']
+            username      = nju['username']
+            password      = nju['password']
+            email         = config['email']
+            token         = email['token']
+            preview_email = email['preview_email']
+            table         = config['table']
+            api_token     = table['api_token']
+            server        = table['server']
+            base          = Validator.valid_base(config)
+            if not base:
                 raise BaseTokenError('base验证未通过')
-            return config
+            return config, base
         except toml.decoder.TomlDecodeError as err:
             mailbot_log.logger.error(f'admin.toml格式不正确, 错误: {err}')
             return False
@@ -106,16 +108,16 @@ class Validator:
     def valid_post(content):
         try:
             post        = json.loads(content)
-            user        = post['user']       # 学号
-            time        = post['time']       # 请求时间
+            user        = post['stu_id']       # 学号
+            time        = post['application_time']       # 请求时间
             passwd      = post['passwd']     # 验证码
             passwd_hash = encrypt(time, user)
             if 'id' in post:
-                id      = post['id']         # 姓名
-                name    = post['name']       # 英文姓名
-                dist    = post['dist']       # 申请单位邮箱
-                self    = post['self']       # 申请人邮箱
-                list    = post['list']       # 申请列表
+                id      = post['zh_name']         # 姓名
+                name    = post['en_name']       # 英文姓名
+                dist    = post['company_mail']       # 申请单位邮箱
+                self    = post['mail']       # 申请人邮箱
+                list    = post['material']       # 申请列表
             elif 'word' in post:
                 word    = post['word']
                 version = post['version']
@@ -124,7 +126,7 @@ class Validator:
                 pass
 
             if passwd_hash != post['passwd']:
-                raise AssertionError('密码验证错误')
+                raise AssertionError(f'密码验证错误')
             return post
         except json.decoder.JSONDecodeError:
             mailbot_log.logger.error('用户输入非json字符串')
@@ -133,7 +135,7 @@ class Validator:
             mailbot_log.logger.error(f'用户请求json不完整：{err}')
             return False
         except AssertionError:
-            mailbot_log.logger.error('用户请求密码错误')
+            mailbot_log.logger.error(f'用户请求密码错误')
             return False
         except Exception as err:
             mailbot_log.logger.error(f'post请求无效, 错误：{err}')

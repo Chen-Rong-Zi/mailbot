@@ -1,16 +1,17 @@
 import sys
-from   os       import environ
+import os
+from   os                    import environ
 import subprocess
 
-from time import time
 import json
 import shutil
 import toml
 from   wsgiref.simple_server import make_server
 
-from   util.logger   import mailbot_log as log
-from   util.validate import Validator
-from   util.handler  import Handler
+from   util.logger           import mailbot_log as log
+from   util.validate         import Validator
+from   util.handler          import Handler
+from   util.stream           import StdoutRedirector
 
 
 def set_config(configuration):
@@ -18,27 +19,54 @@ def set_config(configuration):
     config = configuration
 
 def email_request(post):
-    log.logger.error(f"收到一次发送邮件请求 user: {str(post['user'])}")
+    log.logger.error(f"收到一次发送邮件请求 user: {str(post['stu_id'])}")
+    base.query('select 名称 from Table1')
 
-    user = post['user']
+    stu_id = post['stu_id']
+    # config: 配置信息，data: 用户信息
     environ.update({'config' : json.dumps(config), 'data' : json.dumps(post)})
     proc_func_maker = lambda command : lambda : subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=environ)
 
-    crawer          = proc_func_maker(["python", "fetch.py",  str(user)])
+    crawer          = proc_func_maker(["python3", "fetch.py",  str(stu_id)])
     is_crawer_fine  = Handler.apply(crawer, '获取资料失败', 'mailbot.log')
     if not is_crawer_fine:
-        return [json.dumps({"status": "ok"}).encode('utf-8')]
+        base.query(f"""UPDATE Table1 set 材料是否下载 = False where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
+        return [json.dumps({"status": "ok", "result" : "材料下载失败"}).encode('utf-8')]
 
-    mail_program = proc_func_maker(["python", "send_mail.py", str(user)])
-    is_mail_fine = Handler.apply(mail_program, '发送邮件失败', 'mailbot.log')
+    mail_program = proc_func_maker(["python3", "send_email.py", str(stu_id), 'save'])
+    is_mail_fine = Handler.apply(mail_program, '邮件保存失败', 'mailbot.log')
     if not is_mail_fine:
-        return [json.dumps({"status": "ok"}).encode('utf-8')]
+        base.query(f"""UPDATE Table1 set 邮件是否生成 = False where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
+        return [json.dumps({"status": "ok", "result" : '邮件保存失败'}).encode('utf-8')]
 
-    base.query('select 名称 from Table1')
-    sqlc = f'''UPDATE Table1 set 是否成功发送 = True where num = {int(post['id'])}'''
-    base.query(sqlc)
-    log.logger.info(f"user: {user} 发送邮件成功")
+    base.query(f"""UPDATE Table1 set 材料是否下载 = True where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
+    base.query(f"""UPDATE Table1 set 邮件是否生成 = True where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
     return [json.dumps({"status": "ok"}).encode('utf-8')]
+
+def send_email_request(post):
+    stu_id = post['stu_id']
+    filepath = f"./emails/{stu_id}.eml"
+    if not os.path.exists(filepath):
+        return [json.dumps({"status": "ok", 'result' : f"学号为{stu_id}没有发送邮件请求"}).encode('utf-8')]
+
+    environ.update({'config' : json.dumps(config), 'data' : json.dumps(post)})
+    proc_func_maker = lambda command : lambda : subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True, env=environ)
+    mail_program    = proc_func_maker(["python3", "send_email.py", str(stu_id), 'send'])
+    is_mail_fine    = Handler.apply(mail_program, '邮件发送失败', 'mailbot.log')
+    if not is_mail_fine:
+        base.query(f"""UPDATE Table1 set 邮件是否发送 = False where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
+        return [json.dumps({"status": "ok", "result" : '邮件保存失败'}).encode('utf-8')]
+    base.query(f"""UPDATE Table1 set 邮件是否发送 = True where 学号 = {int(stu_id)} and 申请时间 = '{post["application_time"]}'""")
+    return [json.dumps({"status": "ok", "result" : '邮件发送成功'}).encode('utf-8')]
+
+
+def get_preview(post):
+    filepath = f"./emails/{post['stu_id']}.eml"
+    if not os.path.exists(filepath):
+        return [json.dumps({"status": "ok", 'result' : f"学号为{post['stu_id']}没有发送邮件请求"}).encode('utf-8')]
+    with open(filepath) as f:
+        content = f.read()
+    return [json.dumps({"status": "ok", 'result' : 'ok',  'email' : content}).encode('utf-8')]
 
 def update_mail():
     log.logger.info("收到一次更新邮件内容的请求")
@@ -51,14 +79,18 @@ def update_mail():
     return [json.dumps({"status": "ok"}).encode('utf-8')]
 
 def update_config(configuration):
+    redir = StdoutRedirector()
+    log.logger.addHandler(redir)
     log.logger.info("收到一次更新管理员配置的请求")
     is_config_valid = Validator.valid_config(configuration)
     if not is_config_valid:
-        return [json.dumps({"status": "ok", 'time': time(), 'result' : '配置文件更新失败，用户配置不合法'}).encode('utf-8')]
+        log.logger.removeHandler(redir)
+        return [json.dumps({"status": "ok", 'result' : '配置文件更新失败，用户配置不合法', 'error_msg' : redir.content}).encode('utf-8')]
 
     set_config(is_config_valid)
     log.logger.info("已完成更新管理员配置文件")
-    return [json.dumps({"status": "ok", "result" : "更新配置成功"}).encode('utf-8')]
+    log.logger.removeHandler(redir)
+    return [json.dumps({"status": "ok", "result" : "更新配置成功", 'error_msg' : redir.content}).encode('utf-8')]
 
 
 def application(environ, start_response):
@@ -74,6 +106,10 @@ def application(environ, start_response):
         return update_mail()
     if 'configuration' in post:
         return update_config(post['configuration'])
+    if 'send' in post:
+        return send_email_request(post)
+    if 'preview' in post:
+        return get_preview(post)
     else:
         email_request(post)
     return [json.dumps({"status": "ok"}).encode('utf-8')]
@@ -89,7 +125,6 @@ if __name__ == "__main__":
     valid        = all(requirements)
     if not valid:
         sys.exit(1)
-    config       = requirements[0]
-    # base         = requirements[1]
+    config, base = requirements[0]
     main()
 

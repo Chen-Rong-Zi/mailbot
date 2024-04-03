@@ -1,0 +1,53 @@
+
+2024-03-30 22:13:26,847 [ERROR] (<module>: 132): 错误：'config'
+2024-03-30 22:13:50,267 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': '56128d59ebfaf66936a14228cd92351ef100fd36'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-30 22:13:50,302 [INFO] (__init__: 39): 邮件模板连接成功
+2024-03-30 22:13:50,302 [ERROR] (<module>: 132): 错误：'preview_email'
+2024-03-30 22:16:00,443 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': '56128d59ebfaf66936a14228cd92351ef100fd36'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-30 22:16:00,477 [INFO] (__init__: 39): 邮件模板连接成功
+2024-03-30 22:16:00,535 [INFO] (make_email: 86): 邮件构建成功
+2024-03-30 22:16:00,535 [INFO] (save: 97): 成功保存邮件
+2024-03-30 22:28:47,338 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': '56128d59ebfaf66936a14228cd92351ef100fd36'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-30 22:28:47,373 [INFO] (__init__: 39): 邮件模板连接成功
+2024-03-30 22:28:47,430 [INFO] (make_email: 86): 邮件构建成功
+2024-03-30 22:28:47,431 [INFO] (save: 97): 成功保存邮件
+2024-03-30 22:30:42,109 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-30 22:30:42,143 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-30 22:30:42,201 [INFO] (make_email: 86): 邮件构建成功
+2024-03-30 22:30:42,201 [INFO] (save: 97): 成功保存邮件
+2024-03-30 23:23:04,030 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-30 23:23:04,064 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-30 23:23:04,084 [INFO] (make_email: 86): 邮件构建成功
+2024-03-30 23:23:04,084 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:18:17,907 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:18:17,941 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:18:18,000 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:18:18,085 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:18:59,672 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:18:59,707 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:18:59,766 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:18:59,850 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:24:13,744 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:24:13,778 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:24:13,836 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:24:13,922 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:25:04,292 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:25:04,327 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:25:04,347 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:25:04,375 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:45:13,470 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:45:13,504 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:45:13,524 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:45:13,555 [INFO] (save: 97): 成功保存邮件
+2024-03-31 00:51:22,024 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 00:51:22,059 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 00:51:22,079 [INFO] (make_email: 86): 邮件构建成功
+2024-03-31 00:51:22,106 [INFO] (save: 97): 成功保存邮件
+2024-03-31 02:19:15,228 [ERROR] (<module>: 132): 错误：'config'
+2024-03-31 02:19:20,326 [ERROR] (<module>: 132): 错误：'config'
+2024-03-31 02:20:27,929 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 02:20:27,964 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 02:20:27,964 [ERROR] (<module>: 132): 错误：'en_name'
+2024-03-31 02:22:19,632 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-03-31 02:22:19,670 [INFO] (__init__: 40): 邮件模板连接成功
+2024-03-31 02:22:19,670 [ERROR] (<module>: 133): 错误：'en_name'

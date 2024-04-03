@@ -3,16 +3,17 @@ import requests
 from   util.validate import encrypt
 
 obj = {
-    "user": 231220088,
-    "name": "Rongzi Chen",
-    "dist": "2014078563@qq.com",
-    "id": "陈翔宇",
-    "time": 1,
-    "passwd": encrypt(1, 231220088),
-    "self": "231880291@smail.nju.edu.cn",
-    # "list": ["本科学位证明", "中英文在学证明", "本科毕业证明"]
-    # "list": ['英文电子成绩单', '中文电子成绩单', '英文自助打印成绩单', '中文自助打印成绩单', '中文在学（学籍）证明']
-    "list": ['中英文在学证明', '中文电子成绩单', '英文电子成绩单', '本科学位证明', '本科毕业证明', '英文自助打印成绩单', '中文自助打印成绩单', '中文在学（学籍）证明']
+    "stu_id"           : 231220088,
+    "en_name"          : "Rongzi Chen",
+    "company_mail"     : "231220088@smail.nju.edu.cn",
+    "zh_name"          : "陈翔宇",
+    "application_time" : 1,
+    "passwd"           : encrypt(1, 231220088),
+    # 'preview'          : True,
+    "mail"             : "19708876912@163.com",
+    # "material": ["本科学位证明", "中英文在学证明", "本科毕业证明"]
+    # "material": ['英文电子成绩单', '中文电子成绩单', '英文自助打印成绩单', '中文自助打印成绩单', '中文在学（学籍）证明']
+    "material": ['中英文在学证明', '中文电子成绩单', '英文电子成绩单', '本科学位证明', '本科毕业证明', '英文自助打印成绩单', '中文自助打印成绩单', '中文在学（学籍）证明']
 }
 text = json.dumps(obj)
 # s = json.dumps(obj)

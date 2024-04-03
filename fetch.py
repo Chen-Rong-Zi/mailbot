@@ -97,7 +97,7 @@ class printer:
                 raise Exception('未获取下载链接，触发反爬机制')
             return task
 
-        task = Handler.multi_apply(get_downloadUrl, times=range(1, 4), sleeping_time=1.5)
+        task = Handler.multi_apply(get_downloadUrl, times=range(1, 6), sleeping_time=1.5)
 
         # 服务器返回信息
         # 出现错误信息
@@ -161,7 +161,7 @@ class fetcher:
             根据用户 id 读取用户数据
         '''
         user_data = os.environ['data']
-        materials = json.loads(user_data)['list']
+        materials = json.loads(user_data)['material']
         return materials, user_data
 
     def read_admin_data(self):

@@ -51,3 +51,864 @@
 2024-03-28 00:01:56,274 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
 2024-03-28 00:01:57,055 [INFO] (get_data: 244): 已获取学号 181860006 的 本科毕业证明
 2024-03-28 00:01:57,056 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:16,570 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:16,603 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:32:18,167 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:32:19,699 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:32:19,746 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:32:21,301 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:32:22,822 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:32:22,884 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:32:24,440 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:24,468 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:32:26,026 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:26,053 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:32:27,609 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:27,637 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:32:29,192 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:29,220 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:32:30,782 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:32:30,804 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:32:30,804 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:37:54,324 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:37:54,352 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:37:55,906 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:37:57,426 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:37:57,476 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:37:59,031 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:38:00,555 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:38:00,599 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:38:02,161 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:38:02,192 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:38:03,747 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:38:03,778 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:38:05,359 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:38:05,384 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:38:06,932 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:38:06,957 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:38:08,507 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:38:08,537 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:38:08,537 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:08,094 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:08,126 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:39:09,687 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:39:11,206 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:39:11,252 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:39:12,801 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:39:14,322 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:39:14,366 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:39:15,922 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:15,954 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:39:17,511 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:17,540 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:39:19,098 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:19,124 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:39:20,676 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:20,704 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:39:22,255 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:39:22,278 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:39:22,278 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:45:55,846 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:45:55,897 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:45:57,449 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:45:58,970 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:45:59,016 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:46:00,570 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:46:02,090 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:46:02,135 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:46:03,684 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:46:03,713 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:46:05,261 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:46:05,289 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:46:06,846 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:46:06,872 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:46:08,424 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:46:08,453 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:46:10,003 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:46:10,024 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:46:10,024 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:16,477 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:16,506 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:49:18,055 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:49:19,577 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:49:19,624 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:49:21,176 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:49:22,697 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:49:22,764 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:49:24,314 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:24,341 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:49:25,888 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:25,917 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:49:27,472 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:27,500 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:49:29,054 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:29,081 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:49:30,632 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:49:30,654 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:49:30,654 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:37,623 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:37,656 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:50:39,209 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:50:40,730 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:50:40,777 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:50:42,325 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:50:43,849 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:50:43,895 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:50:45,445 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:45,476 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:50:47,029 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:47,059 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:50:48,610 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:50:50,130 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:50:50,155 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:50:51,705 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:51,732 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:50:53,286 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:50:53,309 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:50:53,309 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:51:47,580 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:51:47,609 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:51:49,164 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:51:50,686 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:51:50,731 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:51:52,280 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:51:53,802 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:51:53,853 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:51:55,407 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:51:55,437 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:51:56,993 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:51:57,024 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:51:58,578 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:51:58,604 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:52:00,158 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:52:00,186 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:52:01,737 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:52:01,762 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:52:01,762 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:14,785 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:14,816 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:55:16,367 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:55:17,888 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:55:17,954 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:55:19,508 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:55:21,027 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:55:21,072 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:55:22,629 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:22,662 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:55:24,218 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:24,248 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:55:25,802 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:25,830 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:55:27,380 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:27,406 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:55:28,963 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:55:28,987 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:55:28,987 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:42,257 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:42,291 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 19:58:43,841 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:58:45,363 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:58:45,409 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 19:58:46,959 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 19:58:48,480 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 19:58:48,523 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 19:58:50,077 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:50,107 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 19:58:51,663 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:51,694 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 19:58:53,250 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:53,278 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 19:58:54,831 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:54,859 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 19:58:56,409 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 19:58:56,430 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 19:58:56,430 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:17,814 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:17,843 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:01:19,392 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:01:20,914 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:01:20,961 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:01:22,515 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:01:24,036 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:01:24,081 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:01:25,635 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:25,666 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:01:27,215 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:27,267 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:01:28,817 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:28,843 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:01:30,397 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:30,426 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:01:32,002 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:01:32,024 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:01:32,025 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:21,038 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:21,072 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:02:22,625 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:02:24,144 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:02:24,187 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:02:25,738 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:02:27,258 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:02:27,300 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:02:28,851 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:28,880 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:02:30,434 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:30,463 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:02:32,015 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:32,041 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:02:33,604 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:33,635 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:02:35,186 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:02:35,209 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:02:35,209 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:04,865 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:04,896 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:04:06,448 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:04:07,969 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:04:08,016 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:04:09,570 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:04:11,090 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:04:11,134 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:04:12,686 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:12,717 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:04:14,270 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:14,299 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:04:15,850 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:15,877 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:04:17,429 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:17,457 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:04:19,008 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:04:19,030 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:04:19,030 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:08,718 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:08,749 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:10:10,304 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:10:11,825 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:10:11,866 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:10:13,415 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:10:14,937 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:10:14,981 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:10:16,536 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:16,566 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:10:18,116 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:18,146 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:10:19,705 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:19,732 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:10:21,287 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:21,316 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:10:22,873 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:10:22,897 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:10:22,897 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:17,863 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:17,900 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:11:19,450 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:11:20,971 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:11:21,018 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:11:22,573 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:11:24,095 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:11:24,140 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:11:25,694 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:25,725 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:11:27,277 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:27,302 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:11:28,853 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:28,878 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:11:30,429 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:30,456 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:11:32,008 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:11:32,033 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:11:32,033 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:17:55,535 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:17:55,569 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:17:57,130 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:17:58,651 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:17:58,697 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:18:00,249 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:18:01,769 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:18:01,813 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:18:03,365 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:18:03,395 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:18:04,947 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:18:04,975 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:18:06,527 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:18:06,579 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:18:08,132 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:18:08,160 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:18:09,718 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:18:09,741 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:18:09,741 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:26,417 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:26,448 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:19:28,000 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:19:29,519 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:19:29,562 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:19:31,112 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:19:32,633 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:19:32,672 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:19:34,225 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:34,250 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:19:35,824 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:35,852 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:19:37,406 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:37,433 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:19:38,984 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:39,010 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:19:40,564 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:19:40,588 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:19:40,588 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:00,847 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:00,877 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:24:02,426 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:24:03,945 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:24:03,991 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:24:05,542 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:24:07,061 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:24:07,106 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:24:08,658 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:08,689 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:24:10,245 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:10,274 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:24:11,827 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:11,852 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:24:13,403 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:13,431 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:24:14,982 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:24:15,005 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:24:15,005 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:16,651 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:16,683 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:25:18,236 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:25:19,758 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:25:19,804 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:25:21,356 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:25:22,878 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:25:22,922 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:25:24,479 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:24,509 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:25:26,063 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:26,093 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:25:27,648 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:27,696 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:25:29,249 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:29,278 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:25:30,834 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:25:30,858 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:25:30,858 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:12,453 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:12,503 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:32:14,056 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:32:15,575 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:32:17,095 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-03-30 20:32:17,142 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:32:18,693 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:32:20,214 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:32:20,255 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:32:21,820 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:21,852 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:32:23,409 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:23,439 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:32:24,992 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:25,020 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:32:26,573 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:26,601 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:32:28,152 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:32:28,175 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:32:28,175 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:23,983 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:24,014 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:33:25,568 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:33:27,088 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:33:27,135 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:33:28,684 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:33:30,204 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:33:30,248 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:33:31,801 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:31,831 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:33:33,392 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:33,422 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:33:34,974 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:35,001 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:33:36,550 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:36,577 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:33:38,124 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:33:38,149 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:33:38,149 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:34,285 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:34,317 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:34:35,867 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:34:37,388 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:34:37,434 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:34:38,988 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:34:40,507 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:34:40,551 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:34:42,104 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:42,134 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:34:43,683 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:43,712 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:34:45,263 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:45,287 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:34:46,838 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:46,863 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:34:48,413 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:34:48,436 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:34:48,436 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:05,378 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:05,410 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 20:35:06,964 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:35:08,485 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:35:08,530 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 20:35:10,079 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 20:35:11,600 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 20:35:11,646 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 20:35:13,198 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:13,227 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 20:35:14,775 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:14,804 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 20:35:16,355 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:16,381 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 20:35:17,929 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:17,958 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 20:35:19,507 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 20:35:19,529 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 20:35:19,529 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:13:54,539 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:13:54,571 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:13:56,125 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:13:57,645 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:13:57,689 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:13:59,239 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:14:00,757 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:14:00,797 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:14:02,348 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:14:02,378 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:14:03,931 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:14:03,961 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:14:05,513 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:14:05,538 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:14:07,088 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:14:07,116 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:14:08,664 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:14:08,686 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:14:08,686 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:27,558 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:27,592 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:15:29,148 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:15:30,669 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:15:30,714 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:15:32,265 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:15:33,786 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:15:33,830 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:15:35,382 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:35,410 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:15:36,970 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:36,997 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:15:38,548 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:38,582 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:15:40,133 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:40,158 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:15:41,707 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:15:41,731 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:15:41,731 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:16:55,535 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:16:55,568 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:16:57,122 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:16:58,642 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:16:58,722 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:17:00,280 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:17:01,801 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:17:01,846 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:17:03,399 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:03,428 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:17:04,981 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:05,009 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:17:06,557 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:06,582 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:17:08,135 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:08,164 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:17:09,715 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:09,741 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:17:09,741 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:47,005 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:47,037 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:17:48,589 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:17:50,110 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:17:50,157 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:17:51,713 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:17:53,233 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:17:53,276 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:17:54,829 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:54,859 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:17:56,409 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:56,438 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:17:57,986 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:58,012 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:17:59,560 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:17:59,586 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:18:01,136 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:18:01,160 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:18:01,160 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:38,492 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:38,524 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:30:40,077 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:30:41,598 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:30:41,644 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:30:43,200 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:30:44,722 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:30:44,767 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:30:46,317 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:46,344 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:30:47,897 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:47,926 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:30:49,476 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:49,502 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:30:51,054 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:51,083 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:30:52,639 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:30:52,663 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:30:52,663 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:14,277 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:14,308 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:32:15,857 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:32:17,378 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:32:17,423 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:32:18,975 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:32:20,495 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:32:20,540 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:32:22,094 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:22,124 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:32:23,678 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:23,708 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:32:25,263 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:25,290 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:32:26,841 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:26,871 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:32:28,423 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:32:28,447 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:32:28,447 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:13,381 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:13,412 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:33:14,962 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:33:16,483 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:33:16,529 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:33:18,082 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:33:19,603 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:33:19,647 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:33:21,201 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:21,233 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:33:22,787 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:22,816 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:33:24,369 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:24,396 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:33:25,952 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:25,981 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:33:27,534 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:33:27,558 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:33:27,558 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:10,177 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:10,208 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:35:11,759 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:35:13,277 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:35:13,321 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:35:14,871 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:35:16,393 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:35:16,437 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:35:17,990 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:18,019 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:35:19,572 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:19,611 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:35:21,162 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:21,186 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:35:22,738 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:22,764 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:35:24,315 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:35:24,336 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:35:24,337 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:21,002 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:21,034 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 21:42:22,587 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:42:24,108 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:42:25,629 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-03-30 21:42:25,676 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 21:42:27,230 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 21:42:28,752 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 21:42:28,797 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 21:42:30,348 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:30,378 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 21:42:31,931 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:31,960 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 21:42:33,516 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:33,545 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 21:42:35,100 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:35,129 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 21:42:36,681 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 21:42:36,705 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 21:42:36,705 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:27,881 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:27,912 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 22:09:29,463 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:09:30,982 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:09:32,504 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-03-30 22:09:32,553 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 22:09:34,108 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:09:35,628 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:09:35,671 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 22:09:37,227 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:37,257 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 22:09:38,809 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:38,839 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 22:09:40,396 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:40,423 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 22:09:41,979 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:42,009 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 22:09:43,562 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:09:43,586 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 22:09:43,586 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:40,643 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:40,674 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-03-30 22:10:42,226 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:10:43,747 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:10:43,796 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-03-30 22:10:45,352 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:10:46,873 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:10:46,918 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-03-30 22:10:48,472 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:48,501 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-03-30 22:10:50,050 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:50,104 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-03-30 22:10:51,657 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:51,685 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-03-30 22:10:53,240 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:53,271 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-03-30 22:10:54,826 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:10:54,851 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-03-30 22:10:54,852 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:07,957 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:07,989 [INFO] (get_data: 244): 已获取学号 231220004 的 中英文在学证明
+2024-03-30 22:12:09,542 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:12:11,063 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:12:11,108 [INFO] (get_data: 244): 已获取学号 231220004 的 中文电子成绩单
+2024-03-30 22:12:12,662 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:12:14,184 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:12:14,227 [INFO] (get_data: 244): 已获取学号 231220004 的 英文电子成绩单
+2024-03-30 22:12:15,784 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:15,812 [INFO] (get_data: 244): 已获取学号 231220004 的 本科学位证明
+2024-03-30 22:12:17,362 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:17,391 [INFO] (get_data: 244): 已获取学号 231220004 的 本科毕业证明
+2024-03-30 22:12:18,944 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:18,970 [INFO] (get_data: 244): 已获取学号 231220004 的 英文自助打印成绩单
+2024-03-30 22:12:20,525 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:20,555 [INFO] (get_data: 244): 已获取学号 231220004 的 中文自助打印成绩单
+2024-03-30 22:12:22,110 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:12:22,134 [INFO] (get_data: 244): 已获取学号 231220004 的 中文在学（学籍）证明
+2024-03-30 22:12:22,134 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:35,834 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:35,865 [INFO] (get_data: 244): 已获取学号 231220004 的 中英文在学证明
+2024-03-30 22:13:37,415 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:13:38,936 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:13:39,005 [INFO] (get_data: 244): 已获取学号 231220004 的 中文电子成绩单
+2024-03-30 22:13:40,557 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:13:42,075 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:13:42,120 [INFO] (get_data: 244): 已获取学号 231220004 的 英文电子成绩单
+2024-03-30 22:13:43,673 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:43,705 [INFO] (get_data: 244): 已获取学号 231220004 的 本科学位证明
+2024-03-30 22:13:45,259 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:45,290 [INFO] (get_data: 244): 已获取学号 231220004 的 本科毕业证明
+2024-03-30 22:13:46,844 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:46,872 [INFO] (get_data: 244): 已获取学号 231220004 的 英文自助打印成绩单
+2024-03-30 22:13:48,426 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:48,457 [INFO] (get_data: 244): 已获取学号 231220004 的 中文自助打印成绩单
+2024-03-30 22:13:50,009 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:13:50,034 [INFO] (get_data: 244): 已获取学号 231220004 的 中文在学（学籍）证明
+2024-03-30 22:13:50,034 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:46,019 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:46,054 [INFO] (get_data: 244): 已获取学号 231220004 的 中英文在学证明
+2024-03-30 22:15:47,607 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:15:49,129 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:15:49,176 [INFO] (get_data: 244): 已获取学号 231220004 的 中文电子成绩单
+2024-03-30 22:15:50,730 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:15:52,250 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:15:52,293 [INFO] (get_data: 244): 已获取学号 231220004 的 英文电子成绩单
+2024-03-30 22:15:53,847 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:53,878 [INFO] (get_data: 244): 已获取学号 231220004 的 本科学位证明
+2024-03-30 22:15:55,434 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:55,464 [INFO] (get_data: 244): 已获取学号 231220004 的 本科毕业证明
+2024-03-30 22:15:57,014 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:57,042 [INFO] (get_data: 244): 已获取学号 231220004 的 英文自助打印成绩单
+2024-03-30 22:15:58,597 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:15:58,628 [INFO] (get_data: 244): 已获取学号 231220004 的 中文自助打印成绩单
+2024-03-30 22:16:00,182 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:16:00,205 [INFO] (get_data: 244): 已获取学号 231220004 的 中文在学（学籍）证明
+2024-03-30 22:16:00,205 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:32,927 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:32,960 [INFO] (get_data: 244): 已获取学号 231220009 的 中英文在学证明
+2024-03-30 22:28:34,515 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:28:36,037 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:28:36,083 [INFO] (get_data: 244): 已获取学号 231220009 的 中文电子成绩单
+2024-03-30 22:28:37,641 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:28:39,161 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:28:39,200 [INFO] (get_data: 244): 已获取学号 231220009 的 英文电子成绩单
+2024-03-30 22:28:40,753 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:40,782 [INFO] (get_data: 244): 已获取学号 231220009 的 本科学位证明
+2024-03-30 22:28:42,337 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:42,367 [INFO] (get_data: 244): 已获取学号 231220009 的 本科毕业证明
+2024-03-30 22:28:43,920 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:43,948 [INFO] (get_data: 244): 已获取学号 231220009 的 英文自助打印成绩单
+2024-03-30 22:28:45,499 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:45,526 [INFO] (get_data: 244): 已获取学号 231220009 的 中文自助打印成绩单
+2024-03-30 22:28:47,075 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:28:47,098 [INFO] (get_data: 244): 已获取学号 231220009 的 中文在学（学籍）证明
+2024-03-30 22:28:47,099 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:27,698 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:27,728 [INFO] (get_data: 244): 已获取学号 231220009 的 中英文在学证明
+2024-03-30 22:30:29,281 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:30:30,801 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:30:30,848 [INFO] (get_data: 244): 已获取学号 231220009 的 中文电子成绩单
+2024-03-30 22:30:32,421 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-30 22:30:33,943 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-30 22:30:33,987 [INFO] (get_data: 244): 已获取学号 231220009 的 英文电子成绩单
+2024-03-30 22:30:35,537 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:35,566 [INFO] (get_data: 244): 已获取学号 231220009 的 本科学位证明
+2024-03-30 22:30:37,118 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:37,148 [INFO] (get_data: 244): 已获取学号 231220009 的 本科毕业证明
+2024-03-30 22:30:38,699 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:38,726 [INFO] (get_data: 244): 已获取学号 231220009 的 英文自助打印成绩单
+2024-03-30 22:30:40,278 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:40,306 [INFO] (get_data: 244): 已获取学号 231220009 的 中文自助打印成绩单
+2024-03-30 22:30:41,858 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 22:30:41,879 [INFO] (get_data: 244): 已获取学号 231220009 的 中文在学（学籍）证明
+2024-03-30 22:30:41,879 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-30 23:21:51,257 [ERROR] (valid_stuid: 105): name 'stu_name' is not defined
+2024-03-30 23:21:51,257 [ERROR] (multi_apply: 22): 函数fetcher.fetch_data.<locals>.get_data第1次调用失败！错误：学号未通过验证性检测, error_message: fetch_data失败, 未能获取资料
+2024-03-30 23:21:51,276 [ERROR] (valid_stuid: 105): name 'stu_name' is not defined
+2024-03-30 23:21:51,276 [ERROR] (multi_apply: 22): 函数fetcher.fetch_data.<locals>.get_data第2次调用失败！错误：学号未通过验证性检测, error_message: fetch_data失败, 未能获取资料
+2024-03-30 23:21:51,294 [ERROR] (valid_stuid: 105): name 'stu_name' is not defined
+2024-03-30 23:21:51,294 [ERROR] (multi_apply: 22): 函数fetcher.fetch_data.<locals>.get_data第3次调用失败！错误：学号未通过验证性检测, error_message: fetch_data失败, 未能获取资料
+2024-03-30 23:21:51,294 [ERROR] (multi_apply: 23): 函数fetcher.fetch_data.<locals>.get_data调用失败, 完全退出
+2024-03-30 23:21:51,294 [ERROR] (main: 263): fetch data抛出异常, multi_apply失败
+2024-03-30 23:23:00,600 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 23:23:00,631 [INFO] (get_data: 244): 已获取学号 231880291 的 本科学位证明
+2024-03-30 23:23:02,181 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 23:23:02,211 [INFO] (get_data: 244): 已获取学号 231880291 的 本科毕业证明
+2024-03-30 23:23:03,765 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-30 23:23:03,796 [INFO] (get_data: 244): 已获取学号 231880291 的 中英文在学证明
+2024-03-30 23:23:03,796 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:00,242 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:01,797 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:18:01,854 [INFO] (get_data: 244): 已获取学号 231220009 的 中英文在学证明
+2024-03-31 00:18:03,431 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:04,955 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:06,487 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-03-31 00:18:06,539 [INFO] (get_data: 244): 已获取学号 231220009 的 中文电子成绩单
+2024-03-31 00:18:08,105 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:09,632 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:18:09,680 [INFO] (get_data: 244): 已获取学号 231220009 的 英文电子成绩单
+2024-03-31 00:18:11,249 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:11,279 [INFO] (get_data: 244): 已获取学号 231220009 的 本科学位证明
+2024-03-31 00:18:12,848 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:12,880 [INFO] (get_data: 244): 已获取学号 231220009 的 本科毕业证明
+2024-03-31 00:18:14,450 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:14,484 [INFO] (get_data: 244): 已获取学号 231220009 的 英文自助打印成绩单
+2024-03-31 00:18:16,053 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:16,084 [INFO] (get_data: 244): 已获取学号 231220009 的 中文自助打印成绩单
+2024-03-31 00:18:17,647 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:17,672 [INFO] (get_data: 244): 已获取学号 231220009 的 中文在学（学籍）证明
+2024-03-31 00:18:17,672 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:45,113 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:45,154 [INFO] (get_data: 244): 已获取学号 231220009 的 中英文在学证明
+2024-03-31 00:18:46,722 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:48,250 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:18:48,298 [INFO] (get_data: 244): 已获取学号 231220009 的 中文电子成绩单
+2024-03-31 00:18:49,868 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:18:51,394 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:18:51,442 [INFO] (get_data: 244): 已获取学号 231220009 的 英文电子成绩单
+2024-03-31 00:18:53,011 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:53,043 [INFO] (get_data: 244): 已获取学号 231220009 的 本科学位证明
+2024-03-31 00:18:54,612 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:54,646 [INFO] (get_data: 244): 已获取学号 231220009 的 本科毕业证明
+2024-03-31 00:18:56,210 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:56,239 [INFO] (get_data: 244): 已获取学号 231220009 的 英文自助打印成绩单
+2024-03-31 00:18:57,809 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:57,842 [INFO] (get_data: 244): 已获取学号 231220009 的 中文自助打印成绩单
+2024-03-31 00:18:59,411 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:18:59,438 [INFO] (get_data: 244): 已获取学号 231220009 的 中文在学（学籍）证明
+2024-03-31 00:18:59,438 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:23:59,253 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:23:59,286 [INFO] (get_data: 244): 已获取学号 231220009 的 中英文在学证明
+2024-03-31 00:24:00,847 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:24:02,372 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:24:02,418 [INFO] (get_data: 244): 已获取学号 231220009 的 中文电子成绩单
+2024-03-31 00:24:03,978 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-03-31 00:24:05,501 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-03-31 00:24:05,550 [INFO] (get_data: 244): 已获取学号 231220009 的 英文电子成绩单
+2024-03-31 00:24:07,116 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:24:07,147 [INFO] (get_data: 244): 已获取学号 231220009 的 本科学位证明
+2024-03-31 00:24:08,710 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:24:08,741 [INFO] (get_data: 244): 已获取学号 231220009 的 本科毕业证明
+2024-03-31 00:24:10,306 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:24:10,335 [INFO] (get_data: 244): 已获取学号 231220009 的 英文自助打印成绩单
+2024-03-31 00:24:11,896 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:24:11,926 [INFO] (get_data: 244): 已获取学号 231220009 的 中文自助打印成绩单
+2024-03-31 00:24:13,489 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:24:13,513 [INFO] (get_data: 244): 已获取学号 231220009 的 中文在学（学籍）证明
+2024-03-31 00:24:13,513 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:25:00,829 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:25:00,860 [INFO] (get_data: 244): 已获取学号 231880291 的 本科学位证明
+2024-03-31 00:25:02,429 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:25:02,459 [INFO] (get_data: 244): 已获取学号 231880291 的 本科毕业证明
+2024-03-31 00:25:04,023 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:25:04,058 [INFO] (get_data: 244): 已获取学号 231880291 的 中英文在学证明
+2024-03-31 00:25:04,059 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:45:10,031 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:45:10,062 [INFO] (get_data: 244): 已获取学号 231880291 的 本科学位证明
+2024-03-31 00:45:11,624 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:45:11,652 [INFO] (get_data: 244): 已获取学号 231880291 的 本科毕业证明
+2024-03-31 00:45:13,205 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:45:13,235 [INFO] (get_data: 244): 已获取学号 231880291 的 中英文在学证明
+2024-03-31 00:45:13,235 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-03-31 00:51:18,583 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:51:18,616 [INFO] (get_data: 244): 已获取学号 231880291 的 本科学位证明
+2024-03-31 00:51:20,171 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:51:20,200 [INFO] (get_data: 244): 已获取学号 231880291 的 本科毕业证明
+2024-03-31 00:51:21,756 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-03-31 00:51:21,789 [INFO] (get_data: 244): 已获取学号 231880291 的 中英文在学证明
+2024-03-31 00:51:21,789 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:05,605 [ERROR] (main: 263): HTTPConnectionPool(host='api.jfbym.com', port=80): Max retries exceeded with url: /api/YmServer/customApi (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f67bcd8d450>, 'Connection to api.jfbym.com timed out. (connect timeout=None)'))
+2024-04-03 22:45:10,840 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:10,898 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-04-03 22:45:12,450 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-04-03 22:45:13,973 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第2次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-04-03 22:45:15,495 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试3次, sucess_message: 
+2024-04-03 22:45:15,543 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-04-03 22:45:17,100 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-04-03 22:45:18,622 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-04-03 22:45:18,666 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-04-03 22:45:20,218 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:20,250 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-04-03 22:45:21,812 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:21,841 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-04-03 22:45:23,420 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:23,446 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-04-03 22:45:24,998 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:25,026 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-04-03 22:45:26,576 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:45:26,603 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-04-03 22:45:26,603 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:40,520 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:40,551 [INFO] (get_data: 244): 已获取学号 231220088 的 中英文在学证明
+2024-04-03 22:46:42,100 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-04-03 22:46:43,621 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-04-03 22:46:43,668 [INFO] (get_data: 244): 已获取学号 231220088 的 中文电子成绩单
+2024-04-03 22:46:45,221 [ERROR] (multi_apply: 22): 函数printer.get_url.<locals>.get_downloadUrl第1次调用失败！错误：未获取下载链接，触发反爬机制, error_message: 
+2024-04-03 22:46:46,745 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试2次, sucess_message: 
+2024-04-03 22:46:46,791 [INFO] (get_data: 244): 已获取学号 231220088 的 英文电子成绩单
+2024-04-03 22:46:48,345 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:48,373 [INFO] (get_data: 244): 已获取学号 231220088 的 本科学位证明
+2024-04-03 22:46:49,925 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:49,955 [INFO] (get_data: 244): 已获取学号 231220088 的 本科毕业证明
+2024-04-03 22:46:51,510 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:51,536 [INFO] (get_data: 244): 已获取学号 231220088 的 英文自助打印成绩单
+2024-04-03 22:46:53,085 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:53,112 [INFO] (get_data: 244): 已获取学号 231220088 的 中文自助打印成绩单
+2024-04-03 22:46:54,671 [INFO] (multi_apply: 17): 调用printer.get_url.<locals>.get_downloadUrl成功，总计尝试1次, sucess_message: 
+2024-04-03 22:46:54,693 [INFO] (get_data: 244): 已获取学号 231220088 的 中文在学（学籍）证明
+2024-04-03 22:46:54,693 [INFO] (multi_apply: 17): 调用fetcher.fetch_data.<locals>.get_data成功，总计尝试1次, sucess_message: 

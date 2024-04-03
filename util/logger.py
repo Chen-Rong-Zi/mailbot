@@ -1,3 +1,4 @@
+import sys
 import logging
 
 class logger:
@@ -31,6 +32,8 @@ class logger:
         self.file.setFormatter(self.format)
         self.logger.addHandler(self.file)
 
+        stream_handler = logging.StreamHandler(sys.stdout)
+        self.logger.addHandler(stream_handler)
         self.logger.setLevel(logging.INFO)
 
     def __del__(self):
@@ -41,5 +44,6 @@ class logger:
         self.logger.handlers.clear()
 
 
-fetch_log   = logger( 'fetch',   './log/fetch.log')
-mailbot_log = logger( 'mailbot', './log/mailbot.log')
+fetch_log      = logger('fetch',     './log/fetch.log')
+mailbot_log    = logger('mailbot',   './log/mailbot.log')
+send_email_log = logger('send_mail', './log/send_mail.log')
