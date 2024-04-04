@@ -10,6 +10,7 @@ from   seatable_api    import Base
 
 from   functional.util import curry, compose
 from   global_variable import get_url
+from   handler         import Handler
 from   poster          import encrypt
 
 server_url = 'https://table.nju.edu.cn'
@@ -59,14 +60,21 @@ class ButtonFrame(tk.Frame):
                 style='Accent.TButton',
                 command=self.get_preview()
             )
+        self.btn_send_generate = ttk.Button(
+                self,
+                text='生成邮件',
+                style='Accent.TButton',
+                command=self.send_generate()
+            )
         self.install()
     def install(self):
         self.btn_send.grid(row=0, column=0)
         self.btn_query.grid(row=0, column=1)
         self.btn_delete.grid(row=0, column=2)
         self.btn_preview.grid(row=0, column=3)
+        self.btn_send_generate.grid(row=0, column=4)
         self.rowconfigure(0, weight=1)
-        self.columnconfigure([0, 1, 2, 3], weight=3)
+        self.columnconfigure([0, 1, 2, 3, 4], weight=3)
 
     def get_preview(self):
         def get_data(stu_id):
@@ -76,41 +84,82 @@ class ButtonFrame(tk.Frame):
                 'passwd' : encrypt(0, stu_id),
                 'preview' : 'client'
             }
-        def inner():
+        def btn_disable():
             self.btn_preview.state(['disabled'])
             self.btn_preview.config(text="下载中, 请稍候")
             self.update()
+        def btn_normal():
+            self.btn_preview.state(['!disabled'])
+            self.btn_preview.config(text="获取生成邮件")
+
+        def save(email, id):
+            filepath = f'email/{id}.eml'
+            with open(filepath, 'w') as f:
+                f.write(email)
+            print(f'已经保存{filepath}')
+
+        def inner():
+            btn_disable()
             working_list = [
                     curry(map, 2)(self.parent.ctv.item),
                     curry(map, 2)(lambda item : item['values'][0]),
                     curry(map, 2)(lambda data : requests.post(url=get_url(), json=get_data(data))),
                     curry(map, 2)(lambda content : content.json()),
                     curry(filter, 2)(lambda  item : 'email' in item or print(item)),
-                    curry(map, 2)(lambda  item : item['email']),
+                    curry(map, 2)(lambda  item : save(item['email'], item['stu_id'])),
                     curry(list, 1),
                 ]
             emails = compose(working_list, self.parent.ctv.get_checked())
-            working_list = [
-                    curry(map, 2)(self.parent.ctv.item),
-                    curry(map, 2)(lambda item : item['values'][0]),
-                    curry(list, 1),
-                ]
-            stu_ids = compose(working_list, self.parent.ctv.get_checked())
 
-            for id, email in zip(stu_ids, emails):
-                filepath = f'email/{id}.eml'
-                with open(filepath, 'w') as f:
-                    f.write(email)
-                print(f'已经保存{filepath}')
-            self.btn_preview.state(['!disabled'])
-            self.btn_preview.config(text="获取生成邮件")
+            btn_normal()
         def thread():
             td = threading.Thread(target=inner)
             td.start()
         return thread
 
+    def send_generate(self):
+        def make_data(args):
+            args = list(args)
+            return {
+                "stu_id": args[0],
+                "en_name": args[1],
+                "zh_name": args[2],
+                "mail": args[3],
+                "company_mail": args[4],
+                'generate': True,
+                'material': args[6],
+                "application_time": args[5],
+                "passwd": encrypt(args[5], args[0]),
+            }
+        def btn_disable():
+            self.btn_send_generate.state(['disabled'])
+            self.btn_send_generate.config(text="发送中, 请稍候")
+            self.update()
+
+        def btn_normal():
+            self.btn_send_generate.state(['!disabled'])
+            self.btn_send_generate.config(text="生成邮件")
+
+        def inner():
+            node = self.parent.ctv.get_checked()
+            if len(node) > 1 or len(node) <= 0:
+                return messagebox.showinfo('Info', '请每一次只生成一个邮件')
+            btn_disable()
+            base = Base(api_token, server_url)
+            base.auth()
+            item = self.parent.ctv.item(node[0])
+            result = base.query(f"""select 学号, 英文姓名, 中文姓名, 邮箱地址, 单位邮箱地址, 申请时间, 申请材料 from Table1 where 学号 = {item["values"][0]} AND 申请时间 = '{item["values"][6]}' order by 申请时间 Desc limit 1""")
+            post_func = lambda : requests.post(url=get_url(), json=make_data(result[0].values())).content.decode('unicode_escape')
+            print(Handler.apply(post_func, range(1, 2)))
+            btn_normal()
+        def thread():
+            th = threading.Thread(target=inner)
+            th.start()
+        return thread
+
     def send_mail(self):
-        def make_data(*args):
+        def make_data(args):
+            args = list(args)
             return {
                 "stu_id": args[0],
                 "en_name": args[1],
@@ -118,19 +167,31 @@ class ButtonFrame(tk.Frame):
                 "mail": args[3],
                 "company_mail": args[4],
                 'send': True,
+                'material': args[6],
                 "application_time": args[5],
                 "passwd": encrypt(args[5], args[0]),
             }
+        def btn_disable():
+            self.btn_send.state(['disabled'])
+            self.btn_send.config(text="发送中, 请稍候")
+            self.update()
+
+        def btn_normal():
+            self.btn_send.state(['!disabled'])
+            self.btn_send.config(text="发送邮件")
 
         def inner():
             node = self.parent.ctv.get_checked()
             if len(node) > 1 or len(node) <= 0:
                 return messagebox.showinfo('Info', '请每一次只发送一个请求')
+            btn_disable()
             base = Base(api_token, server_url)
             base.auth()
             item = self.parent.ctv.item(node[0])
-            result = base.query(f"""select 学号, 英文姓名, 中文姓名, 邮箱地址, 单位邮箱地址, 申请时间 from Table1 where 学号 = {item["values"][0]} order by 申请时间 Desc limit 1""")
-            print(requests.post(url=get_url(), json=make_data(*result[0].values())).content.decode('unicode_escape'))
+            result = base.query(f"""select 学号, 英文姓名, 中文姓名, 邮箱地址, 单位邮箱地址, 申请时间, 申请材料 from Table1 where 学号 = {item["values"][0]} AND 申请时间 = '{item["values"][6]}' order by 申请时间 Desc limit 1""")
+            post_func = lambda : requests.post(url=get_url(), json=make_data(result[0].values())).content.decode('unicode_escape')
+            print(Handler.apply(post_func, range(1, 2)))
+            btn_normal()
         return inner
 
 

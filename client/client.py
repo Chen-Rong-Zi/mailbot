@@ -34,9 +34,9 @@ class Client:
 if __name__ == '__main__':
     clt = Client()
     clt.window.title("不可缩放的窗口")
-    clt.window.geometry("800x900")
-    clt.window.resizable(True, False)
-    # custom_font = font.Font(size=20)
+    clt.window.geometry("800x700")
+    clt.window.resizable(True, True)
+    # custom_font = font.Font(size=200)
     # clt.window.option_add("*Font", custom_font)
     clt.window.call("source", "azure.tcl")
     clt.window.call("set_theme", "dark")

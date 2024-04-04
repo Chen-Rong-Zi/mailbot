@@ -1,8 +1,8 @@
 from threading       import Thread
 from time            import sleep
 
-from requests        import post
 from global_variable import configuration
+from poster          import Poster
 
 import tkinter as tk
 
@@ -24,13 +24,9 @@ class StautsBar(tk.Frame):
     def run(self):
         def update():
             while 1:
-                ip = configuration['ip']
+                ip   = configuration['ip']
                 port = configuration['port']
-                res = None
-                try:
-                    res = post(f'http://{ip}:{port}', json={'client' : 'I am client!'})
-                except Exception as err:
-                    print(f'连接错误， 错误：{err}')
+                res  = Poster.ping(ip, port)
                 if res:
                     self.lbl_status.config(
                             text=f"    已连接至{configuration['ip']}:{configuration['port']}",

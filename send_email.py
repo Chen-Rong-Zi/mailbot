@@ -22,6 +22,9 @@ file_mapping = {
     "中文电子成绩单": "Nanjing University Transcript of Academic Records in Chinses",
     "英文电子成绩单": "Nanjing University Transcript of Academic Records in English",
     "中英文在学证明": "Nanjing University Undergraduate Student Certificate",
+    "英文自助打印成绩单" : "Self-service printing of transcripts in English",
+    "中文自助打印成绩单" : "Self-service printing of transcripts in Chinese",
+    "中文在学（学籍）证明" : "Proof of Chinese language study (student status)",
 }
 
 class send_email:
@@ -29,8 +32,7 @@ class send_email:
         self.stu_id = id
         self.config = json.loads(os.environ['config'])
         self.data          = json.loads(os.environ['data'])
-        self.email         = self.config['email']['email']
-        self.preview_email = self.config['email']['preview_email']
+        self.sender_mail   = self.config['email']['email']
         self.token         = self.config['email']['token']
         self.stu_id        = self.data['stu_id']
         self.en_name       = self.data['en_name']
@@ -42,8 +44,10 @@ class send_email:
 
         title = f"""Official Documents for Transfer Admission—{self.en_name}"""
         self.message = MIMEMultipart()
-        self.message["Subject"] = Header(title, "utf-8")
-        self.message["From"]    = Header("nju@nju.edu.cn", "utf-8")
+        self.message["Subject"] = Header(title, "UTF-8")
+        self.receiver = [f"""{self.mail}""", f"""{self.company_mail}"""]
+        self.message.add_header('From', self.sender_mail)
+        self.message.add_header('To', ', '.join(self.receiver))
 
     def connect_template(self):
         try:
@@ -103,20 +107,21 @@ class send_email:
         with open(filepath) as f:
             self.message = email.message_from_file(f)
         try:
-            receiver = [f"""{self.mail}""", f"""{self.company_mail}"""]
             # 使用学生邮箱测试时，请将host名改为"smtp.exmail.qq.com"
-            host = "smtp.nju.edu.cn"
+            # host = "smtp.nju.edu.cn"
             # host = "smtp.exmail.qq.com"
+            host = "smtp.163.com"
             smtp = smtplib.SMTP_SSL(host, 465)
-            smtp.login(self.email, self.token)
+            smtp.login(self.sender_mail, self.token)
             log.logger.info("邮件服务器连接成功")
         except smtplib.SMTPAuthenticationError:
             log.logger.error("邮箱认证失败，邮箱名或授权码错误")
             raise Exception("邮箱认证失败，邮箱名或授权码错误")
 
         try:
-            smtp.sendmail(self.mail, receiver, self.message.as_string())
+            smtp.sendmail(self.sender_mail, self.receiver, self.message.as_string())
             log.logger.info("邮件发送成功")
+            log.logger.error(f"{self.mail = }, {self.sender_mail = }")
             smtp.quit()
         except Exception as err:
             log.logger.error(f"发送失败, {err}")
@@ -124,9 +129,10 @@ class send_email:
 
 if __name__ == "__main__":
     try:
+        a = send_email(sys.argv[1])
         if sys.argv[2] == 'send':
             a.send()
-        a = send_email(sys.argv[1])
+        else:
             a.save()
         sys.exit(0)
     except Exception as err:

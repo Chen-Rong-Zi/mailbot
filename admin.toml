@@ -5,15 +5,15 @@ password = 'V1ews0n1c'
 
 # 邮件区
 [email]
-email         = '1398881912@qq.com'
-token         = 'snocsimxfjvchcci'
+email         = '19708876912@163.com'
+token         = 'JQJJDUZSXVKLLGAP'
 preview_email = '231220088@smail.nju.edu.cn'
 
 
 # 表格api
 [table]
 server    = 'https://table.nju.edu.cn'
-api_token = '56128d59ebfaf66936a14228cd92351ef100fd36'
+api_token = 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'
 
 
 # 邮件机器人

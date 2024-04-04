@@ -46,7 +46,7 @@ def make_config(args):
             "password" : args[1]
         },
         "email" : {
-            "emai" : args[2],
+            "email" : args[2],
             "token" : args[3]
         },
         "table" : {
@@ -107,19 +107,26 @@ class Config(tk.Frame):
     def __init__(self, frame):
         self.parent_frame = frame
         super().__init__(master=self.parent_frame)
-        self.frm_items = [make_item_Frame(self, *item) for item in config_format.items()]
+        self.frm_outter = tk.Frame(master=self)
+        self.frm_items = [make_item_Frame(self.frm_outter, *item) for item in config_format.items()]
         self.btn_update = tk.Button(
                 master=self,
                 text="更新配置文件",
-                font=("-size", 9, "-weight", "normal"),
+                font=("-size", 13, "-weight", "normal"),
                 command=self.update_config()
             )
         self.install()
 
     def install(self):
+        pos = [0, 0]
         for frm in self.frm_items:
-            frm.pack(fill=tk.BOTH, expand=True)
-        self.btn_update.pack(fill=tk.BOTH)
+            row, col = pos
+            frm.grid(row=row, column=col, sticky='nswe', padx=10)
+            pos[1] = (col + 1) % 2
+            pos[0] += (col + 1) // 2
+        self.frm_outter.columnconfigure([0, 1], weight=3)
+        self.frm_outter.pack(fill=tk.BOTH)
+        self.btn_update.pack(fill=tk.BOTH, pady=20)
 
 
     def update_config(self):

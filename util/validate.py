@@ -31,7 +31,6 @@ class Validator:
             password      = nju['password']
             email         = config['email']
             token         = email['token']
-            preview_email = email['preview_email']
             table         = config['table']
             api_token     = table['api_token']
             server        = table['server']

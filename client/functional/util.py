@@ -1,8 +1,6 @@
 import inspect
 from functools import reduce
 
-f = open('/home/rongzi/mailbot/project/log/fetch.log', 'a')
-
 def curry(func, len_of_params= None):
     assert len_of_params is None or len_of_params >= 0, "func的参数个数不能少于0个"
     length = len_of_params if len_of_params else len(inspect.signature(func).parameters)

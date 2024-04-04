@@ -51,3 +51,829 @@
 2024-03-31 02:22:19,632 [ERROR] (__init__: 31): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '1398881912@qq.com', 'token': 'snocsimxfjvchcci', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
 2024-03-31 02:22:19,670 [INFO] (__init__: 40): 邮件模板连接成功
 2024-03-31 02:22:19,670 [ERROR] (<module>: 133): 错误：'en_name'
+2024-04-04 00:26:37,282 [ERROR] (<module>: 134): 错误：'material'
+2024-04-04 00:30:33,696 [ERROR] (<module>: 137): 错误：'material'
+2024-04-04 00:31:07,650 [ERROR] (<module>: 138): 错误：'material'
+2024-04-04 00:31:25,099 [ERROR] (<module>: 138): 错误：'material'
+2024-04-04 00:36:23,618 [ERROR] (<module>: 138): 错误：'material'
+2024-04-04 00:36:38,652 [ERROR] (<module>: 130): 进入send_email
+2024-04-04 00:36:38,653 [ERROR] (<module>: 138): 错误：'material'
+2024-04-04 00:42:31,088 [ERROR] (<module>: 131): 进入send_email
+2024-04-04 00:42:31,745 [ERROR] (send: 117): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:42:31,745 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:44:14,675 [ERROR] (<module>: 131): 进入send_email
+2024-04-04 00:44:15,281 [ERROR] (send: 117): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:44:15,281 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:45:46,325 [ERROR] (<module>: 131): 进入send_email
+2024-04-04 00:45:46,908 [ERROR] (send: 117): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:45:46,908 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:45:57,576 [ERROR] (<module>: 131): 进入send_email
+2024-04-04 00:45:58,136 [ERROR] (send: 117): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:45:58,137 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:47:27,692 [INFO] (send: 116): 邮件服务器连接成功
+2024-04-04 00:47:27,847 [ERROR] (send: 126): 发送失败, (553, b'Mail from must equal authorized user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:47:27,848 [ERROR] (<module>: 138): 错误：发送失败, (553, b'Mail from must equal authorized user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:52:26,195 [ERROR] (<module>: 138): 错误：name 'qq' is not defined
+2024-04-04 00:52:36,168 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:52:36,168 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:52:54,589 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:52:54,590 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:53:09,832 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:53:09,832 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:21,941 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:21,991 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:45,834 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:45,834 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:56,234 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:54:56,235 [ERROR] (<module>: 138): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 00:55:58,419 [INFO] (send: 116): 邮件服务器连接成功
+2024-04-04 00:55:58,641 [ERROR] (send: 126): 发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:55:58,642 [ERROR] (<module>: 138): 错误：发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:56:40,580 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 00:56:40,791 [ERROR] (send: 127): 发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:56:40,791 [ERROR] (<module>: 139): 错误：发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:56:50,638 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 00:56:50,855 [ERROR] (send: 127): 发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 00:56:50,855 [ERROR] (<module>: 139): 错误：发送失败, (501, b'mail from address must be same as authorization user', '231220009@smail.nju.edu.cn')
+2024-04-04 01:00:38,250 [ERROR] (send: 119): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 01:00:38,250 [ERROR] (<module>: 139): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 01:01:11,567 [ERROR] (send: 119): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 01:01:11,568 [ERROR] (<module>: 139): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 01:11:59,075 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 01:11:59,971 [INFO] (send: 124): 邮件发送成功
+2024-04-04 01:13:57,827 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 01:13:58,239 [INFO] (send: 124): 邮件发送成功
+2024-04-04 01:17:25,722 [ERROR] (__init__: 34): {'nju': {'username': '0412007', 'password': 'V1ews0n1c'}, 'email': {'email': '19708876912@163.com', 'token': 'JQJJDUZSXVKLLGAP', 'preview_email': '231220088@smail.nju.edu.cn'}, 'table': {'server': 'https://table.nju.edu.cn', 'api_token': 'aeade84e27bb0cf7d43c213b570bb9ae641334ec'}, 'mailbot': {'port': 8080}, 'ocr': {'token': 'TA6djdhm0NC1ROb8KJLaxG7WSf2ycfBZ46Lg7Tc0e5c'}}
+2024-04-04 01:17:26,145 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:17:26,969 [INFO] (send: 125): 邮件发送成功
+2024-04-04 01:19:15,302 [ERROR] (__init__: 35): {'stu_id': 231220009, 'en_name': 'Shuran Liu', 'zh_name': None, 'mail': '231220009@smail.nju.edu.cn', 'company_mail': 'lsr456789@outlook.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:58:12.396+08:00', 'passwd': 'e1453c676f8fa97f50a6b9d50cf79fe7'}
+2024-04-04 01:19:15,622 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:19:16,481 [INFO] (send: 125): 邮件发送成功
+2024-04-04 01:21:37,949 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:21:37,983 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:21:38,003 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:21:38,030 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:22:00,994 [ERROR] (__init__: 35): {'stu_id': 231880291, 'en_name': 'Baijun Chen', 'zh_name': None, 'mail': '231880291@smail.nju.edu.cn', 'company_mail': '2014078563@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明'], 'application_time': '2023-12-10T20:59:11.119+08:00', 'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5'}
+2024-04-04 01:22:01,250 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:22:03,548 [INFO] (send: 125): 邮件发送成功
+2024-04-04 01:26:29,478 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:26:29,513 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:26:29,533 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:26:29,561 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:26:38,222 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:26:38,258 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:26:38,278 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:26:38,311 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:26:47,387 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:26:47,423 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:26:47,443 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:26:47,471 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:27:32,978 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:27:33,013 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:27:33,033 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:27:33,068 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:28:32,856 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:28:32,891 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:28:32,911 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:28:32,938 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:28:39,886 [ERROR] (__init__: 35): {'passwd': 'e1453c676f8fa97f50a6b9d50cf79fe7', 'application_time': '2023-12-10T20:58:12.396+08:00', 'zh_name': None, 'stu_id': 231220009, 'en_name': 'Shuran Liu', 'company_mail': 'lsr456789@outlook.com', 'mail': '231220009@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明']}
+2024-04-04 01:28:39,921 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:28:39,935 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:28:39,960 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:28:46,955 [ERROR] (__init__: 35): {'passwd': 'fe88a61036f730541835c04130a42284', 'application_time': '2023-12-10T20:30:44.798+08:00', 'zh_name': None, 'stu_id': 231870078, 'en_name': 'zero', 'company_mail': '231870078@smail.nju.edu.cn', 'mail': '231870078@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明']}
+2024-04-04 01:28:46,990 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:28:47,003 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:28:47,024 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:28:55,510 [ERROR] (__init__: 35): {'passwd': 'be8fba4795bdd76cd787828c6dc13503', 'application_time': '2023-12-10T20:30:21.332+08:00', 'zh_name': None, 'stu_id': 231880402, 'en_name': 'Jin Peng', 'company_mail': 'chm050918@outlook.com', 'mail': 'pengjin@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:28:55,544 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:28:55,564 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:28:55,591 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:04,118 [ERROR] (__init__: 35): {'passwd': '4603e66a02685b0642b2941a0a309e10', 'application_time': '2023-12-10T20:29:40.082+08:00', 'zh_name': None, 'stu_id': 231220009, 'en_name': 'Shuran Liu', 'company_mail': 'lsr456789@outlook.com', 'mail': '231220009@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:29:04,154 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:04,174 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:04,201 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:11,267 [ERROR] (__init__: 35): {'passwd': '28e0deb0a7fbde3a802ee118cb11641a', 'application_time': '2023-12-10T20:25:47.484+08:00', 'zh_name': None, 'stu_id': 231870122, 'en_name': 'Mingkai Zhang', 'company_mail': '231870122@smail.nju.edu.cn', 'mail': '231870122@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明']}
+2024-04-04 01:29:11,303 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:11,317 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:11,335 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:16,864 [ERROR] (__init__: 35): {'passwd': '2a6b3955da4fd0699b248d88e4fbe600', 'application_time': '2023-12-10T20:25:29.991+08:00', 'zh_name': None, 'stu_id': 231275029, 'en_name': 'liaowenbin', 'company_mail': '231275029@smail.nju.edu.cn', 'mail': '231275029@smail.nju.edu.cn', 'material': ['本科学位证明']}
+2024-04-04 01:29:16,901 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:16,908 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:16,918 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:22,238 [ERROR] (__init__: 35): {'passwd': '90ad443de4fdef59b611498144810082', 'application_time': '2023-12-10T20:24:59.353+08:00', 'zh_name': None, 'stu_id': 231300059, 'en_name': None, 'company_mail': '114514@Nova.email', 'mail': '231300059@nju.edu.cn', 'material': ['中英文在学证明']}
+2024-04-04 01:29:22,273 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:22,280 [ERROR] (make_email: 94): 无法构建邮件
+2024-04-04 01:29:22,281 [ERROR] (<module>: 140): 错误：Logger._log() got an unexpected keyword argument 'file'
+2024-04-04 01:29:31,136 [ERROR] (__init__: 35): {'passwd': '0dcd660fb8a7e3f0b7d95d14323b89fa', 'application_time': '2023-12-10T20:24:48.412+08:00', 'zh_name': None, 'stu_id': 231880150, 'en_name': 'Zhiyuan Tang', 'company_mail': '2057394607@qq.com', 'mail': '2057394607@qq.com', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:29:31,170 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:31,190 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:31,217 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:38,354 [ERROR] (__init__: 35): {'passwd': 'a208578104055959e883689f1c964d26', 'application_time': '2023-12-10T20:24:32.58+08:00', 'zh_name': None, 'stu_id': 231880048, 'en_name': 'xiaoyao', 'company_mail': '2327808944@qq.com', 'mail': '2327808944@qq.com', 'material': ['本科学位证明', '本科毕业证明']}
+2024-04-04 01:29:38,389 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:38,403 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:38,421 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:47,008 [ERROR] (__init__: 35): {'passwd': '199de90d9c5e9f4b3d661bc164ae7b76', 'application_time': '2023-12-10T20:24:28.905+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:29:47,043 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:47,063 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:47,090 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:29:55,916 [ERROR] (__init__: 35): {'passwd': 'cfef9cc370c5929fa5657868c9de0cbb', 'application_time': '2023-12-10T20:17:29.318+08:00', 'zh_name': None, 'stu_id': 231220009, 'en_name': 'Shuran Liu', 'company_mail': 'lsr456789@outlook.com', 'mail': '231220009@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:29:55,951 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:29:55,971 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:29:55,999 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:30:04,731 [ERROR] (__init__: 35): {'passwd': 'df69bb255894fc1a6d3fc0692b852b60', 'application_time': '2023-12-10T18:24:04.089+08:00', 'zh_name': None, 'stu_id': 231880402, 'en_name': 'Jin Peng', 'company_mail': 'chm050918@outlook.com', 'mail': 'pengjin@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:30:04,766 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:30:04,786 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:30:04,813 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:30:13,563 [ERROR] (__init__: 35): {'passwd': 'c1229a5c736675c4d34eddbc7f645181', 'application_time': '2023-12-07T22:35:30.373+08:00', 'zh_name': None, 'stu_id': 181860006, 'en_name': 'ZKK', 'company_mail': 'nova@nju.edu.cn', 'mail': 'nova@nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:30:13,598 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:30:13,618 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:30:13,645 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:36:43,030 [ERROR] (__init__: 35): {'passwd': '7ea7dd845bd2c0e39324ba39c963c2f5', 'application_time': '2023-12-10T20:59:11.119+08:00', 'zh_name': None, 'stu_id': 231880291, 'en_name': 'Baijun Chen', 'company_mail': '2014078563@qq.com', 'mail': '231880291@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '中英文在学证明']}
+2024-04-04 01:36:43,065 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:36:43,084 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 01:36:43,111 [INFO] (save: 103): 成功保存邮件
+2024-04-04 01:51:51,621 [ERROR] (__init__: 35): {'stu_id': 231220009, 'en_name': 'Shuran Liu', 'zh_name': None, 'mail': '231220009@smail.nju.edu.cn', 'company_mail': 'lsr456789@outlook.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:58:12.396+08:00', 'passwd': 'e1453c676f8fa97f50a6b9d50cf79fe7'}
+2024-04-04 01:51:51,912 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:51:52,316 [INFO] (send: 125): 邮件发送成功
+2024-04-04 01:52:01,124 [ERROR] (__init__: 35): {'stu_id': 231880048, 'en_name': 'xiaoyao', 'zh_name': None, 'mail': '2327808944@qq.com', 'company_mail': '2327808944@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:24:32.58+08:00', 'passwd': 'a208578104055959e883689f1c964d26'}
+2024-04-04 01:52:01,380 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:52:01,867 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-0,_____wD3f6BBlw1mDXUYAA--.9618S2 1712166721,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-0&time=1712166721')
+2024-04-04 01:52:01,868 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-0,_____wD3f6BBlw1mDXUYAA--.9618S2 1712166721,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-0&time=1712166721')
+2024-04-04 01:52:46,169 [ERROR] (__init__: 35): {'stu_id': 231880048, 'en_name': 'xiaoyao', 'zh_name': None, 'mail': '2327808944@qq.com', 'company_mail': '2327808944@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:24:32.58+08:00', 'passwd': 'a208578104055959e883689f1c964d26'}
+2024-04-04 01:52:46,393 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:52:46,831 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-2,_____wD3X4Bulw1mGJ4YAA--.9811S2 1712166766,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-2&time=1712166766')
+2024-04-04 01:52:46,831 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-2,_____wD3X4Bulw1mGJ4YAA--.9811S2 1712166766,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-2&time=1712166766')
+2024-04-04 01:55:06,504 [ERROR] (__init__: 35): {'stu_id': 231880048, 'en_name': 'xiaoyao', 'zh_name': None, 'mail': '2327808944@qq.com', 'company_mail': '2327808944@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:24:32.58+08:00', 'passwd': 'a208578104055959e883689f1c964d26'}
+2024-04-04 01:55:06,715 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:55:07,118 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-2,_____wD3v+L6lw1m55YZAA--.12817S2 1712166907,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-2&time=1712166907')
+2024-04-04 01:55:07,118 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-2,_____wD3v+L6lw1m55YZAA--.12817S2 1712166907,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-2&time=1712166907')
+2024-04-04 01:55:31,458 [ERROR] (__init__: 35): {'stu_id': 231880048, 'en_name': 'xiaoyao', 'zh_name': None, 'mail': '2327808944@qq.com', 'company_mail': '2327808944@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明'], 'application_time': '2023-12-10T20:24:32.58+08:00', 'passwd': 'a208578104055959e883689f1c964d26'}
+2024-04-04 01:55:31,715 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 01:55:32,172 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-1,_____wD3fzATmA1mP6AZAA--.13750S2 1712166932,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-1&time=1712166932')
+2024-04-04 01:55:32,173 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-1,_____wD3fzATmA1mP6AZAA--.13750S2 1712166932,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-1&time=1712166932')
+2024-04-04 01:59:31,868 [ERROR] (__init__: 35): {'passwd': 'c441e174c3c8e33656b23d557234f663', 'application_time': '2024-04-04T01:58:18+08:00', 'zh_name': None, 'stu_id': 231220088, 'en_name': 'Rongzi Chen', 'company_mail': '1398881912@qq.com', 'mail': '231220088@smail.nju.edu.cn', 'material': ['本科学位证明', '本科毕业证明', '英文电子成绩单', '中英文在学证明', '中文电子成绩单']}
+2024-04-04 01:59:31,905 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 01:59:31,905 [ERROR] (attach: 63): 用户请求本科学位证明
+2024-04-04 01:59:31,912 [ERROR] (attach: 63): 用户请求本科毕业证明
+2024-04-04 01:59:31,919 [ERROR] (attach: 63): 用户请求英文电子成绩单
+2024-04-04 01:59:31,932 [ERROR] (attach: 63): 用户请求中英文在学证明
+2024-04-04 01:59:31,939 [ERROR] (attach: 63): 用户请求中文电子成绩单
+2024-04-04 01:59:31,953 [INFO] (make_email: 93): 邮件构建成功
+2024-04-04 01:59:32,021 [INFO] (save: 104): 成功保存邮件
+2024-04-04 02:01:03,134 [ERROR] (__init__: 35): {'stu_id': 231220088, 'en_name': 'Rongzi Chen', 'zh_name': None, 'mail': '231220088@smail.nju.edu.cn', 'company_mail': '1398881912@qq.com', 'send': True, 'material': ['本科学位证明', '本科毕业证明', '英文电子成绩单', '中英文在学证明', '中文电子成绩单'], 'application_time': '2024-04-04T01:58:18+08:00', 'passwd': 'c441e174c3c8e33656b23d557234f663'}
+2024-04-04 02:01:03,389 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 02:01:04,011 [INFO] (send: 126): 邮件发送成功
+2024-04-04 02:07:45,492 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:07:45,538 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:07:45,607 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:08:38,939 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:08:38,986 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:08:39,052 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:09:08,782 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:09:09,372 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:15:28,126 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:15:28,175 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:15:28,244 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:15:58,370 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:15:59,071 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:16:37,634 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:16:38,404 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:27:59,609 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:27:59,658 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:27:59,734 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:08,657 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:08,677 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:08,704 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:16,066 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:16,084 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:16,106 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:23,142 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:23,156 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:23,174 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:31,867 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:31,891 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:31,918 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:40,908 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:40,928 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:40,955 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:48,013 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:48,026 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:48,044 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:53,506 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:53,517 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:53,527 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:28:58,855 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:28:58,863 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:28:58,873 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:29:07,522 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:29:07,543 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:29:07,573 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:29:14,723 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:29:14,737 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:29:14,758 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:29:23,667 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:29:23,687 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:29:23,715 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:29:32,484 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:29:32,504 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:29:32,532 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:29:41,072 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 02:29:41,092 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 02:29:41,119 [INFO] (save: 102): 成功保存邮件
+2024-04-04 02:31:04,177 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:04,583 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:07,382 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:07,843 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:09,685 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:10,097 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:12,274 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:12,623 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-2,_____wD3_8lwoA1mCbkbAA--.13761S2 1712169072,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-2&time=1712169072')
+2024-04-04 02:31:12,623 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-2,_____wD3_8lwoA1mCbkbAA--.13761S2 1712169072,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-2&time=1712169072')
+2024-04-04 02:31:14,673 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:15,043 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-0,_____wDXn5pyoA1mokMbAA--.7043S2 1712169074,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-0&time=1712169074')
+2024-04-04 02:31:15,044 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-0,_____wDXn5pyoA1mokMbAA--.7043S2 1712169074,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-0&time=1712169074')
+2024-04-04 02:31:17,793 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:18,192 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-1,_____wD3H_N1oA1mZG0bAA--.6345S2 1712169078,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-1&time=1712169078')
+2024-04-04 02:31:18,192 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-1,_____wD3H_N1oA1mZG0bAA--.6345S2 1712169078,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-1&time=1712169078')
+2024-04-04 02:31:20,154 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:20,605 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-4,_____wD3X813oA1muL4bAA--.7401S2 1712169080,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-4&time=1712169080')
+2024-04-04 02:31:20,605 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-4,_____wD3X813oA1muL4bAA--.7401S2 1712169080,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-4&time=1712169080')
+2024-04-04 02:31:23,188 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:23,584 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-3,_____wDHT6B7oA1mNU8bAA--.16327S2 1712169083,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-3&time=1712169083')
+2024-04-04 02:31:23,584 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-3,_____wDHT6B7oA1mNU8bAA--.16327S2 1712169083,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-3&time=1712169083')
+2024-04-04 02:31:25,887 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:26,323 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:28,434 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:28,861 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:31,236 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:31,686 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:33,786 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:34,211 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:31:37,542 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:31:37,937 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:34:13,219 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:34:13,627 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:35:02,936 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:35:03,404 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:35:35,481 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:35:35,946 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:35:40,347 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:35:40,802 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:38:01,403 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:38:02,043 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:38:12,313 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:38:12,708 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-3,_____wDnN1kUog1mVZ4bAA--.9354S2 1712169492,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-3&time=1712169492')
+2024-04-04 02:38:12,709 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-3,_____wDnN1kUog1mVZ4bAA--.9354S2 1712169492,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-3&time=1712169492')
+2024-04-04 02:38:28,596 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:38:29,065 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-0,_____wD3H3wkog1m_QkcAA--.23390S2 1712169509,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-0&time=1712169509')
+2024-04-04 02:38:29,065 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-0,_____wD3H3wkog1m_QkcAA--.23390S2 1712169509,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-0&time=1712169509')
+2024-04-04 02:38:32,649 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:38:33,067 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-3,_____wDXf2Ioog1mmqIbAA--.9141S2 1712169512,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-3&time=1712169512')
+2024-04-04 02:38:33,068 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-3,_____wDXf2Ioog1mmqIbAA--.9141S2 1712169512,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-3&time=1712169512')
+2024-04-04 02:41:14,780 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:41:15,189 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-3,_____wD3v3rKog1mR+EbAA--.16372S2 1712169675,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-3&time=1712169675')
+2024-04-04 02:41:15,189 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-3,_____wD3v3rKog1mR+EbAA--.16372S2 1712169675,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-3&time=1712169675')
+2024-04-04 02:42:14,681 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:42:15,128 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-0,_____wD3X7QGow1mykIcAA--.24032S2 1712169735,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-0&time=1712169735')
+2024-04-04 02:42:15,128 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-0,_____wD3X7QGow1mykIcAA--.24032S2 1712169735,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-0&time=1712169735')
+2024-04-04 02:43:15,566 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:43:15,991 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:43:26,777 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:43:27,222 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:43:36,991 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:43:37,486 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:44:51,525 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:44:51,964 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:44:57,401 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:44:57,879 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:45:00,208 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:45:00,699 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:50:17,972 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:50:18,450 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:51:02,168 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:02,644 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-5,_____wDnNysWpQ1m_OMcAA--.8034S2 1712170262,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-5&time=1712170262')
+2024-04-04 02:51:02,645 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-5,_____wDnNysWpQ1m_OMcAA--.8034S2 1712170262,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-5&time=1712170262')
+2024-04-04 02:51:09,168 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:09,592 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-5,_____wD333YcpQ1mEj4dAA--.11307S2 1712170269,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-5&time=1712170269')
+2024-04-04 02:51:09,592 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-5,_____wD333YcpQ1mEj4dAA--.11307S2 1712170269,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-5&time=1712170269')
+2024-04-04 02:51:10,953 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:11,363 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-4,_____wD3_4sepQ1mzsIcAA--.9866S2 1712170271,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-4&time=1712170271')
+2024-04-04 02:51:11,363 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-4,_____wD3_4sepQ1mzsIcAA--.9866S2 1712170271,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-4&time=1712170271')
+2024-04-04 02:51:13,838 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:14,295 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3_6MhpQ1mcFgcAA--.6547S2 1712170274,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712170274')
+2024-04-04 02:51:14,295 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3_6MhpQ1mcFgcAA--.6547S2 1712170274,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712170274')
+2024-04-04 02:51:18,539 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:18,980 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wD3_7gmpQ1m1HscAA--.7032S2 1712170278,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712170278')
+2024-04-04 02:51:18,980 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wD3_7gmpQ1m1HscAA--.7032S2 1712170278,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712170278')
+2024-04-04 02:51:20,370 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:20,821 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDn1_0opQ1mFtAWAA--.2788S2 1712170280,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712170280')
+2024-04-04 02:51:20,822 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDn1_0opQ1mFtAWAA--.2788S2 1712170280,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712170280')
+2024-04-04 02:51:23,283 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:23,743 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-4,_____wD3PzIrpQ1msNoNAA--.2958S2 1712170283,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-4&time=1712170283')
+2024-04-04 02:51:23,743 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-4,_____wD3PzIrpQ1msNoNAA--.2958S2 1712170283,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-4&time=1712170283')
+2024-04-04 02:51:28,254 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:28,682 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3_6owpQ1mkVscAA--.6548S2 1712170288,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712170288')
+2024-04-04 02:51:28,682 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3_6owpQ1mkVscAA--.6548S2 1712170288,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712170288')
+2024-04-04 02:51:30,243 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:30,693 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-3,_____wDXvw0xpQ1mGvEbAA--.7596S2 1712170290,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-3&time=1712170290')
+2024-04-04 02:51:30,694 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-3,_____wDXvw0xpQ1mGvEbAA--.7596S2 1712170290,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-3&time=1712170290')
+2024-04-04 02:51:42,333 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:51:42,767 [INFO] (send: 124): 邮件发送成功
+2024-04-04 02:52:56,784 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 02:52:57,210 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:08,596 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:09,089 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:17,576 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:18,022 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:20,788 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:21,232 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:23,775 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:24,178 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:28,386 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:28,777 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:34,919 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:35,376 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:40,332 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:40,766 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:43,692 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:44,088 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:00:47,743 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:00:48,219 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:02:35,691 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:02:36,129 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-5,_____wD3n3bLpw1mM98dAA--.11715S2 1712170956,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-5&time=1712170956')
+2024-04-04 03:02:36,129 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-5,_____wD3n3bLpw1mM98dAA--.11715S2 1712170956,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-5&time=1712170956')
+2024-04-04 03:02:41,413 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:02:41,842 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-5,_____wD3_xfRpw1mOn8dAA--.8242S2 1712170961,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-5&time=1712170961')
+2024-04-04 03:02:41,842 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-5,_____wD3_xfRpw1mOn8dAA--.8242S2 1712170961,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-5&time=1712170961')
+2024-04-04 03:02:45,586 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:02:46,042 [INFO] (send: 124): 邮件发送成功
+2024-04-04 03:02:50,042 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:02:50,492 [ERROR] (send: 127): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-5,_____wDHl5LZpw1m6twdAA--.2081S2 1712170970,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-5&time=1712170970')
+2024-04-04 03:02:50,492 [ERROR] (<module>: 139): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g0-5,_____wDHl5LZpw1m6twdAA--.2081S2 1712170970,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g0-5&time=1712170970')
+2024-04-04 03:07:12,658 [ERROR] (<module>: 141): 错误：name 'sender' is not defined
+2024-04-04 03:07:17,094 [ERROR] (<module>: 141): 错误：name 'sender' is not defined
+2024-04-04 03:08:13,936 [ERROR] (<module>: 141): 错误：name 'receivers' is not defined
+2024-04-04 03:08:33,367 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:08:33,378 [ERROR] (send: 129): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 03:08:33,378 [ERROR] (<module>: 141): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 03:09:34,909 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:09:34,923 [ERROR] (send: 129): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 03:09:34,923 [ERROR] (<module>: 141): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 03:09:52,058 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:09:52,462 [ERROR] (send: 129): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:09:52,462 [ERROR] (<module>: 141): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:10:41,130 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:10:41,559 [ERROR] (send: 129): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:10:41,560 [ERROR] (<module>: 141): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:11,117 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:14:11,495 [ERROR] (send: 129): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:11,495 [ERROR] (<module>: 141): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:17,115 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:14:17,520 [ERROR] (send: 129): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:17,521 [ERROR] (<module>: 141): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:26,640 [INFO] (send: 119): 邮件服务器连接成功
+2024-04-04 03:14:27,046 [ERROR] (send: 129): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:14:27,047 [ERROR] (<module>: 141): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:24,915 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:16:25,272 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:25,272 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:29,887 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:16:30,260 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:30,260 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:33,008 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:16:33,360 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:33,361 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:37,840 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:16:38,200 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:38,200 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:46,398 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:16:46,779 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:16:46,779 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 03:20:03,580 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:04,229 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:20:08,460 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:08,863 [ERROR] (send: 130): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-2,_____wD3_6noqw1m5qkdAA--.11513S2 1712172008,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-2&time=1712172008')
+2024-04-04 03:20:08,864 [ERROR] (<module>: 142): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-2,_____wD3_6noqw1m5qkdAA--.11513S2 1712172008,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-2&time=1712172008')
+2024-04-04 03:20:14,055 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:14,432 [ERROR] (send: 130): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-1,_____wDnF+ntqw1m7zoeAA--.6989S2 1712172014,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-1&time=1712172014')
+2024-04-04 03:20:14,432 [ERROR] (<module>: 142): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-1,_____wDnF+ntqw1m7zoeAA--.6989S2 1712172014,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-1&time=1712172014')
+2024-04-04 03:20:18,036 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:18,404 [ERROR] (send: 130): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-2,_____wDnN+Xxqw1mMS0eAA--.15838S2 1712172018,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-2&time=1712172018')
+2024-04-04 03:20:18,404 [ERROR] (<module>: 142): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-2,_____wDnN+Xxqw1mMS0eAA--.15838S2 1712172018,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-2&time=1712172018')
+2024-04-04 03:20:21,520 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:22,184 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:20:25,625 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:20:26,363 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:23:19,882 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:23:20,673 [INFO] (send: 126): 邮件发送成功
+2024-04-04 03:23:24,979 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:23:25,407 [ERROR] (send: 129): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDnz92srA1m_5IYAA--.2894S2 1712172205,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712172205')
+2024-04-04 03:23:25,407 [ERROR] (<module>: 141): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDnz92srA1m_5IYAA--.2894S2 1712172205,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712172205')
+2024-04-04 03:24:13,947 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:24:14,352 [ERROR] (send: 129): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wD3H5PdrA1mblgeAA--.7566S2 1712172254,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712172254')
+2024-04-04 03:24:14,352 [ERROR] (<module>: 141): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wD3H5PdrA1mblgeAA--.7566S2 1712172254,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712172254')
+2024-04-04 03:24:17,495 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:24:18,274 [INFO] (send: 126): 邮件发送成功
+2024-04-04 03:25:36,225 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 03:25:36,956 [INFO] (send: 126): 邮件发送成功
+2024-04-04 03:26:55,844 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:26:56,506 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:27:43,034 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:27:43,794 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:28:41,547 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:28:42,307 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:28:44,068 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:28:44,791 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:28:46,513 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 03:28:47,157 [INFO] (send: 127): 邮件发送成功
+2024-04-04 03:43:05,687 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:43:05,701 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:43:05,723 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:51:09,410 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:51:09,423 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:51:09,441 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:52:41,366 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:52:41,379 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:52:41,397 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:53:12,385 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:53:12,398 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:53:12,416 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:53:54,095 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:53:54,115 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:53:54,142 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:54:37,202 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:54:37,252 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:54:37,320 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:54:45,908 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:54:45,928 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:54:45,954 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:54:53,059 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:54:53,072 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:54:53,090 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:00,167 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:00,181 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:00,199 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:09,077 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:09,097 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:09,124 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:17,928 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:17,948 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:17,976 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:24,977 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:24,990 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:25,008 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:30,450 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:30,457 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:30,467 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:36,092 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:36,099 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:36,109 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:44,772 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:44,792 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:44,820 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:55:51,862 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:55:51,876 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:55:51,905 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:56:00,637 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:56:00,657 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:56:00,685 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:56:09,614 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:56:09,634 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:56:09,661 [INFO] (save: 103): 成功保存邮件
+2024-04-04 03:56:18,516 [INFO] (connect_template: 57): 邮件模板连接成功
+2024-04-04 03:56:18,536 [INFO] (make_email: 92): 邮件构建成功
+2024-04-04 03:56:18,564 [INFO] (save: 103): 成功保存邮件
+2024-04-04 12:38:14,517 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:38:15,294 [INFO] (send: 127): 邮件发送成功
+2024-04-04 12:39:37,685 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:39:38,367 [INFO] (send: 127): 邮件发送成功
+2024-04-04 12:40:59,113 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:41:00,006 [INFO] (send: 127): 邮件发送成功
+2024-04-04 12:42:12,276 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:42:12,765 [INFO] (send: 125): 邮件发送成功
+2024-04-04 12:42:59,865 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:43:00,311 [INFO] (send: 125): 邮件发送成功
+2024-04-04 12:43:00,312 [ERROR] (send: 126): =?utf-8?q?sfasdf?=
+2024-04-04 12:43:26,829 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:43:27,318 [INFO] (send: 125): 邮件发送成功
+2024-04-04 12:43:27,319 [ERROR] (send: 126): =?utf-8?q?sfasdf?=
+2024-04-04 12:43:53,080 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:43:53,685 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:43:53,686 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:44:06,164 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:44:06,568 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:44:06,568 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:44:57,147 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:44:58,435 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:44:58,435 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:45:06,619 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:45:07,116 [INFO] (send: 125): 邮件发送成功
+2024-04-04 12:45:07,117 [ERROR] (send: 126): =?utf-8?q?sfasdf?=
+2024-04-04 12:45:21,540 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:45:21,961 [ERROR] (send: 130): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:45:21,961 [ERROR] (<module>: 142): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 12:45:39,249 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 12:45:39,267 [ERROR] (send: 130): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 12:45:39,267 [ERROR] (<module>: 142): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 12:47:17,107 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:47:17,558 [INFO] (send: 124): 邮件发送成功
+2024-04-04 12:47:17,559 [ERROR] (send: 125): =?utf-8?q?sfasdf?=
+2024-04-04 12:47:25,045 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:47:25,616 [INFO] (send: 124): 邮件发送成功
+2024-04-04 12:47:25,617 [ERROR] (send: 125): =?utf-8?q?sfasdf?=
+2024-04-04 12:47:29,679 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:47:30,165 [INFO] (send: 124): 邮件发送成功
+2024-04-04 12:47:30,165 [ERROR] (send: 125): =?utf-8?q?sfasdf?=
+2024-04-04 12:47:32,944 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:47:33,360 [INFO] (send: 124): 邮件发送成功
+2024-04-04 12:47:33,361 [ERROR] (send: 125): =?utf-8?q?sfasdf?=
+2024-04-04 12:47:50,128 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:47:50,603 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wDnz671MA5mGuVAAA--.15877S2 1712206070,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712206070')
+2024-04-04 12:47:50,604 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g1-0,_____wDnz671MA5mGuVAAA--.15877S2 1712206070,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g1-0&time=1712206070')
+2024-04-04 12:48:58,606 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:48:59,031 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDXH946MQ5mUCY7AA--.7199S2 1712206138,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712206138')
+2024-04-04 12:48:59,031 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-5,_____wDXH946MQ5mUCY7AA--.7199S2 1712206138,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-5&time=1712206138')
+2024-04-04 12:49:07,025 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:49:07,517 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-3,_____wDnbQVCMQ5mSlFAAA--.2472S2 1712206147,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-3&time=1712206147')
+2024-04-04 12:49:07,517 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-3,_____wDnbQVCMQ5mSlFAAA--.2472S2 1712206147,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-3&time=1712206147')
+2024-04-04 12:50:26,447 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 12:50:26,460 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 12:50:26,483 [INFO] (save: 102): 成功保存邮件
+2024-04-04 12:50:32,525 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:50:32,939 [ERROR] (send: 128): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3P6SYMQ5mtf1AAA--.15698S2 1712206232,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712206232')
+2024-04-04 12:50:32,939 [ERROR] (<module>: 140): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g3-4,_____wD3P6SYMQ5mtf1AAA--.15698S2 1712206232,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g3-4&time=1712206232')
+2024-04-04 12:50:49,584 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 12:50:49,604 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 12:50:49,632 [INFO] (save: 102): 成功保存邮件
+2024-04-04 12:50:58,503 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:50:58,952 [INFO] (send: 124): 邮件发送成功
+2024-04-04 12:50:58,953 [ERROR] (send: 125): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 12:54:22,636 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 12:54:22,656 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 12:54:22,684 [INFO] (save: 102): 成功保存邮件
+2024-04-04 12:55:25,623 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 12:55:25,636 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 12:55:25,655 [INFO] (save: 102): 成功保存邮件
+2024-04-04 12:55:32,237 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:55:32,687 [ERROR] (send: 131): 发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-0,_____wDXX4nEMg5mE_9AAA--.16550S2 1712206532,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-0&time=1712206532')
+2024-04-04 12:55:32,688 [ERROR] (<module>: 143): 错误：发送失败, (554, b'DT:SPM 163 gzga-smtp-mta-g2-0,_____wDXX4nEMg5mE_9AAA--.16550S2 1712206532,please see http://mail.163.com/help/help_spam_16.htm?ip=58.213.8.34&hostid=gzga-smtp-mta-g2-0&time=1712206532')
+2024-04-04 12:55:57,189 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:55:57,938 [INFO] (send: 126): 邮件发送成功
+2024-04-04 12:55:57,938 [ERROR] (send: 127): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 12:55:57,939 [ERROR] (send: 131): 发送失败, 'send_email' object has no attribute 'send_email'
+2024-04-04 12:55:57,939 [ERROR] (<module>: 143): 错误：发送失败, 'send_email' object has no attribute 'send_email'
+2024-04-04 12:56:28,100 [INFO] (connect_template: 56): 邮件模板连接成功
+2024-04-04 12:56:28,121 [INFO] (make_email: 91): 邮件构建成功
+2024-04-04 12:56:28,149 [INFO] (save: 102): 成功保存邮件
+2024-04-04 12:56:30,208 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:56:31,133 [INFO] (send: 126): 邮件发送成功
+2024-04-04 12:56:31,134 [ERROR] (send: 127): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 12:56:31,134 [ERROR] (send: 128): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 12:59:17,162 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:59:17,163 [ERROR] (send: 130): 发送失败, name 'msg' is not defined
+2024-04-04 12:59:17,163 [ERROR] (<module>: 142): 错误：发送失败, name 'msg' is not defined
+2024-04-04 12:59:34,375 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 12:59:34,397 [ERROR] (send: 130): 发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 12:59:34,397 [ERROR] (<module>: 142): 错误：发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:03:13,299 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:03:13,322 [ERROR] (send: 130): 发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:03:13,322 [ERROR] (<module>: 142): 错误：发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:06:58,746 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:06:58,763 [ERROR] (send: 130): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:06:58,764 [ERROR] (<module>: 142): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:07:28,818 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:07:28,835 [ERROR] (send: 130): 发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:07:28,835 [ERROR] (<module>: 142): 错误：发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:09:22,109 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:09:22,110 [ERROR] (send: 124): self.message["To"] = ['1398881912@qq.com', '231220088@smail.nju.edu.cn', '19708876912@163.com']
+2024-04-04 13:09:22,130 [ERROR] (send: 131): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:09:22,130 [ERROR] (<module>: 143): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:12:56,722 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:12:56,723 [ERROR] (send: 124): self.message["To"] = ['1398881912@qq.com', '231220088@smail.nju.edu.cn', '19708876912@163.com']
+2024-04-04 13:12:56,723 [ERROR] (send: 131): 发送失败, SMTP.send() missing 1 required positional argument: 's'
+2024-04-04 13:12:56,723 [ERROR] (<module>: 143): 错误：发送失败, SMTP.send() missing 1 required positional argument: 's'
+2024-04-04 13:13:13,150 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:13:13,150 [ERROR] (send: 124): self.message["To"] = ['1398881912@qq.com', '231220088@smail.nju.edu.cn', '19708876912@163.com']
+2024-04-04 13:13:13,151 [ERROR] (send: 131): 发送失败, memoryview: a bytes-like object is required, not 'Message'
+2024-04-04 13:13:13,151 [ERROR] (<module>: 143): 错误：发送失败, memoryview: a bytes-like object is required, not 'Message'
+2024-04-04 13:13:44,184 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:13:44,185 [ERROR] (send: 124): self.message["To"] = ['1398881912@qq.com', '231220088@smail.nju.edu.cn', '19708876912@163.com']
+2024-04-04 13:13:44,214 [ERROR] (send: 131): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:13:44,214 [ERROR] (<module>: 143): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:14:04,116 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:14:04,117 [ERROR] (send: 124): self.message["To"] = '1398881912@qq.com,231220088@smail.nju.edu.cn,19708876912@163.com'
+2024-04-04 13:14:04,336 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:14:04,337 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:14:23,785 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:14:23,786 [ERROR] (send: 124): self.message["To"] = '1398881912@qq.com, 231220088@smail.nju.edu.cn, 19708876912@163.com'
+2024-04-04 13:14:23,892 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:14:23,892 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:14:44,439 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:14:44,440 [ERROR] (send: 124): self.message["To"] = ['1398881912@qq.com', '231220088@smail.nju.edu.cn', '19708876912@163.com']
+2024-04-04 13:14:44,467 [ERROR] (send: 131): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:14:44,468 [ERROR] (<module>: 143): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:15:16,101 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:15:16,102 [ERROR] (send: 125): self.message["To"] = '1398881912@qq.com'
+2024-04-04 13:15:16,197 [ERROR] (send: 132): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:15:16,198 [ERROR] (<module>: 144): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:16:15,054 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:16:15,054 [ERROR] (send: 125): self.message["To"] = '1398881912@qq.com'
+2024-04-04 13:16:15,055 [ERROR] (send: 132): 发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:16:15,055 [ERROR] (<module>: 144): 错误：发送失败, 'str' object has no attribute 'get_all'
+2024-04-04 13:18:12,625 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:18:12,625 [ERROR] (send: 125): self.message["To"] = '1398881912@qq.com'
+2024-04-04 13:18:12,724 [ERROR] (send: 132): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:18:12,724 [ERROR] (<module>: 144): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:26:42,624 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:26:42,624 [ERROR] (send: 125): self.message["To"] = '1398881912@qq.com'
+2024-04-04 13:26:42,796 [ERROR] (send: 132): 发送失败, expected string or bytes-like object
+2024-04-04 13:26:42,796 [ERROR] (<module>: 144): 错误：发送失败, expected string or bytes-like object
+2024-04-04 13:27:01,602 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:27:01,773 [ERROR] (send: 129): 发送失败, expected string or bytes-like object
+2024-04-04 13:27:01,774 [ERROR] (<module>: 141): 错误：发送失败, expected string or bytes-like object
+2024-04-04 13:27:31,144 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:27:31,642 [INFO] (send: 124): 邮件发送成功
+2024-04-04 13:27:31,643 [ERROR] (send: 125): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:27:31,643 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:32:46,125 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:32:46,142 [ERROR] (send: 130): 发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:32:46,142 [ERROR] (<module>: 142): 错误：发送失败, 'list' object has no attribute 'encode'
+2024-04-04 13:32:56,004 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:32:56,481 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:32:56,481 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:32:56,482 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:35:49,352 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:35:49,352 [ERROR] (send: 131): 发送失败, 'send_email' object has no attribute 'get_all'
+2024-04-04 13:35:49,353 [ERROR] (<module>: 143): 错误：发送失败, 'send_email' object has no attribute 'get_all'
+2024-04-04 13:36:19,516 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:36:19,618 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:36:19,618 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:36:44,047 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:36:44,144 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:36:44,144 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:36:58,291 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:36:58,397 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:36:58,397 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:37:22,739 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:37:22,841 [ERROR] (send: 131): 发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:37:22,841 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Invalid User', '=?utf-8?q?19708876912=40163=2Ecom?=')
+2024-04-04 13:37:55,778 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:37:56,263 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:37:56,263 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:37:56,267 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:38:42,522 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 13:38:43,114 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:38:43,114 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:38:43,115 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:42:22,538 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:42:23,033 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:42:23,034 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:42:23,034 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:43:53,718 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:43:53,738 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:43:53,770 [INFO] (save: 105): 成功保存邮件
+2024-04-04 13:43:56,580 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:43:57,059 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:43:57,060 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:43:57,107 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:45:30,987 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:45:31,481 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:45:31,482 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:45:31,482 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:48:12,091 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:48:12,587 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:48:12,588 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:48:12,588 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:48:14,107 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:48:14,610 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:48:14,611 [ERROR] (send: 126): =?utf-8?q?19708876912=40163=2Ecom?=
+2024-04-04 13:48:14,611 [ERROR] (send: 127): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:49:58,274 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:49:58,741 [ERROR] (send: 131): 发送失败, (550, b'Multi from field or address in header')
+2024-04-04 13:49:58,741 [ERROR] (<module>: 143): 错误：发送失败, (550, b'Multi from field or address in header')
+2024-04-04 13:50:26,763 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:50:27,280 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:50:27,281 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:53:41,057 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:53:41,077 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:53:41,105 [INFO] (save: 105): 成功保存邮件
+2024-04-04 13:53:44,328 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:53:44,832 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:53:44,832 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:55:30,412 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:55:30,854 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:55:30,854 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:55:32,402 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:55:32,899 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:55:32,899 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:55:34,387 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:55:34,873 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:55:34,874 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:57:55,488 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:57:55,937 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:57:55,937 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:57:57,533 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 13:57:57,957 [INFO] (send: 125): 邮件发送成功
+2024-04-04 13:57:57,957 [ERROR] (send: 126): self.mail = 'nova@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 13:59:32,599 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:59:32,649 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:59:32,721 [INFO] (save: 105): 成功保存邮件
+2024-04-04 13:59:41,200 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:59:41,220 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:59:41,251 [INFO] (save: 105): 成功保存邮件
+2024-04-04 13:59:48,146 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:59:48,159 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:59:48,177 [INFO] (save: 105): 成功保存邮件
+2024-04-04 13:59:55,350 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 13:59:55,363 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 13:59:55,382 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:04,147 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:04,167 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:04,194 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:12,889 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:12,923 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:12,950 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:20,215 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:20,229 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:20,248 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:26,094 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:26,102 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:26,111 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:31,590 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:31,598 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:31,608 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:40,551 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:40,571 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:40,599 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:47,769 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:47,783 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:47,806 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:00:58,864 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:00:58,884 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:00:58,912 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:01:07,411 [INFO] (connect_template: 59): 邮件模板连接成功
+2024-04-04 14:01:07,431 [INFO] (make_email: 94): 邮件构建成功
+2024-04-04 14:01:07,459 [INFO] (save: 105): 成功保存邮件
+2024-04-04 14:01:58,965 [INFO] (send: 118): 邮件服务器连接成功
+2024-04-04 14:01:59,293 [INFO] (send: 125): 邮件发送成功
+2024-04-04 14:01:59,294 [ERROR] (send: 126): self.mail = '231300059@nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:03:44,432 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:03:44,854 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:03:44,855 [ERROR] (send: 125): self.mail = '231870078@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:03:53,632 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:03:54,004 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:03:54,004 [ERROR] (send: 125): self.mail = '2327808944@qq.com', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:04:00,928 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:04:01,609 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:04:01,610 [ERROR] (send: 125): self.mail = '231220009@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:04:08,681 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:04:09,180 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:04:09,180 [ERROR] (send: 125): self.mail = '231220009@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:04:13,777 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:04:14,192 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:04:14,193 [ERROR] (send: 125): self.mail = '231870122@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:04:19,690 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:04:20,113 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:04:20,113 [ERROR] (send: 125): self.mail = '2327808944@qq.com', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:04:38,263 [INFO] (connect_template: 58): 邮件模板连接成功
+2024-04-04 14:04:38,283 [INFO] (make_email: 93): 邮件构建成功
+2024-04-04 14:04:38,311 [INFO] (save: 104): 成功保存邮件
+2024-04-04 14:05:50,642 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:05:51,022 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:05:51,022 [ERROR] (send: 125): self.mail = '231870078@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:08:28,834 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:08:29,240 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:08:29,240 [ERROR] (send: 125): self.mail = '231870078@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:10:00,952 [INFO] (connect_template: 58): 邮件模板连接成功
+2024-04-04 14:10:00,972 [INFO] (make_email: 93): 邮件构建成功
+2024-04-04 14:10:01,000 [INFO] (save: 104): 成功保存邮件
+2024-04-04 14:17:54,318 [INFO] (connect_template: 58): 邮件模板连接成功
+2024-04-04 14:17:54,338 [INFO] (make_email: 93): 邮件构建成功
+2024-04-04 14:17:54,365 [INFO] (save: 104): 成功保存邮件
+2024-04-04 14:18:05,290 [INFO] (connect_template: 58): 邮件模板连接成功
+2024-04-04 14:18:05,310 [INFO] (make_email: 93): 邮件构建成功
+2024-04-04 14:18:05,337 [INFO] (save: 104): 成功保存邮件
+2024-04-04 14:18:14,530 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:18:14,979 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:18:14,979 [ERROR] (send: 125): self.mail = '231220088@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:19:43,527 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:19:44,032 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:19:44,032 [ERROR] (send: 125): self.mail = '231220088@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:45:06,599 [INFO] (send: 117): 邮件服务器连接成功
+2024-04-04 14:45:06,950 [INFO] (send: 124): 邮件发送成功
+2024-04-04 14:45:06,950 [ERROR] (send: 125): self.mail = '231275029@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:47:22,351 [ERROR] (<module>: 140): 错误：'email'
+2024-04-04 14:49:20,407 [ERROR] (<module>: 140): 错误：'preview_email'
+2024-04-04 14:49:41,308 [INFO] (send: 116): 邮件服务器连接成功
+2024-04-04 14:49:41,794 [INFO] (send: 123): 邮件发送成功
+2024-04-04 14:49:41,794 [ERROR] (send: 124): self.mail = '231220088@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
+2024-04-04 14:52:45,283 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 14:52:45,283 [ERROR] (<module>: 139): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 14:53:30,653 [ERROR] (send: 118): 邮箱认证失败，邮箱名或授权码错误
+2024-04-04 14:53:30,654 [ERROR] (<module>: 139): 错误：邮箱认证失败，邮箱名或授权码错误
+2024-04-04 14:54:21,720 [INFO] (send: 116): 邮件服务器连接成功
+2024-04-04 14:54:21,818 [ERROR] (send: 127): 发送失败, (550, b'Invalid User', '19708876912')
+2024-04-04 14:54:21,818 [ERROR] (<module>: 139): 错误：发送失败, (550, b'Invalid User', '19708876912')
+2024-04-04 14:54:39,962 [INFO] (send: 116): 邮件服务器连接成功
+2024-04-04 14:54:40,396 [INFO] (send: 123): 邮件发送成功
+2024-04-04 14:54:40,396 [ERROR] (send: 124): self.mail = '231220088@smail.nju.edu.cn', self.sender_mail = '19708876912@163.com'
